@@ -10,18 +10,19 @@ export default function Home() {
 
   return (
     <>
-      <h1>Einrichtungsnamen</h1>
-      {data.map((facility) => {
-        return (
-          <ul key={facility.id}>
-            <ListItem>{facility.name}</ListItem>
-          </ul>
-        );
-      })}
+      <Heading>Einrichtungsnamen</Heading>
+      <ul>
+        {data.map((facility) => {
+          return <ListItem key={facility.id}>{facility.name}</ListItem>;
+        })}
+      </ul>
     </>
   );
 }
-
+const Heading = styled.h1`
+  text-align: center;
+`;
 const ListItem = styled.li`
   list-style: none;
+  line-height: 2rem;
 `;
