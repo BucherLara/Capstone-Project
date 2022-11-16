@@ -14,6 +14,8 @@ export default function Home() {
       <Head>
         <title>App-Name</title>
       </Head>
+      <header></header>
+
       <main>
         <Heading>Einrichtungsnamen</Heading>
         <ul>
