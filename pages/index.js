@@ -1,6 +1,7 @@
 import fetcher from "../helpers/fetcher";
 import useSWR from "swr";
 import styled from "styled-components";
+import Head from "next/head";
 
 export default function Home() {
   const { data, error } = useSWR("api/facilities", fetcher);
@@ -10,12 +11,17 @@ export default function Home() {
 
   return (
     <>
-      <Heading>Einrichtungsnamen</Heading>
-      <ul>
-        {data.map((facility) => {
-          return <ListItem key={facility.id}>{facility.name}</ListItem>;
-        })}
-      </ul>
+      <Head>
+        <title>App-Name</title>
+      </Head>
+      <main>
+        <Heading>Einrichtungsnamen</Heading>
+        <ul>
+          {data.map((facility) => {
+            return <ListItem key={facility.id}>{facility.name}</ListItem>;
+          })}
+        </ul>
+      </main>
     </>
   );
 }
