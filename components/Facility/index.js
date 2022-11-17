@@ -24,6 +24,8 @@ export default function Facility({ facility }) {
           src={image}
           width={120}
           height={80}
+          // width={80%}
+          // height={50%}
           priority
         />
         <StyledArticle>
@@ -46,6 +48,9 @@ const StyledImage = styled(Image)`
 const StyledSection = styled.section`
   display: flex;
   border-style: solid;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: lightgrey;
 `;
 const StyledArticle = styled.article`
   text-align: left;
