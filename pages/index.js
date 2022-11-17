@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Head from "next/head";
 
 export default function Home() {
-  const { data, error } = useSWR("api/facilities", fetcher);
+  const { data, error } = useSWR("/api/facilities", fetcher);
 
   if (error) return <div>failed to load</div>;
   if (!data) return <div>loading...</div>;
@@ -14,7 +14,6 @@ export default function Home() {
       <Head>
         <title>App-Name</title>
       </Head>
-      <header></header>
 
       <main>
         <Heading>Einrichtungsnamen</Heading>
