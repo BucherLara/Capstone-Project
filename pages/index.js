@@ -3,11 +3,13 @@ import useSWR from "swr";
 import styled from "styled-components";
 import Head from "next/head";
 
+import FacilityList from "../components/FacilityList";
+
 export default function Home() {
-  const { data, error } = useSWR("/api/facilities", fetcher);
+  const { data: facilities, error } = useSWR("/api/facilities", fetcher);
 
   if (error) return <div>failed to load</div>;
-  if (!data) return <div>loading...</div>;
+  if (!facilities) return <div>loading...</div>;
 
   return (
     <>
@@ -17,19 +19,11 @@ export default function Home() {
 
       <main>
         <Heading>Einrichtungsnamen</Heading>
-        <ul>
-          {data.map((facility) => {
-            return <ListItem key={facility.id}>{facility.name}</ListItem>;
-          })}
-        </ul>
+        <FacilityList facilities={facilities}></FacilityList>
       </main>
     </>
   );
 }
 const Heading = styled.h1`
   text-align: center;
-`;
-const ListItem = styled.li`
-  list-style: none;
-  line-height: 2rem;
 `;
