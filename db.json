@@ -6,7 +6,7 @@
     "adress": "Neustädter Str. 31 a, 20355 Hamburg, https://www.google.com/maps/place/Pik+As/@53.553246,9.980664,17z/data=!3m1!4b1!4m5!3m4!1s0x47b18f10d01e241f:0xabb10810d7b57cb4!8m2!3d53.5532528!4d9.9828532",
     "target": "Für Männer",
     "requirements": "Keine",
-    "image": "",
+    "image": "/img/PikAs.png",
     "filterCriteria": ["Sofort", "Hund"]
   },
   {
@@ -16,7 +16,7 @@
     "adress": "Friesenstraße 22, 20097 Hamburg, https://www.google.com/maps/place/Winternotprogramm+f%C3%BCr+Obdachlose+e.V./@53.5430635,10.0272033,17z/data=!3m1!4b1!4m5!3m4!1s0x47b18baddca75ef3:0x20522cfdb72c4771!8m2!3d53.5430635!4d10.029392",
     "target": "Für Alle",
     "requirements": "Keine",
-    "image": "",
+    "image": "/img/Winternotprogram.jpeg",
     "filterCriteria": ["Sofort"]
   },
   {
@@ -26,7 +26,7 @@
     "adress": "Hinrichsenstraße 4a, 20535 Hamburg, https://www.google.com/maps/place/FrauenZimmer/@53.5581386,9.7690318,11z/data=!4m9!1m2!2m1!1sFrauenZimmer!3m5!1s0x47b18ec082726029:0x2250855cb45762e0!8m2!3d53.5581733!4d10.032681!15sCgxGcmF1ZW5aaW1tZXJaDiIMZnJhdWVuemltbWVykgEcc29jaWFsX3NlcnZpY2VzX29yZ2FuaXphdGlvbpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSRE9IVllNV05SRUFF4AEA",
     "target": "Für Frauen",
     "requirements": "Keine",
-    "image": "",
+    "image": "/img/FrauenZimmerFördernund.jpeg",
     "filterCriteria": ["Sofort"]
   },
   {
@@ -36,7 +36,7 @@
     "adress": "Außenmühlenweg 10b, 21073 Hamburg, https://www.google.com/maps?q=Deutsches+Rotes+Kreuz+Kreisverband+Hamburg-Harburg+e.V.,+Harburg+Huus+(Obdachlosenhilfe)&gsas=1&lsig=AB86z5WVpubuy_jybZ_6v_oNCYpQ&biw=960&bih=874&dpr=1&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjRrIr-xrL7AhVy_rsIHTIfAWIQ_AUoAXoECAEQAw",
     "target": "Für Alle",
     "requirements": "Keine",
-    "image": "",
+    "image": "/img/HarburHuusLOGO.jpeg",
     "filterCriteria": ["Sofort, Hund"]
   },
   {
@@ -46,7 +46,7 @@
     "adress": "Außenmühlenweg 10b, 21073 Hamburg, https://www.google.com/maps?q=Deutsches+Rotes+Kreuz+Kreisverband+Hamburg-Harburg+e.V.,+Harburg+Huus+(Obdachlosenhilfe)&gsas=1&lsig=AB86z5WVpubuy_jybZ_6v_oNCYpQ&biw=960&bih=874&dpr=1&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjRrIr-xrL7AhVy_rsIHTIfAWIQ_AUoAXoECAEQAw",
     "target": "Für Alle",
     "requirements": "Keine",
-    "image": "",
+    "image": "/img/HarburHuusLOGO.jpeg",
     "filterCriteria": ["Sofort, Hund"]
   },
   {
@@ -56,7 +56,7 @@
     "adress": "Jutestraße 7, 21079 Hamburg-Harburg, https://www.google.com/maps/search/Jep+Jutestra%C3%9Fe+7,+21079+Hamburg-Harburg/@53.4515225,9.9868155,17z/data=!3m1!4b1",
     "target": "Für Männer",
     "requirements": "Termin Fachstelle für Wohnungsnotfälle",
-    "image": "",
+    "image": "/img/JEP.jpeg",
     "filterCriteria": ["unter 25 Jahren"]
   },
   {
@@ -66,7 +66,7 @@
     "adress": "Hinrichsenstraße 6a, 20535 Hamburg-Borgfelde, https://www.google.com/maps/search/JEP+Hinrichsenstra%C3%9Fe+6a,+20535+Hamburg-Borgfelde/@53.5578733,10.031,17z/data=!3m1!4b1",
     "target": "Für Frauen",
     "requirements": "Termin Fachstelle für Wohnungsnotfälle",
-    "image": "",
+    "image": "/img/JEP.jpeg",
     "filterCriteria": ["unter 25 Jahren"]
   },
   {
@@ -76,7 +76,7 @@
     "adress": "mobil, weiter Infos hier, https://gobanyo.org/duschen/",
     "target": "Für Alle (unterschiedliche Zeiten)",
     "requirements": "Keine",
-    "image": "",
+    "image": "/img/GoBanyo.png",
     "filterCriteria": ["mobil, LGBTQI"]
   },
   {
@@ -86,7 +86,7 @@
     "adress": "Steindamm 11, 20099 Hamburg ,https://www.google.com/maps?uact=5&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCEQoAEQCjIHCCEQoAEQCjoKCAAQRxDWBBCwAzoFCAAQogQ6BwgAEB4QogQ6BQghEKABSgQIQRgASgQIRhgAUL4EWKQPYPsQaAFwAXgAgAGBAYgB5geSAQM4LjOYAQCgAQHIAQLAAQE&q=sidewalx+steindamm&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjWl_26y7L7AhVIhv0HHe5cCvEQ_AUoAXoECAEQAw",
     "target": "Für Menschen unter 25 Jahren",
     "requirements": "Unter 25 Jahren",
-    "image": "",
+    "image": "/img/SidewalX.png",
     "filterCriteria": ["unter 25 Jahren"]
   },
   {
@@ -96,7 +96,7 @@
     "adress": "Pulverteich 17 20099 Hamburg-St. Georg, https://www.google.com/maps?q=BASIS-Projekt,+Pulverteich+17,+20099+Hamburg&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMgIIJkoECEEYAUoECEYYAFDNA1ieCWCdGmgBcAB4AIABbogBrwSSAQM0LjKYAQCgAQHAAQE&um=1&ie=UTF-8&sa=X&ved=2ahUKEwji_L6xz7L7AhWniv0HHXKPBb4Q_AUoAXoECAEQAw",
     "target": "Für männliche Sexwoker*",
     "requirements": "Keine",
-    "image": "",
+    "image": "/img/BasisProjekt.png",
     "filterCriteria": ["LGBTQI"]
   },
   {
@@ -106,7 +106,7 @@
     "adress": "Neustädter Str. 31 a, 20355 Hamburg, https://www.google.com/maps/place/Pik+As/@53.553246,9.980664,17z/data=!3m1!4b1!4m5!3m4!1s0x47b18f10d01e241f:0xabb10810d7b57cb4!8m2!3d53.5532528!4d9.9828532",
     "target": "Für Alle",
     "requirements": "Wenn vorhanden Versicherungskarte, Keine",
-    "image": "",
+    "image": "/img/PikAs.png",
     "filterCriteria": ["Allgemein, Psycholog*in"]
   },
   {
@@ -116,7 +116,7 @@
     "adress": "Altstädter Twiete 5 20095 Hamburg, https://www.google.com/maps/place/Altst%C3%A4dter+Twiete+5,+20095+Hamburg/@53.5495906,10.0021812,17z/data=!3m1!4b1!4m9!1m2!2m1!1sCariCare+Altst%C3%A4dter+Twiete+5+20095+Hamburg!3m5!1s0x47b18ee259c32cdb:0xd280263e74910511!8m2!3d53.5495906!4d10.0021812!15sCitDYXJpQ2FyZSBBbHRzdMOkZHRlciBUd2lldGUgNSAyMDA5NSBIYW1idXJnkgEQZ2VvY29kZWRfYWRkcmVzc-ABAA",
     "target": "Für Alle",
     "requirements": "Keine",
-    "image": "",
+    "image": "/img/CariCare.jpeg",
     "filterCriteria": ["Allgemein, Psycholog*in"]
   },
   {
@@ -126,7 +126,7 @@
     "adress": "Brennerstraße 19, 20099 Hamburg, https://www.google.com/maps/place/ragazza+e.+V./@53.5554491,10.012392,17z/data=!3m1!4b1!4m5!3m4!1s0x47b18ee794847dcf:0x778afceb10ebfb50!8m2!3d53.5554707!4d10.014553",
     "target": "Für Frauen",
     "requirements": "Keine",
-    "image": "",
+    "image": "/img/Ragazza.png",
     "filterCriteria": ["Allgemein, Gynäkolog*in"]
   }
 ]
