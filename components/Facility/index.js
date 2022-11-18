@@ -42,7 +42,6 @@ export default function Facility({ facility }) {
 }
 const StyledImage = styled(Image)`
   object-fit: contain;
-  layout: "responsive";
 `;
 
 const StyledSection = styled.section`
