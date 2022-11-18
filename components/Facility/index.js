@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Image from "next/image";
 import Link from "next/link";
+import { ListItem } from "../FacilityList";
 
 export default function Facility({ facility }) {
   const {
@@ -26,39 +27,40 @@ export default function Facility({ facility }) {
           height={80}
           priority
         />
-        <StyledArticle>
-          <p>Kategorie: {category}</p>
-          <p>
+        <StyledList>
+          <ListItem>Kategorie: {category}</ListItem>
+          <ListItem>
             Adresse:
             <StyledLink href={link}> {adress}</StyledLink>
-          </p>
-          <p>Zielgruppe: {target}</p>
-          <p>Zugangsvoraussetzungen: {requirements}</p>
-        </StyledArticle>
+          </ListItem>
+          <ListItem>Zielgruppe: {target}</ListItem>
+          <ListItem>Zugangsvoraussetzungen: {requirements}</ListItem>
+        </StyledList>
       </StyledSection>
     </>
   );
 }
 const StyledImage = styled(Image)`
   object-fit: contain;
-  layout: responsive;
+  layout: "responsive";
 `;
 
 const StyledSection = styled.section`
   display: flex;
   border-style: solid;
-  padding: 10px;
+  padding: 20px;
   border-radius: 20px;
   background-color: lightgrey;
-
+  min-width: 150px;
   align-items: center;
 `;
-const StyledArticle = styled.article`
+const StyledList = styled.ul`
   text-align: left;
-  margin-left: 10px;
-  position: relative;
+  margin-left: 0px;
+  padding: 0 0 0 0;
 `;
 
 const StyledLink = styled(Link)`
   text-decoration: none;
 `;
+export { StyledList };
