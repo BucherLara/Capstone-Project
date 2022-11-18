@@ -42,6 +42,7 @@ export default function Facility({ facility }) {
 }
 const StyledImage = styled(Image)`
   object-fit: contain;
+  margin-right: 10px;
 `;
 
 const StyledSection = styled.section`
@@ -55,7 +56,7 @@ const StyledSection = styled.section`
 `;
 const StyledList = styled.ul`
   text-align: left;
-  margin-left: 0px;
+  margin-left: 0 px;
   padding: 0 0 0 0;
 `;
 
