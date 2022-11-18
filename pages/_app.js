@@ -8,14 +8,13 @@ function MyApp({ Component, pageProps }) {
     "facilities",
     initialState
   );
+
   return (
     <>
       <Header />
       <GlobalStyles />
       <Component
         {...pageProps}
-        storage={storage}
-        setStorage={setStorage}
         facilities={facilities}
         setFacilities={setFacilities}
       />
