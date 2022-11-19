@@ -15,10 +15,11 @@ import { useCallback, useEffect, useState } from "react";
 export function useLocalStorage(key, initialState) {
   // Set the desired initialState
   const [state, setState] = useState(initialState);
-
+  console.log(state);
   // Provide a custom setter function that updates the state and writes to localStorage
   const setStateAndLocalStorage = useCallback(
     (callbackOrValue) => {
+      console.log("test s");
       setState((previousValue) => {
         // The value might be a callback with the previousValue
         const nextValue =

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import GlobalStyles from "../components/GlobalStyles";
 import Header from "../components/Header";
 import initialState from "../db.json";
@@ -8,6 +9,11 @@ function MyApp({ Component, pageProps }) {
     "facilities",
     initialState
   );
+  const [storage, setStorage] = useLocalStorage("flamingo-capstone", []);
+
+  // useEffect(() => {
+  //   window.localStorage.setItem("rest", "ghzgdzhs");
+  // }, []);
 
   return (
     <>

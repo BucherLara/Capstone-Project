@@ -95,7 +95,7 @@
     "link": "https://www.google.com/maps?uact=5&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCEQoAEQCjIHCCEQoAEQCjoKCAAQRxDWBBCwAzoFCAAQogQ6BwgAEB4QogQ6BQghEKABSgQIQRgASgQIRhgAUL4EWKQPYPsQaAFwAXgAgAGBAYgB5geSAQM4LjOYAQCgAQHIAQLAAQE&q=sidewalx+steindamm&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjWl_26y7L7AhVIhv0HHe5cCvEQ_AUoAXoECAEQAw",
     "target": "Für Menschen unter 25 Jahren",
     "requirements": "Unter 25 Jahren",
-    "image": "/img/SidewalX.png",
+    "image": "/img/sidewalX.png",
     "filterCriteria": ["unter 25 Jahren"]
   },
   {
