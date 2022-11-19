@@ -9,11 +9,6 @@ function MyApp({ Component, pageProps }) {
     "facilities",
     initialState
   );
-  const [storage, setStorage] = useLocalStorage("flamingo-capstone", []);
-
-  // useEffect(() => {
-  //   window.localStorage.setItem("rest", "ghzgdzhs");
-  // }, []);
 
   return (
     <>

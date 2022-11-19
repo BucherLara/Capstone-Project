@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Head from "next/head";
+import NavLandingpage from "../components/Navigation/NavLandingpage";
 
 import FacilityList from "../components/FacilityList";
 
@@ -13,6 +14,7 @@ export default function Home({ facilities }) {
       </Head>
 
       <main>
+        <NavLandingpage />
         <Heading>Einrichtungsnamen</Heading>
         <FacilityList facilities={facilities}></FacilityList>
       </main>
