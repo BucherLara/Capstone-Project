@@ -1,10 +1,16 @@
 import Link from "next/link";
+import styled from "styled-components";
 export default function MiniNav() {
   return (
     <>
-      <button type="button">
-        <Link href={"/"}>Home</Link>
-      </button>
+      <StyledLink href={"/"}>Home</StyledLink>
     </>
   );
 }
+
+const StyledLink = styled(Link)`
+  border-radius: 20px;
+  border-style: solid;
+  padding: 10px;
+  text-decoration: none;
+`;

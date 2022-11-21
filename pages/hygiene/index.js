@@ -1,8 +1,9 @@
 import MiniNav from "../../components/Navigation/MiniNavbar";
+import { StyledParagraph } from "../Schlafen";
 export default function Hygiene() {
   return (
     <>
-      <div>Hier gibt es Hygiene-Möglichkeiten</div>
+      <StyledParagraph>Hier gibt es Hygiene-Möglichkeiten</StyledParagraph>
 
       <MiniNav />
     </>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 export default function Header() {
   return (
     <StyledHeader>
-      <h1> App für Wohnungslose </h1>
+      <h1> App für wohnungslose Menschen </h1>
     </StyledHeader>
   );
 }
