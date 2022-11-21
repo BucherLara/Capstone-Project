@@ -28,7 +28,6 @@ export default function Facility({ facility }) {
           priority
         />
         <StyledList>
-          <ListItem>Kategorie: {category}</ListItem>
           <ListItem>
             Adresse:
             <StyledLink href={link}> {adress}</StyledLink>

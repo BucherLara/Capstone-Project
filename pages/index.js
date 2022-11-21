@@ -15,11 +15,6 @@ export default function Home({ facilities, category }) {
 
       <main>
         <NavLandingpage />
-        <Heading>Einrichtungsnamen</Heading>
-        <FacilityList
-          facilities={facilities}
-          category={category}
-        ></FacilityList>
       </main>
     </>
   );

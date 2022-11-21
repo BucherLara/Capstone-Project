@@ -2,13 +2,11 @@ import MiniNav from "../../components/Navigation/MiniNavbar";
 import styled from "styled-components";
 import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
+
 export default function Schlafen({ facilities }) {
-  // const asArray = Object.entries(facilities);
   const filtered = facilities.filter((facility) => {
     return facility.category.includes("Schlafen");
   });
-
-  console.log(filtered);
 
   return (
     <>
