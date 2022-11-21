@@ -5,7 +5,7 @@ styled;
 
 export default function NavLandingpage() {
   return (
-    <>
+    <StyledDiv>
       <StyledLink href={"/schlafen"}>
         <Image
           src={"/icons/SchlafenIcon.png"}
@@ -33,7 +33,7 @@ export default function NavLandingpage() {
         />{" "}
         <StyledParagraph>Medizin</StyledParagraph>
       </StyledLink>
-    </>
+    </StyledDiv>
   );
 }
 
@@ -49,4 +49,7 @@ const StyledLink = styled(Link)`
 const StyledParagraph = styled.p`
   margin-top: 80px;
   margin-left: -15px;
+`;
+const StyledDiv = styled.div`
+  margin-left: 15px;
 `;
