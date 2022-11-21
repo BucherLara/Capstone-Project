@@ -1,16 +1,35 @@
 import MiniNav from "../../components/Navigation/MiniNavbar";
 import styled from "styled-components";
-export default function Schlafen() {
+import { ListItem } from "../../components/FacilityList";
+import Facility from "../../components/Facility";
+export default function Schlafen({ facilities }) {
+  // const asArray = Object.entries(facilities);
+  const filtered = facilities.filter((facility) => {
+    return facility.category.includes("Schlafen");
+  });
+
+  console.log(filtered);
+
   return (
     <>
-      <StyledParagraph>Hier wird geschlafen</StyledParagraph>
+      <StyledHeading>Einrichtungen zum Übernachten</StyledHeading>
+      <ul>
+        {filtered.map((filteredFacility) => {
+          return (
+            <ListItem key={filteredFacility.id}>
+              <Facility facility={filteredFacility} />
+            </ListItem>
+          );
+        })}
+      </ul>
+
       <MiniNav />
     </>
   );
 }
 
-const StyledParagraph = styled.p`
+const StyledHeading = styled.h2`
   margin-bottom: 20px;
 `;
 
-export { StyledParagraph };
+export { StyledHeading };

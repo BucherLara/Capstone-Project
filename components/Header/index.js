@@ -1,12 +1,7 @@
-import styled from "styled-components";
 export default function Header() {
   return (
-    <StyledHeader>
-      <h1> App für wohnungslose Menschen </h1>
-    </StyledHeader>
+    <header>
+      <h1>Überlebenshilfen für wohnungslose Menschen </h1>
+    </header>
   );
 }
-
-const StyledHeader = styled.header`
-  background-color: lightgreen;
-`;

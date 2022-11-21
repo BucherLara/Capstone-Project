@@ -1,9 +1,9 @@
 import MiniNav from "../../components/Navigation/MiniNavbar";
-import { StyledParagraph } from "../Schlafen";
+import { StyledHeading } from "../Schlafen";
 export default function Medizin() {
   return (
     <>
-      <StyledParagraph>Hier gibt es medizinische Versorgung</StyledParagraph>
+      <StyledHeading> Einrichtungen zur medizinischen Versorgung</StyledHeading>
       <MiniNav />
     </>
   );

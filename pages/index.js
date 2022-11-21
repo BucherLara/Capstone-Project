@@ -4,7 +4,7 @@ import NavLandingpage from "../components/Navigation/NavLandingpage";
 
 import FacilityList from "../components/FacilityList";
 
-export default function Home({ facilities }) {
+export default function Home({ facilities, category }) {
   if (!facilities) return <div>loading...</div>;
 
   return (
@@ -16,7 +16,10 @@ export default function Home({ facilities }) {
       <main>
         <NavLandingpage />
         <Heading>Einrichtungsnamen</Heading>
-        <FacilityList facilities={facilities}></FacilityList>
+        <FacilityList
+          facilities={facilities}
+          category={category}
+        ></FacilityList>
       </main>
     </>
   );
