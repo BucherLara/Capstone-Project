@@ -5,35 +5,41 @@ styled;
 
 export default function NavLandingpage() {
   return (
-    <StyledDiv>
-      <StyledLink href={"/schlafen"}>
-        <Image
-          src={"/icons/SchlafenIcon.png"}
-          alt={"Schlafen-Icon"}
-          width={100}
-          height={60}
-        />
-        <StyledParagraph>Schlafen</StyledParagraph>
-      </StyledLink>
-      <StyledLink href={"/hygiene"}>
-        <Image
-          src={"/icons/Waschen.png"}
-          alt={"Hygiene-Icon"}
-          width={100}
-          height={60}
-        />{" "}
-        <StyledParagraph>Hygiene</StyledParagraph>
-      </StyledLink>
-      <StyledLink href={"/medizin"}>
-        <Image
-          src={"/icons/Medizin.png"}
-          alt={"Medizin-Icon"}
-          width={100}
-          height={60}
-        />{" "}
-        <StyledParagraph>Medizin</StyledParagraph>
-      </StyledLink>
-    </StyledDiv>
+    <GridContainer>
+      <StyledSection>
+        <StyledLink href={"/schlafen"}>
+          <Image
+            src={"/icons/SchlafenIcon.png"}
+            alt={"Schlafen-Icon"}
+            width={100}
+            height={60}
+          />
+          <StyledParagraph>Schlafen</StyledParagraph>
+        </StyledLink>
+      </StyledSection>
+      <StyledSection>
+        <StyledLink href={"/hygiene"}>
+          <Image
+            src={"/icons/Waschen.png"}
+            alt={"Hygiene-Icon"}
+            width={100}
+            height={60}
+          />{" "}
+          <StyledParagraph>Hygiene</StyledParagraph>
+        </StyledLink>
+      </StyledSection>
+      <StyledSection>
+        <StyledLink href={"/medizin"}>
+          <Image
+            src={"/icons/Medizin.png"}
+            alt={"Medizin-Icon"}
+            width={100}
+            height={60}
+          />{" "}
+          <StyledParagraph>Medizin</StyledParagraph>
+        </StyledLink>
+      </StyledSection>
+    </GridContainer>
   );
 }
 
@@ -48,8 +54,15 @@ const StyledLink = styled(Link)`
 
 const StyledParagraph = styled.p`
   margin-top: 80px;
-  margin-left: -15px;
+  position: absolute;
+  margin-left: 5px;
+  padding: 10px;
 `;
-const StyledDiv = styled.div`
+const StyledSection = styled.section`
   margin-left: 15px;
+`;
+
+const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: auto auto;
 `;
