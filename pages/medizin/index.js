@@ -1,6 +1,5 @@
 import MiniNav from "../../components/Navigation/MiniNavbar";
-import { StyledHeading } from "../Schlafen";
-import styled from "styled-components";
+import { StyledHeading } from "../schlafen";
 import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
 
