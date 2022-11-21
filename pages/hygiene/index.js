@@ -1,7 +1,8 @@
 import MiniNav from "../../components/Navigation/MiniNavbar";
 import { StyledHeading } from "../schlafen";
-import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
+import { StyledList } from "../../components/Facility";
+import { ListItem } from "../../components/FacilityList";
 
 export default function Hygiene({ facilities }) {
   const filtered = facilities.filter((facility) => {
@@ -10,8 +11,8 @@ export default function Hygiene({ facilities }) {
 
   return (
     <>
-      <StyledHeading>Einrichtungen mit Duschmöglichkeit </StyledHeading>
-      <ul>
+      <StyledHeading>Duschmöglichkeiten </StyledHeading>
+      <StyledList>
         {filtered.map((filteredFacility) => {
           return (
             <ListItem key={filteredFacility.id}>
@@ -19,7 +20,7 @@ export default function Hygiene({ facilities }) {
             </ListItem>
           );
         })}
-      </ul>
+      </StyledList>
       <MiniNav />
     </>
   );

@@ -4,17 +4,7 @@ import Link from "next/link";
 import { ListItem } from "../FacilityList";
 
 export default function Facility({ facility }) {
-  const {
-    id,
-    name,
-    category,
-    adress,
-    target,
-    requirements,
-    image,
-    link,
-    filterCriteria,
-  } = facility;
+  const { name, adress, target, requirements, image, link } = facility;
 
   return (
     <>
@@ -23,8 +13,8 @@ export default function Facility({ facility }) {
         <StyledImage
           alt={`Logo der Einrichtung ${name}`}
           src={image}
-          width={120}
-          height={80}
+          width={180}
+          height={120}
           priority
         />
         <StyledList>
@@ -50,16 +40,16 @@ const StyledSection = styled.section`
   padding: 20px;
   border-radius: 20px;
   background-color: lightgrey;
-  min-width: 150px;
+
+  min-heigth: 500px;
   align-items: center;
 `;
 const StyledList = styled.ul`
   text-align: left;
-  margin-left: 0 px;
   padding: 0 0 0 0;
 `;
 
 const StyledLink = styled(Link)`
   text-decoration: none;
 `;
-export { StyledList };
+export { StyledList, StyledImage };

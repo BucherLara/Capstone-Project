@@ -1,14 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import styled from "styled-components";
-styled;
+import { StyledImage } from "../../Facility";
 
 export default function NavLandingpage() {
   return (
     <GridContainer>
       <StyledSection>
         <StyledLink href={"/schlafen"}>
-          <Image
+          <StyledImage
             src={"/icons/SchlafenIcon.png"}
             alt={"Schlafen-Icon"}
             width={100}
@@ -19,7 +19,7 @@ export default function NavLandingpage() {
       </StyledSection>
       <StyledSection>
         <StyledLink href={"/hygiene"}>
-          <Image
+          <StyledImage
             src={"/icons/Waschen.png"}
             alt={"Hygiene-Icon"}
             width={100}
@@ -30,7 +30,7 @@ export default function NavLandingpage() {
       </StyledSection>
       <StyledSection>
         <StyledLink href={"/medizin"}>
-          <Image
+          <StyledImage
             src={"/icons/Medizin.png"}
             alt={"Medizin-Icon"}
             width={100}

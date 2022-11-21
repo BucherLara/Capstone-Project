@@ -2,9 +2,7 @@ import styled from "styled-components";
 import Head from "next/head";
 import NavLandingpage from "../components/Navigation/NavLandingpage";
 
-import FacilityList from "../components/FacilityList";
-
-export default function Home({ facilities, category }) {
+export default function Home({ facilities }) {
   if (!facilities) return <div>loading...</div>;
 
   return (

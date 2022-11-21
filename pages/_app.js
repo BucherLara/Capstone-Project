@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import GlobalStyles from "../components/GlobalStyles";
 import Header from "../components/Header";
 import initialState from "../db.json";
