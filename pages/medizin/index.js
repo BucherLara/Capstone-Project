@@ -1,7 +1,7 @@
 import MiniNav from "../../components/Navigation/MiniNavbar";
 import { StyledHeading } from "../schlafen";
 import { ListItem } from "../../components/FacilityList";
-import { Facility } from "../../components/Facility";
+import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 
 export default function Medizin({ facilities }) {

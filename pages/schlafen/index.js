@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import MiniNav from "../../components/Navigation/MiniNavbar";
 import { ListItem } from "../../components/FacilityList";
-import { Facility } from "../../components/Facility";
+import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 
 export default function Schlafen({ facilities }) {
