@@ -32,6 +32,7 @@ export default function Facility({ facility }) {
 const StyledImage = styled(Image)`
   object-fit: contain;
   margin-right: 10px;
+  border-radius: 50px; ;
 `;
 
 const StyledSection = styled.section`
