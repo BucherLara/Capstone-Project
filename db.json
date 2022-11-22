@@ -45,14 +45,14 @@
   },
   {
     "id": 5,
-    "name": "Harburg-Huus",
+    "name": "Tierschutzverein Hamburg",
     "category": "Schlafen",
-    "adress": "Außenmühlenweg 10b, 21073 Hamburg",
-    "link": "https://www.google.com/maps?q=Deutsches+Rotes+Kreuz+Kreisverband+Hamburg-Harburg+e.V.,+Harburg+Huus+(Obdachlosenhilfe)&gsas=1&lsig=AB86z5WVpubuy_jybZ_6v_oNCYpQ&biw=960&bih=874&dpr=1&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjRrIr-xrL7AhVy_rsIHTIfAWIQ_AUoAXoECAEQAw",
+    "adress": "Süderstraße 399, 20537 Hamburg",
+    "link": "https://www.google.com/maps/place/Hamburger+Tierschutzverein+von+1841+e.+V./@53.5715838,9.9344756,12z/data=!4m10!1m2!2m1!1stierschutzverein+hamburg!3m6!1s0x47b18c2410d19923:0x57ff1b698ac5ed8b!8m2!3d53.5462465!4d10.0663622!15sChh0aWVyc2NodXR6dmVyZWluIGhhbWJ1cmeSAQ5hbmltYWxfc2hlbHRlcuABAA!16s%2Fg%2F1tgc8l2q",
     "target": "Für Alle",
     "requirements": "KEINE",
-    "image": "/img/HarburgHuusLOGO.jpeg",
-    "filterCriteria": ["Sofort, Hund"]
+    "image": "/img/Tierschutz.png",
+    "filterCriteria": ["Hund"]
   },
   {
     "id": 6,
