@@ -4,8 +4,8 @@ import Link from "next/link";
 import { ListItem } from "../FacilityList";
 
 export default function Facility({ facility }) {
-  const { name, adress, target, requirements, image, link } = facility;
-
+  const { name, adress, target, requirements, image, link, tel } = facility;
+  console.log(tel);
   return (
     <>
       <h3>{name}</h3>
@@ -18,12 +18,16 @@ export default function Facility({ facility }) {
           priority
         />
         <StyledList>
+          <ListItem>Zielgruppe: {target}</ListItem>
+          <ListItem>Zugangsvoraussetzungen: {requirements}</ListItem>
           <ListItem>
             Adresse:
             <StyledLink href={link}> {adress}</StyledLink>
           </ListItem>
-          <ListItem>Zielgruppe: {target}</ListItem>
-          <ListItem>Zugangsvoraussetzungen: {requirements}</ListItem>
+          <ListItem>
+            Telefonnummer:
+            <StyledLink href={`tel:${tel}`}> {tel}</StyledLink>
+          </ListItem>
         </StyledList>
       </StyledSection>
     </>

@@ -57,7 +57,7 @@
     "requirements": "KEINE",
     "image": "/img/Tierschutz.png",
     "filterCriteria": ["Hund"],
-    "telefon": "+49 40 2111060"
+    "tel": "+49 40 2111060"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "requirements": "Termin Fachstelle für Wohnungsnotfälle",
     "image": "/img/JEP.jpeg",
     "filterCriteria": ["unter 25 Jahren"],
-    "telefon": "+49 40 427314587"
+    "tel": "+49 40 427314587"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "requirements": "Termin bei der Fachstelle für Wohnungsnotfälle",
     "image": "/img/JEP.jpeg",
     "filterCriteria": ["unter 25 Jahren"],
-    "telefon": "+49 40 427310119"
+    "tel": "+49 40 427310119"
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "requirements": "Keine",
     "image": "/img/GoBanyo.png",
     "filterCriteria": ["mobil, LGBTQI"],
-    "telefon": "+49 40 53542496"
+    "tel": "+49 40 53542496"
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "requirements": "Unter 25 Jahren",
     "image": "/img/sidewalX.png",
     "filterCriteria": ["unter 25 Jahren"],
-    "telefon": "+49 40 39842643"
+    "tel": "+49 40 39842643"
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "requirements": "KEINE",
     "image": "/img/BasisProjekt.png",
     "filterCriteria": ["LGBTQI"],
-    "telefon": "+49 40 2801607"
+    "tel": "+49 40 2801607"
   },
   {
     "id": 11,
