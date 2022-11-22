@@ -1,14 +1,8 @@
-import fetcher from "../helpers/fetcher";
-import useSWR from "swr";
 import styled from "styled-components";
 import Head from "next/head";
+import NavLandingpage from "../components/Navigation/NavLandingpage";
 
-import FacilityList from "../components/FacilityList";
-
-export default function Home() {
-  const { data: facilities, error } = useSWR("/api/facilities", fetcher);
-
-  if (error) return <div>failed to load</div>;
+export default function Home({ facilities }) {
   if (!facilities) return <div>loading...</div>;
 
   return (
@@ -18,8 +12,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Heading>Einrichtungsnamen</Heading>
-        <FacilityList facilities={facilities}></FacilityList>
+        <NavLandingpage />
       </main>
     </>
   );

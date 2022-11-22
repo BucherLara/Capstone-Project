@@ -1,6 +1,7 @@
 import Facility from "../Facility";
 import styled from "styled-components";
 import { StyledList } from "../Facility";
+
 export default function FacilityList({ facilities }) {
   return (
     <>
@@ -21,4 +22,5 @@ const ListItem = styled.li`
   list-style: none;
   padding-left: -10px;
 `;
+
 export { ListItem };
