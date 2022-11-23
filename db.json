@@ -8,7 +8,7 @@
     "target": "Für Männer",
     "requirements": "KEINE",
     "image": "/img/PikAs.png",
-    "filterCriteria": ["Sofort", "Hund"],
+    "filterCriteria": ["Sofort", "mit Hund"],
     "tel": "+49 40 427312059"
   },
   {
@@ -44,7 +44,7 @@
     "target": "Für Alle",
     "requirements": "KEINE",
     "image": "/img/HarburgHuusLOGO.jpeg",
-    "filterCriteria": ["Sofort, Hund"],
+    "filterCriteria": ["Sofort", "mit Hund"],
     "tel": "+49 40 80790986"
   },
   {
@@ -56,7 +56,7 @@
     "target": "Für Alle",
     "requirements": "KEINE",
     "image": "/img/Tierschutz.png",
-    "filterCriteria": ["Hund"],
+    "filterCriteria": ["mit Hund"],
     "tel": "+49 40 2111060"
   },
   {
@@ -92,7 +92,7 @@
     "target": "Für Alle (unterschiedliche Zeiten)",
     "requirements": "Keine",
     "image": "/img/GoBanyo.png",
-    "filterCriteria": ["mobil, LGBTQI"],
+    "filterCriteria": ["mobil", "LGBTQIA+"],
     "tel": "+49 40 53542496"
   },
   {
@@ -113,10 +113,10 @@
     "category": "Hygiene",
     "adress": "Pulverteich 17 20099 Hamburg-St. Georg",
     "link": "https://www.google.com/maps?q=BASIS-Projekt,+Pulverteich+17,+20099+Hamburg&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMgIIJkoECEEYAUoECEYYAFDNA1ieCWCdGmgBcAB4AIABbogBrwSSAQM0LjKYAQCgAQHAAQE&um=1&ie=UTF-8&sa=X&ved=2ahUKEwji_L6xz7L7AhWniv0HHXKPBb4Q_AUoAXoECAEQAw",
-    "target": "Für männliche Sexwoker*",
+    "target": "Für männliche Sexworker*",
     "requirements": "KEINE",
     "image": "/img/BasisProjekt.png",
-    "filterCriteria": ["LGBTQI"],
+    "filterCriteria": ["LGBTQIA+"],
     "tel": "+49 40 2801607"
   },
   {
@@ -128,7 +128,7 @@
     "target": "Für Alle",
     "requirements": "Wenn vorhanden Versicherungskarte",
     "image": "/img/PikAs.png",
-    "filterCriteria": ["Allgemein, Psycholog*in"],
+    "filterCriteria": ["Allgemein", "Psycholog*in"],
     "tel": "+49 40 427312059"
   },
   {
@@ -140,7 +140,7 @@
     "target": "Für Alle",
     "requirements": "KEINE",
     "image": "/img/CariCare.jpeg",
-    "filterCriteria": ["Allgemein, Psycholog*in"],
+    "filterCriteria": ["Allgemein", "Psycholog*in"],
     "tel": "+49 152 09296710"
   },
   {
@@ -152,7 +152,7 @@
     "target": "Für Frauen",
     "requirements": "KEINE",
     "image": "/img/Ragazza.png",
-    "filterCriteria": ["Allgemein, Frauenärzt*in"],
+    "filterCriteria": ["Allgemein", "Frauenärzt*in"],
     "tel": "+49 40 244631"
   }
 ]

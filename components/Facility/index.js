@@ -5,7 +5,7 @@ import { ListItem } from "../FacilityList";
 
 export default function Facility({ facility }) {
   const { name, adress, target, requirements, image, link, tel } = facility;
-  console.log(tel);
+
   return (
     <>
       <h3>{name}</h3>
