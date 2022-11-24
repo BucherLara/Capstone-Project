@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { StyledList } from "../Facility";
 
 export default function FacilityList({ facilities }) {
-  // console.log("Dummie" + facilities);
   return (
     <>
       <StyledList>

@@ -3,8 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ListItem } from "../FacilityList";
 
-export default function Facility(facility) {
-  // console.log("facility" + facility);
+export default function Facility({ facility }) {
   const { name, adress, target, requirements, image, link, tel } = facility;
 
   return (
@@ -23,11 +22,11 @@ export default function Facility(facility) {
           <ListItem>Zugangsvoraussetzungen: {requirements}</ListItem>
           <ListItem>
             Adresse:
-            {/* <StyledLink href={link}> {adress}</StyledLink> */}
+            <StyledLink href={link}> {adress}</StyledLink>
           </ListItem>
           <ListItem>
             Telefonnummer:
-            {/* <StyledLink href={`tel:${tel}`}> {tel}</StyledLink> */}
+            <StyledLink href={`tel:${tel}`}> {tel}</StyledLink>
           </ListItem>
         </StyledList>
       </StyledSection>
