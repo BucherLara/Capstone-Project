@@ -5,7 +5,7 @@ import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
 
-export default function sleep({ facilities }) {
+export default function Sleep({ facilities }) {
   const sleepFacilities = facilities.filter((facility) => {
     return facility.category === "sleep";
   });

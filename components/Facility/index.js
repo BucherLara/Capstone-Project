@@ -22,7 +22,9 @@ export default function Facility({ facility }) {
           <ListItem>Zugangsvoraussetzungen: {requirements}</ListItem>
           <ListItem>
             Adresse:
-            <StyledLink href={link}> {adress}</StyledLink>
+            <StyledLink href={link} target="_blank">
+              {adress}
+            </StyledLink>
           </ListItem>
           <ListItem>
             Telefonnummer:
