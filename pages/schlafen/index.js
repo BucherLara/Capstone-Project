@@ -6,7 +6,7 @@ import { StyledList } from "../../components/Facility";
 import { useState } from "react";
 
 export default function Sleep({ facilities }) {
-  const sleepFacilities = facilities.filter((facility) => {
+  const sleepFacilitis = facilities.filter((facility) => {
     return facility.category === "sleep";
   });
 
@@ -27,8 +27,7 @@ export default function Sleep({ facilities }) {
       ]);
     }
   }
-
-  let filteredFacilities = sleepFacilities;
+  let filteredFacilities = sleepFacilitis;
 
   for (let i = 0; i < selectedFilters.length; i++) {
     filteredFacilities = filteredFacilities.filter((facility) => {

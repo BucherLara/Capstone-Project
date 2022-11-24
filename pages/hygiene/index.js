@@ -6,7 +6,7 @@ import { ListItem } from "../../components/FacilityList";
 import { useState } from "react";
 
 export default function Hygiene({ facilities }) {
-  const hygieneFacilitis = facilities.filter((facility) => {
+  const hygieneFacilities = facilities.filter((facility) => {
     return facility.category === "hygiene";
   });
 
@@ -27,8 +27,7 @@ export default function Hygiene({ facilities }) {
       ]);
     }
   }
-
-  let filteredFacilities = hygieneFacilitis;
+  let filteredFacilities = hygieneFacilities;
 
   for (let i = 0; i < selectedFilters.length; i++) {
     filteredFacilities = filteredFacilities.filter((facility) => {
@@ -62,7 +61,7 @@ export default function Hygiene({ facilities }) {
               checked={selectedFilters.includes("lGBTQIA+")}
               onChange={handleToggleFilter}
             />
-            <label htmlFor="lGBTQIA+"> LGBTQIA +</label>
+            <label htmlFor="lGBTQIA+"> LGBTQIA+</label>
           </div>
           <div>
             <input

@@ -6,7 +6,7 @@ import { StyledList } from "../../components/Facility";
 import { useState } from "react";
 
 export default function Medicin({ facilities }) {
-  const medicinFacilities = facilities.filter((facility) => {
+  const medicinFacilitis = facilities.filter((facility) => {
     return facility.category === "medicin";
   });
 
@@ -27,8 +27,7 @@ export default function Medicin({ facilities }) {
       ]);
     }
   }
-
-  let filteredFacilities = medicinFacilities;
+  let filteredFacilities = medicinFacilitis;
 
   for (let i = 0; i < selectedFilters.length; i++) {
     filteredFacilities = filteredFacilities.filter((facility) => {
