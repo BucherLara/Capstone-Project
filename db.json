@@ -8,7 +8,7 @@
     "target": "Für Männer",
     "requirements": "KEINE",
     "image": "/img/PikAs.png",
-    "filterCriteria": ["Sofort", "mit Hund"],
+    "filterCriteria": ["now", "dog"],
     "tel": "+49 40 427312059"
   },
   {
@@ -20,7 +20,7 @@
     "target": "Für Alle",
     "requirements": "KEINE",
     "image": "/img/Winternotprogram.jpeg",
-    "filterCriteria": ["Sofort"],
+    "filterCriteria": ["now"],
     "tel": "+49 40 428353719"
   },
   {
@@ -32,7 +32,7 @@
     "target": "Für Frauen",
     "requirements": "KEINE",
     "image": "/img/FrauenZimmerFördernund.jpeg",
-    "filterCriteria": ["Sofort"],
+    "filterCriteria": ["now"],
     "tel": "+49 40 25418721"
   },
   {
@@ -44,7 +44,7 @@
     "target": "Für Alle",
     "requirements": "KEINE",
     "image": "/img/HarburgHuusLOGO.jpeg",
-    "filterCriteria": ["Sofort", "mit Hund"],
+    "filterCriteria": ["now", "dog"],
     "tel": "+49 40 80790986"
   },
   {
@@ -56,7 +56,7 @@
     "target": "Für Alle",
     "requirements": "KEINE",
     "image": "/img/Tierschutz.png",
-    "filterCriteria": ["mit Hund"],
+    "filterCriteria": ["dog"],
     "tel": "+49 40 2111060"
   },
   {
@@ -68,7 +68,7 @@
     "target": "Für Männer",
     "requirements": "Termin Fachstelle für Wohnungsnotfälle",
     "image": "/img/JEP.jpeg",
-    "filterCriteria": ["unter 25 Jahren"],
+    "filterCriteria": ["u25"],
     "tel": "+49 40 427314587"
   },
   {
@@ -80,7 +80,7 @@
     "target": "Für Frauen",
     "requirements": "Termin bei der Fachstelle für Wohnungsnotfälle",
     "image": "/img/JEP.jpeg",
-    "filterCriteria": ["unter 25 Jahren"],
+    "filterCriteria": ["u25"],
     "tel": "+49 40 427310119"
   },
   {
@@ -92,7 +92,7 @@
     "target": "Für Alle (unterschiedliche Zeiten)",
     "requirements": "Keine",
     "image": "/img/GoBanyo.png",
-    "filterCriteria": ["mobil", "LGBTQIA+"],
+    "filterCriteria": ["mobile", "lGBTQIA+"],
     "tel": "+49 40 53542496"
   },
   {
@@ -104,7 +104,7 @@
     "target": "Für Menschen unter 25 Jahren",
     "requirements": "Unter 25 Jahren",
     "image": "/img/sidewalX.png",
-    "filterCriteria": ["unter 25 Jahren"],
+    "filterCriteria": ["u25"],
     "tel": "+49 40 39842643"
   },
   {
@@ -116,7 +116,7 @@
     "target": "Für männliche Sexworker*",
     "requirements": "KEINE",
     "image": "/img/BasisProjekt.png",
-    "filterCriteria": ["LGBTQIA+"],
+    "filterCriteria": ["lGBTQIA+"],
     "tel": "+49 40 2801607"
   },
   {
@@ -128,8 +128,9 @@
     "target": "Für Alle",
     "requirements": "Wenn vorhanden Versicherungskarte",
     "image": "/img/PikAs.png",
-    "filterCriteria": ["Allgemein", "Psycholog*in"],
-    "tel": "+49 40 427312059"
+    "filterCriteria": ["general", "psychologist"],
+    "tel": "+49 40 427312059",
+    "isChecked": false
   },
   {
     "id": 12,
@@ -140,8 +141,9 @@
     "target": "Für Alle",
     "requirements": "KEINE",
     "image": "/img/CariCare.jpeg",
-    "filterCriteria": ["Allgemein", "Psycholog*in"],
-    "tel": "+49 152 09296710"
+    "filterCriteria": ["general", "psychologist"],
+    "tel": "+49 152 09296710",
+    "isChecked": false
   },
   {
     "id": 13,
@@ -152,7 +154,8 @@
     "target": "Für Frauen",
     "requirements": "KEINE",
     "image": "/img/Ragazza.png",
-    "filterCriteria": ["Allgemein", "Frauenärzt*in"],
-    "tel": "+49 40 244631"
+    "filterCriteria": ["general", "gynecologist"],
+    "tel": "+49 40 244631",
+    "isChecked": false
   }
 ]

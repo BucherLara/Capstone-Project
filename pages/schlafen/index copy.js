@@ -4,7 +4,6 @@ import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
-import { useEffect } from "react";
 
 export default function Schlafen({ facilities }) {
   // console.log(facilities);
@@ -15,30 +14,68 @@ export default function Schlafen({ facilities }) {
   const [schlafenFacilities, setSchlafenFacilities] = useState(filtered);
   const [currentFilter, setCurrentFilter] = useState("all");
 
-  const [nowFilter, setNowFilter] = useState(false);
-  const [dogFilter, setDogFilter] = useState(false);
-  const [under25Filter, setUnder25Filter] = useState(false);
+  function handleCheckboxFilter(event) {
+    const criteria = event.target.id;
+    setCurrentFilter(criteria);
 
-  useEffect(() => {
-    function handleFilter() {
-      console.log("now = " + nowFilter);
-      console.log("dog = " + dogFilter);
-      console.log("under25 = " + under25Filter);
+    // console.log(criteria);
+  }
+
+  function filterCheckboxes(currentFilter) {
+    switch (currentFilter) {
+      case "all":
+        console.log(schlafenFacilities);
+        return schlafenFacilities;
+
+      case "sofort":
+        return schlafenFacilities.filter(
+          (facility) => facility.filterCriteria === "Sofort"
+        );
+      case "mit Hund":
+        return schlafenFacilities.filter(
+          (facility) => facility.filterCriteria === "mit Hund"
+        );
+      case "unter 25 Jahren":
+        return schlafenFacilities.filter(
+          (facility) => facility.filterCriteria === "unter 25 Jahren"
+        );
+      case "sofort+Hund":
+        return schlafenFacilities.filter(
+          (facility) =>
+            facility.filterCriteria === "unter 25 Jahren" &&
+            facility.filterCriteria === "mit Hund"
+        );
+      default:
+        return;
     }
-  });
+  }
 
-  function toggleNowFilter(event) {
-    setNowFilter(event.target.checked);
-    handleFilter();
+  function toggleCheckFacility(facilityId) {
+    setSchlafenFacilities((oldSchlafenFacilities) => {
+      const newSchlafenFacility = oldSchlafenFacilities.map(
+        (oldSchlafenFacility) => {
+          if (oldSchlafenFacility.id === facilityId) {
+            return {
+              ...oldSchlafenFacility,
+              isChecked: !oldSchlafenFacility.isChecked,
+            };
+          }
+          return oldSchlafenFacility;
+        }
+      );
+      return newSchlafenFacility;
+    });
   }
-  function toggleDogFilter(event) {
-    setDogFilter(event.target.checked);
-    handleFilter();
-  }
-  function toggleUnder25Filter(event) {
-    setUnder25Filter(event.target.checked);
-    handleFilter();
-  }
+  const filteredFacilities = filterCheckboxes(currentFilter);
+  // console.log(filteredFacilities);
+
+  // const sofort = filtered.map((facility) => {
+  //   if (facility.filterCriteria.includes("Sofort")) {
+  //     return facility;
+  //   } else {
+  //     return null;
+  //   }
+  // });
 
   return (
     <>
@@ -51,7 +88,8 @@ export default function Schlafen({ facilities }) {
               type="checkbox"
               name="sofort"
               id="sofort"
-              onChange={(event) => toggleNowFilter(event)}
+              onChange={() => toggleCheckFacility(filtered.id)}
+              checked={filtered.isChecked}
             />
             <label htmlFor="sofort"> sofort</label>
           </div>
@@ -60,7 +98,8 @@ export default function Schlafen({ facilities }) {
               type="checkbox"
               name="u25"
               id="u25"
-              onChange={(event) => toggleUnder25Filter(event)}
+              onChange={() => toggleCheckFacility(filtered.id)}
+              checked={filtered.isChecked}
             />
             <label htmlFor="u25"> unter 25 Jahren</label>
           </div>
@@ -69,7 +108,8 @@ export default function Schlafen({ facilities }) {
               type="checkbox"
               name="Hund"
               id="Hund"
-              onChange={(event) => toggleDogFilter(event)}
+              onChange={() => toggleCheckFacility(filtered.id)}
+              checked={filtered.isChecked}
             />
             <label htmlFor="Hund"> mit Hund</label>
           </div>
