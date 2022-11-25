@@ -122,7 +122,7 @@
   {
     "id": 11,
     "name": "Pik As",
-    "category": "medicin",
+    "category": "medicine",
     "adress": "Neustädter Str. 31 a, 20355 Hamburg",
     "link": "https://www.google.com/maps/place/Pik+As/@53.553246,9.980664,17z/data=!3m1!4b1!4m5!3m4!1s0x47b18f10d01e241f:0xabb10810d7b57cb4!8m2!3d53.5532528!4d9.9828532",
     "target": "Für Alle",
@@ -135,7 +135,7 @@
   {
     "id": 12,
     "name": "CariCare",
-    "category": "medicin",
+    "category": "medicine",
     "adress": "Altstädter Twiete 5, 20095 Hamburg",
     "link": "https://www.google.com/maps/place/Altst%C3%A4dter+Twiete+5,+20095+Hamburg/@53.5495906,10.0021812,17z/data=!3m1!4b1!4m9!1m2!2m1!1sCariCare+Altst%C3%A4dter+Twiete+5+20095+Hamburg!3m5!1s0x47b18ee259c32cdb:0xd280263e74910511!8m2!3d53.5495906!4d10.0021812!15sCitDYXJpQ2FyZSBBbHRzdMOkZHRlciBUd2lldGUgNSAyMDA5NSBIYW1idXJnkgEQZ2VvY29kZWRfYWRkcmVzc-ABAA",
     "target": "Für Alle",
@@ -147,7 +147,7 @@
   {
     "id": 13,
     "name": "Ragazza",
-    "category": "medicin",
+    "category": "medicine",
     "adress": "Brennerstraße 19, 20099 Hamburg",
     "link": "https://www.google.com/maps/place/ragazza+e.+V./@53.5554491,10.012392,17z/data=!3m1!4b1!4m5!3m4!1s0x47b18ee794847dcf:0x778afceb10ebfb50!8m2!3d53.5554707!4d10.014553",
     "target": "Für Frauen",

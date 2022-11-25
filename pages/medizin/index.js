@@ -5,21 +5,22 @@ import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
 
-export default function Medicin({ facilities }) {
+export default function Medicine({ facilities }) {
   const medicinFacilitis = facilities.filter((facility) => {
-    return facility.category === "medicin";
+    return facility.category === "medicine";
   });
 
   const [selectedFilters, setSelectedFilters] = useState([]);
 
   function handleToggleFilter(event) {
     const selectedValue = event.target.value;
-    console.log(selectedValue);
+
     if (selectedFilters.includes(selectedValue)) {
-      const updatedFilters = selectedFilters.filter(
-        (selectedFilter) => selectedFilter !== selectedValue
+      setSelectedFilters((previousSelectedFilters) =>
+        previousSelectedFilters.filter(
+          (selectedFilter) => selectedFilter !== selectedValue
+        )
       );
-      setSelectedFilters(updatedFilters);
     } else {
       setSelectedFilters((previousSelectedFilters) => [
         ...previousSelectedFilters,

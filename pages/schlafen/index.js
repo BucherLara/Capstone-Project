@@ -14,12 +14,13 @@ export default function Sleep({ facilities }) {
 
   function handleToggleFilter(event) {
     const selectedValue = event.target.value;
-    console.log(selectedValue);
+
     if (selectedFilters.includes(selectedValue)) {
-      const updatedFilters = selectedFilters.filter(
-        (selectedFilter) => selectedFilter !== selectedValue
+      setSelectedFilters((previousSelectedFilters) =>
+        previousSelectedFilters.filter(
+          (selectedFilter) => selectedFilter !== selectedValue
+        )
       );
-      setSelectedFilters(updatedFilters);
     } else {
       setSelectedFilters((previousSelectedFilters) => [
         ...previousSelectedFilters,
