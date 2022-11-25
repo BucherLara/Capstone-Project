@@ -1,6 +1,6 @@
 import GlobalStyles from "../components/GlobalStyles";
 import Header from "../components/Header";
-import initialState from "../db.json";
+import initialState from "../helpers/db.json";
 import { useLocalStorage } from "../helpers/hooks";
 
 function MyApp({ Component, pageProps }) {

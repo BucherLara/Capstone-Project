@@ -1,12 +1,12 @@
-import MiniNav from "../../components/Navigation/MiniNavbar";
-import { StyledHeading } from "../schlafen";
+import HomeLink from "../../components/Navigation/HomeLink";
+import { StyledHeading } from "../sleep";
 import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
 
 export default function Medicine({ facilities }) {
-  const medicinFacilitis = facilities.filter((facility) => {
+  const medicinFacilities = facilities.filter((facility) => {
     return facility.category === "medicine";
   });
 
@@ -28,7 +28,7 @@ export default function Medicine({ facilities }) {
       ]);
     }
   }
-  let filteredFacilities = medicinFacilitis;
+  let filteredFacilities = medicinFacilities;
 
   for (let i = 0; i < selectedFilters.length; i++) {
     filteredFacilities = filteredFacilities.filter((facility) => {
@@ -87,7 +87,7 @@ export default function Medicine({ facilities }) {
         })}
       </StyledList>
 
-      <MiniNav />
+      <HomeLink />
     </>
   );
 }
