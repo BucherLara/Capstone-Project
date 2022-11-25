@@ -1,5 +1,5 @@
-import MiniNav from "../../components/Navigation/MiniNavbar";
-import { StyledHeading } from "../schlafen";
+import HomeLink from "../../components/Navigation/HomeLink";
+import { StyledHeading } from "../sleep";
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { ListItem } from "../../components/FacilityList";
@@ -86,7 +86,7 @@ export default function Hygiene({ facilities }) {
           );
         })}
       </StyledList>
-      <MiniNav />
+      <HomeLink />
     </>
   );
 }

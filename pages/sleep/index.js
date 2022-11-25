@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import MiniNav from "../../components/Navigation/MiniNavbar";
+import HomeLink from "../../components/Navigation/HomeLink";
 import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
 
 export default function Sleep({ facilities }) {
-  const sleepFacilitis = facilities.filter((facility) => {
+  const sleepFacilities = facilities.filter((facility) => {
     return facility.category === "sleep";
   });
 
@@ -28,7 +28,7 @@ export default function Sleep({ facilities }) {
       ]);
     }
   }
-  let filteredFacilities = sleepFacilitis;
+  let filteredFacilities = sleepFacilities;
 
   for (let i = 0; i < selectedFilters.length; i++) {
     filteredFacilities = filteredFacilities.filter((facility) => {
@@ -87,7 +87,7 @@ export default function Sleep({ facilities }) {
         })}
       </StyledList>
 
-      <MiniNav />
+      <HomeLink />
     </>
   );
 }
