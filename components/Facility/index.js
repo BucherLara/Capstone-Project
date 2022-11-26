@@ -3,9 +3,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { ListItem } from "../FacilityList";
 
-export default function Facility({ facility }) {
-  const { name, adress, target, requirements, image, link, tel } = facility;
+export default function Facility({ facility, setFacilities }) {
+  const { name, adress, target, requirements, image, link, tel, id } = facility;
 
+  const toggleBookmark = (facilityId) => {
+    setFacilities((facilities) => {
+      const newValue = facilities.map((facility) => {
+        if (facility.id === facilityId) {
+          return { ...facility, isBookmarked: !facility.isBookmarked };
+        } else {
+          return facility;
+        }
+      });
+      return newValue;
+    });
+  };
   return (
     <>
       <h3>{name}</h3>
@@ -18,6 +30,15 @@ export default function Facility({ facility }) {
           priority
         />
         <StyledList>
+          <button
+            type="button"
+            aria-label="bookmark"
+            onClick={() => {
+              toggleBookmark(id);
+            }}
+          >
+            ICON
+          </button>
           <ListItem>Zielgruppe: {target}</ListItem>
           <ListItem>Zugangsvoraussetzungen: {requirements}</ListItem>
           <ListItem>
