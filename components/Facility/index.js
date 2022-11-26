@@ -30,15 +30,24 @@ export default function Facility({ facility, setFacilities }) {
           priority
         />
         <StyledList>
-          <button
+          <StyledButton
             type="button"
             aria-label="bookmark"
             onClick={() => {
               toggleBookmark(id);
             }}
           >
-            ICON
-          </button>
+            <Image
+              src={
+                facility.isBookmarked === false
+                  ? "/icons/isNotBookmarked.png"
+                  : "/icons/isBookmarked.png"
+              }
+              alt="isNotBookmarkedHeart"
+              width={30}
+              height={30}
+            />
+          </StyledButton>
           <ListItem>Zielgruppe: {target}</ListItem>
           <ListItem>Zugangsvoraussetzungen: {requirements}</ListItem>
           <ListItem>
@@ -59,7 +68,7 @@ export default function Facility({ facility, setFacilities }) {
 const StyledImage = styled(Image)`
   object-fit: contain;
   margin-right: 10px;
-  border-radius: 50px; ;
+  border-radius: 50px;
 `;
 
 const StyledSection = styled.section`
@@ -67,7 +76,7 @@ const StyledSection = styled.section`
   border-style: solid;
   padding: 20px;
   border-radius: 20px;
-  background-color: lightgrey;
+  background-color: white;
 
   min-heigth: 500px;
   align-items: center;
@@ -80,4 +89,11 @@ const StyledList = styled.ul`
 const StyledLink = styled(Link)`
   text-decoration: none;
 `;
+
+const StyledButton = styled.button`
+  border-style: none;
+  padding: 0;
+  background-color: white;
+`;
+
 export { StyledList, StyledImage };
