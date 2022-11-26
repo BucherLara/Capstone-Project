@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
         max-width: 1280px;
         min-width: 450px;
         
+        
     }
 
     * {

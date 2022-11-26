@@ -9,7 +9,8 @@
     "requirements": "KEINE",
     "image": "/img/PikAs.png",
     "filterCriteria": ["now", "dog"],
-    "tel": "+49 40 427312059"
+    "tel": "+49 40 427312059",
+    "isBookmarked": false
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "requirements": "KEINE",
     "image": "/img/Winternotprogram.jpeg",
     "filterCriteria": ["now"],
-    "tel": "+49 40 428353719"
+    "tel": "+49 40 428353719",
+    "isBookmarked": false
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "requirements": "KEINE",
     "image": "/img/FrauenZimmerFördernund.jpeg",
     "filterCriteria": ["now"],
-    "tel": "+49 40 25418721"
+    "tel": "+49 40 25418721",
+    "isBookmarked": false
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@
     "requirements": "KEINE",
     "image": "/img/HarburgHuusLOGO.jpeg",
     "filterCriteria": ["now", "dog"],
-    "tel": "+49 40 80790986"
+    "tel": "+49 40 80790986",
+    "isBookmarked": false
   },
   {
     "id": 5,
@@ -57,7 +61,8 @@
     "requirements": "KEINE",
     "image": "/img/Tierschutz.png",
     "filterCriteria": ["dog"],
-    "tel": "+49 40 2111060"
+    "tel": "+49 40 2111060",
+    "isBookmarked": false
   },
   {
     "id": 6,
@@ -69,7 +74,8 @@
     "requirements": "Termin Fachstelle für Wohnungsnotfälle",
     "image": "/img/JEP.jpeg",
     "filterCriteria": ["u25"],
-    "tel": "+49 40 427314587"
+    "tel": "+49 40 427314587",
+    "isBookmarked": false
   },
   {
     "id": 7,
@@ -81,7 +87,8 @@
     "requirements": "Termin bei der Fachstelle für Wohnungsnotfälle",
     "image": "/img/JEP.jpeg",
     "filterCriteria": ["u25"],
-    "tel": "+49 40 427310119"
+    "tel": "+49 40 427310119",
+    "isBookmarked": false
   },
   {
     "id": 8,
@@ -89,11 +96,12 @@
     "category": "hygiene",
     "adress": "mobil, weiter Infos hier",
     "link": "https://gobanyo.org/duschen/",
-    "target": "Für Alle (unterschiedliche Zeiten)",
-    "requirements": "Keine",
+    "target": "Für Alle (zu unterschiedlichen Zeiten)",
+    "requirements": "KEINE",
     "image": "/img/GoBanyo.png",
     "filterCriteria": ["mobile", "lGBTQIA+"],
-    "tel": "+49 40 53542496"
+    "tel": "+49 40 53542496",
+    "isBookmarked": false
   },
   {
     "id": 9,
@@ -105,19 +113,21 @@
     "requirements": "Unter 25 Jahren",
     "image": "/img/sidewalX.png",
     "filterCriteria": ["u25"],
-    "tel": "+49 40 39842643"
+    "tel": "+49 40 39842643",
+    "isBookmarked": false
   },
   {
     "id": 10,
     "name": "Basis Projekt",
     "category": "hygiene",
-    "adress": "Pulverteich 17 20099 Hamburg-St. Georg",
+    "adress": "Pulverteich 17, 20099 Hamburg-St. Georg",
     "link": "https://www.google.com/maps?q=BASIS-Projekt,+Pulverteich+17,+20099+Hamburg&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMgIIJkoECEEYAUoECEYYAFDNA1ieCWCdGmgBcAB4AIABbogBrwSSAQM0LjKYAQCgAQHAAQE&um=1&ie=UTF-8&sa=X&ved=2ahUKEwji_L6xz7L7AhWniv0HHXKPBb4Q_AUoAXoECAEQAw",
     "target": "Für männliche Sexworker*",
     "requirements": "KEINE",
     "image": "/img/BasisProjekt.png",
     "filterCriteria": ["lGBTQIA+"],
-    "tel": "+49 40 2801607"
+    "tel": "+49 40 2801607",
+    "isBookmarked": false
   },
   {
     "id": 11,
@@ -130,7 +140,7 @@
     "image": "/img/PikAs.png",
     "filterCriteria": ["general", "psychologist"],
     "tel": "+49 40 427312059",
-    "isChecked": false
+    "isBookmarked": false
   },
   {
     "id": 12,
@@ -142,7 +152,8 @@
     "requirements": "KEINE",
     "image": "/img/CariCare.jpeg",
     "filterCriteria": ["general", "psychologist"],
-    "tel": "+49 152 09296710"
+    "tel": "+49 152 09296710",
+    "isBookmarked": false
   },
   {
     "id": 13,
@@ -154,6 +165,7 @@
     "requirements": "KEINE",
     "image": "/img/Ragazza.png",
     "filterCriteria": ["general", "gynecologist"],
-    "tel": "+49 40 244631"
+    "tel": "+49 40 244631",
+    "isBookmarked": false
   }
 ]

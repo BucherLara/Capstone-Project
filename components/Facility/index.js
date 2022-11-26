@@ -21,7 +21,7 @@ export default function Facility({ facility }) {
           <ListItem>Zielgruppe: {target}</ListItem>
           <ListItem>Zugangsvoraussetzungen: {requirements}</ListItem>
           <ListItem>
-            Adresse:
+            Adresse:{" "}
             <StyledLink href={link} target="_blank">
               {adress}
             </StyledLink>
