@@ -4,10 +4,11 @@ import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
+import FavoriteLink from "../../components/Navigation/FavoriteLink";
 
 export default function Medicine({ facilities, setFacilities }) {
   const medicinFacilities = facilities.filter((facility) => {
-    return facility.category === "medicine";
+    return facility.category === "medizin";
   });
 
   const [selectedFilters, setSelectedFilters] = useState([]);
@@ -91,6 +92,7 @@ export default function Medicine({ facilities, setFacilities }) {
       </StyledList>
 
       <HomeLink />
+      <FavoriteLink />
     </>
   );
 }

@@ -6,7 +6,7 @@ import { ListItem } from "../FacilityList";
 export default function Facility({ facility, setFacilities }) {
   const { name, adress, target, requirements, image, link, tel, id } = facility;
 
-  const toggleBookmark = (facilityId) => {
+  function toggleBookmark(facilityId) {
     setFacilities((facilities) => {
       const newValue = facilities.map((facility) => {
         if (facility.id === facilityId) {
@@ -17,7 +17,8 @@ export default function Facility({ facility, setFacilities }) {
       });
       return newValue;
     });
-  };
+  }
+
   return (
     <>
       <h3>{name}</h3>
@@ -44,20 +45,29 @@ export default function Facility({ facility, setFacilities }) {
                   : "/icons/isBookmarked.png"
               }
               alt="isNotBookmarkedHeart"
-              width={30}
-              height={30}
+              width={40}
+              height={40}
             />
           </StyledButton>
-          <ListItem>Zielgruppe: {target}</ListItem>
-          <ListItem>Zugangsvoraussetzungen: {requirements}</ListItem>
           <ListItem>
-            Adresse:{" "}
+            <b>Kategorie: </b> {facility.category}
+          </ListItem>
+
+          <ListItem>
+            <b>Zielgruppe: </b> {target}
+          </ListItem>
+          <ListItem>
+            <b>Zugangsvoraussetzungen: </b>
+            {requirements}
+          </ListItem>
+          <ListItem>
+            <b>Adresse: </b>
             <StyledLink href={link} target="_blank">
               {adress}
             </StyledLink>
           </ListItem>
           <ListItem>
-            Telefonnummer:
+            <b>Telefonnummer:</b>
             <StyledLink href={`tel:${tel}`}> {tel}</StyledLink>
           </ListItem>
         </StyledList>
