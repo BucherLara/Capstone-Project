@@ -41,7 +41,7 @@ export default function NavLandingpage() {
       <StyledNav>
         <StyledLink href={"/favorites"}>
           <StyledIcon
-            src={"/icons/isBookmarked.png"}
+            src={"/icons/heart.png"}
             alt={"Favoriten-Icon"}
             width={100}
             height={60}
