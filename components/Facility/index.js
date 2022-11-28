@@ -50,36 +50,26 @@ export default function Facility({ facility, setFacilities }) {
             >
               <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
             </StyledSvg>
-            {/* <Image
-              src={
-                facility.isBookmarked === false
-                  ? "/icons/isNotBookmarked.png"
-                  : "/icons/isBookmarked.png"
-              }
-              alt="isNotBookmarkedHeart"
-              width={40}
-              height={40}
-            /> */}
           </StyledButton>
           <ListItem>
-            <b>Kategorie: </b> {facility.category}
+            <StyledSpan>Kategorie: </StyledSpan> {facility.category}
           </ListItem>
 
           <ListItem>
-            <b>Zielgruppe: </b> {target}
+            <StyledSpan>Zielgruppe: </StyledSpan> {target}
           </ListItem>
           <ListItem>
-            <b>Zugangsvoraussetzungen: </b>
+            <StyledSpan>Zugangsvoraussetzungen: </StyledSpan>
             {requirements}
           </ListItem>
           <ListItem>
-            <b>Adresse: </b>
+            <StyledSpan>Adresse: </StyledSpan>
             <StyledLink href={link} target="_blank">
               {adress}
             </StyledLink>
           </ListItem>
           <ListItem>
-            <b>Telefonnummer:</b>
+            <StyledSpan>Telefonnummer:</StyledSpan>
             <StyledLink href={`tel:${tel}`}> {tel}</StyledLink>
           </ListItem>
         </StyledList>
@@ -134,5 +124,8 @@ const StyledSvg = styled.svg`
       stroke: red;
       color: red;
     `}
+`;
+const StyledSpan = styled.span`
+  font-weight: bold;
 `;
 export { StyledList, StyledImage };
