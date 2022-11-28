@@ -23,7 +23,7 @@ export default function NavLandingpage() {
             alt={"Hygiene-Icon"}
             width={100}
             height={60}
-          />{" "}
+          />
           <StyledParagraph>Hygiene</StyledParagraph>
         </StyledLink>
       </StyledNav>
@@ -34,7 +34,7 @@ export default function NavLandingpage() {
             alt={"Medizin-Icon"}
             width={100}
             height={60}
-          />{" "}
+          />
           <StyledParagraph>Medizin</StyledParagraph>
         </StyledLink>
       </StyledNav>
@@ -45,7 +45,7 @@ export default function NavLandingpage() {
             alt={"Favoriten-Icon"}
             width={100}
             height={60}
-          />{" "}
+          />
           <StyledParagraph>meine Favoriten</StyledParagraph>
         </StyledLink>
       </StyledNav>
