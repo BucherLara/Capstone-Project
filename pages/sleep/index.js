@@ -4,10 +4,11 @@ import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
+import FavoriteLink from "../../components/Navigation/FavoriteLink";
 
-export default function Sleep({ facilities }) {
+export default function Sleep({ facilities, setFacilities }) {
   const sleepFacilities = facilities.filter((facility) => {
-    return facility.category === "sleep";
+    return facility.category === "schlafen";
   });
 
   const [selectedFilters, setSelectedFilters] = useState([]);
@@ -81,13 +82,17 @@ export default function Sleep({ facilities }) {
         {filteredFacilities.map((filteredFacility) => {
           return (
             <ListItem key={filteredFacility.id}>
-              <Facility facility={filteredFacility} />
+              <Facility
+                facility={filteredFacility}
+                setFacilities={setFacilities}
+              />
             </ListItem>
           );
         })}
       </StyledList>
 
       <HomeLink />
+      <FavoriteLink />
     </>
   );
 }

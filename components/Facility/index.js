@@ -2,9 +2,23 @@ import styled from "styled-components";
 import Image from "next/image";
 import Link from "next/link";
 import { ListItem } from "../FacilityList";
+import { css } from "styled-components";
 
-export default function Facility({ facility }) {
-  const { name, adress, target, requirements, image, link, tel } = facility;
+export default function Facility({ facility, setFacilities }) {
+  const { name, adress, target, requirements, image, link, tel, id } = facility;
+
+  function toggleBookmark(facilityId) {
+    setFacilities((facilities) => {
+      const newValue = facilities.map((facility) => {
+        if (facility.id === facilityId) {
+          return { ...facility, isBookmarked: !facility.isBookmarked };
+        } else {
+          return facility;
+        }
+      });
+      return newValue;
+    });
+  }
 
   return (
     <>
@@ -18,16 +32,44 @@ export default function Facility({ facility }) {
           priority
         />
         <StyledList>
-          <ListItem>Zielgruppe: {target}</ListItem>
-          <ListItem>Zugangsvoraussetzungen: {requirements}</ListItem>
+          <StyledButton
+            type="button"
+            aria-label="bookmark"
+            onClick={() => {
+              toggleBookmark(id);
+            }}
+          >
+            <StyledSvg
+              variant={
+                facility.isBookmarked ? "bookmarkActive" : "bookmarkNotActive"
+              }
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 0 24 24"
+              width="24px"
+            >
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+            </StyledSvg>
+          </StyledButton>
           <ListItem>
-            Adresse:
+            <StyledSpan>Kategorie: </StyledSpan> {facility.category}
+          </ListItem>
+
+          <ListItem>
+            <StyledSpan>Zielgruppe: </StyledSpan> {target}
+          </ListItem>
+          <ListItem>
+            <StyledSpan>Zugangsvoraussetzungen: </StyledSpan>
+            {requirements}
+          </ListItem>
+          <ListItem>
+            <StyledSpan>Adresse: </StyledSpan>
             <StyledLink href={link} target="_blank">
               {adress}
             </StyledLink>
           </ListItem>
           <ListItem>
-            Telefonnummer:
+            <StyledSpan>Telefonnummer:</StyledSpan>
             <StyledLink href={`tel:${tel}`}> {tel}</StyledLink>
           </ListItem>
         </StyledList>
@@ -38,7 +80,7 @@ export default function Facility({ facility }) {
 const StyledImage = styled(Image)`
   object-fit: contain;
   margin-right: 10px;
-  border-radius: 50px; ;
+  border-radius: 50px;
 `;
 
 const StyledSection = styled.section`
@@ -46,7 +88,7 @@ const StyledSection = styled.section`
   border-style: solid;
   padding: 20px;
   border-radius: 20px;
-  background-color: lightgrey;
+  background-color: white;
 
   min-heigth: 500px;
   align-items: center;
@@ -58,5 +100,32 @@ const StyledList = styled.ul`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+`;
+
+const StyledButton = styled.button`
+  border-style: none;
+  padding: 0;
+  background-color: white;
+`;
+const StyledSvg = styled.svg`
+  width: 45px;
+  height: 45px;
+  margin-left: 150px;
+  ${({ variant }) =>
+    variant === "bookmarkActive" &&
+    css`
+      fill: #ff7f7f;
+    `}
+
+  ${({ variant }) =>
+    variant === "bookmarkNotActive" &&
+    css`
+      fill: transparent;
+      stroke: red;
+      color: red;
+    `}
+`;
+const StyledSpan = styled.span`
+  font-weight: bold;
 `;
 export { StyledList, StyledImage };

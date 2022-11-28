@@ -4,8 +4,9 @@ import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { ListItem } from "../../components/FacilityList";
 import { useState } from "react";
+import FavoriteLink from "../../components/Navigation/FavoriteLink";
 
-export default function Hygiene({ facilities }) {
+export default function Hygiene({ facilities, setFacilities }) {
   const hygieneFacilities = facilities.filter((facility) => {
     return facility.category === "hygiene";
   });
@@ -81,12 +82,16 @@ export default function Hygiene({ facilities }) {
         {filteredFacilities.map((filteredFacility) => {
           return (
             <ListItem key={filteredFacility.id}>
-              <Facility facility={filteredFacility} />
+              <Facility
+                facility={filteredFacility}
+                setFacilities={setFacilities}
+              />
             </ListItem>
           );
         })}
       </StyledList>
       <HomeLink />
+      <FavoriteLink />
     </>
   );
 }

@@ -1,13 +1,13 @@
 import Link from "next/link";
 import styled from "styled-components";
-import { StyledImage } from "../../Facility";
+import Image from "next/image";
 
 export default function NavLandingpage() {
   return (
     <GridContainer>
-      <StyledSection>
+      <StyledNav>
         <StyledLink href={"/sleep"}>
-          <StyledImage
+          <StyledIcon
             src={"/icons/sleep.png"}
             alt={"Schlafen-Icon"}
             width={100}
@@ -15,29 +15,40 @@ export default function NavLandingpage() {
           />
           <StyledParagraph>Schlafen</StyledParagraph>
         </StyledLink>
-      </StyledSection>
-      <StyledSection>
+      </StyledNav>
+      <StyledNav>
         <StyledLink href={"/hygiene"}>
-          <StyledImage
+          <StyledIcon
             src={"/icons/shower.png"}
             alt={"Hygiene-Icon"}
             width={100}
             height={60}
-          />{" "}
+          />
           <StyledParagraph>Hygiene</StyledParagraph>
         </StyledLink>
-      </StyledSection>
-      <StyledSection>
+      </StyledNav>
+      <StyledNav>
         <StyledLink href={"/medicine"}>
-          <StyledImage
+          <StyledIcon
             src={"/icons/medicine.png"}
             alt={"Medizin-Icon"}
             width={100}
             height={60}
-          />{" "}
+          />
           <StyledParagraph>Medizin</StyledParagraph>
         </StyledLink>
-      </StyledSection>
+      </StyledNav>
+      <StyledNav>
+        <StyledLink href={"/favorites"}>
+          <StyledIcon
+            src={"/icons/heart.png"}
+            alt={"Favoriten-Icon"}
+            width={100}
+            height={60}
+          />
+          <StyledParagraph>meine Favoriten</StyledParagraph>
+        </StyledLink>
+      </StyledNav>
     </GridContainer>
   );
 }
@@ -49,19 +60,30 @@ const StyledLink = styled(Link)`
   height: 120px;
   display: flex;
   margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 25px 80px -25px;
+  color: #0000ee;
 `;
 
 const StyledParagraph = styled.p`
-  margin-top: 80px;
+  margin-top: 65px;
   position: absolute;
   margin-left: 5px;
   padding: 10px;
+  color: black;
 `;
-const StyledSection = styled.section`
+const StyledNav = styled.nav`
   margin-left: 15px;
+  margin-top: 10px;
 `;
 
 const GridContainer = styled.div`
   display: grid;
   grid-template-columns: auto auto;
+`;
+const StyledIcon = styled(Image)`
+  object-fit: contain;
+  margin-right: 10px;
+  border-radius: 50px;
+  margin-top: 10px;
 `;
