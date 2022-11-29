@@ -49,6 +49,17 @@ export default function NavLandingpage() {
           <StyledParagraph>meine Favoriten</StyledParagraph>
         </StyledLink>
       </StyledNav>
+      <StyledNav>
+        <StyledLink href={"/add"}>
+          <StyledIcon
+            src={"/icons/add.png"}
+            alt={"Favoriten-Icon"}
+            width={100}
+            height={60}
+          />
+          <StyledParagraph>Einrichtung hinzufügen</StyledParagraph>
+        </StyledLink>
+      </StyledNav>
     </GridContainer>
   );
 }
@@ -71,6 +82,7 @@ const StyledParagraph = styled.p`
   margin-left: 5px;
   padding: 10px;
   color: black;
+  max-width: 120px;
 `;
 const StyledNav = styled.nav`
   margin-left: 15px;
