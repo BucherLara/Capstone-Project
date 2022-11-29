@@ -285,6 +285,7 @@ export default function Form({ onSubmit }) {
                 id="tel"
                 name="tel"
                 placeholder="0049..."
+                pattern="0049"
                 required
               />
             </label>
