@@ -1,28 +1,37 @@
 import Form from "../../components/Form";
-import {nanoid} from nanoid
-export default function Add({ setFacilities }) {
+import { nanoid } from "nanoid";
+export default function NewFacilities({ setFacilities }) {
   function addFacilities(
-    id,
     name,
     category,
     adress,
     link,
     target,
     requirements,
-    image,
     filterCriteria,
-    tel,
-    isBookmarked
+    tel
   ) {
     setFacilities((oldFacilities) => [
       ...oldFacilities,
-      { id: nanoid(), name },
+      {
+        id: nanoid(),
+        name,
+        category,
+        adress,
+        link,
+        target,
+        requirements,
+        image: "/icons/app.png",
+        filterCriteria,
+        tel,
+        isBookmarked: false,
+      },
     ]);
   }
 
   return (
     <>
-      <Form />
+      <Form onSubmit={addFacilities} />
     </>
   );
 }
