@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
   function addFacilities(
     name,
     category,
-    adress,
+    address,
     link,
     target,
     requirements,
@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
         id: nanoid(),
         name,
         category,
-        adress,
+        address,
         link,
         target,
         requirements,

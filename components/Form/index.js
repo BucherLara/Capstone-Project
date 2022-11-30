@@ -15,7 +15,7 @@ export default function Form({ addFacilities }) {
     const {
       name,
       category,
-      adress,
+      address,
       target,
       requirements,
       link,
@@ -32,7 +32,7 @@ export default function Form({ addFacilities }) {
     addFacilities(
       name.trim(),
       category,
-      adress.trim(),
+      address.trim(),
       link.trim(),
       target.trim(),
       requirements.trim(),
@@ -239,9 +239,9 @@ export default function Form({ addFacilities }) {
           height="48"
         /> */}
 
-        <label htmlFor="adress">
-          Adresse:
-          <StyledInput type="text" id="adress" name="adress" required />
+        <label htmlFor="address">
+          addresse:
+          <StyledInput type="text" id="address" name="address" required />
         </label>
         <label htmlFor="link">
           Google-Maps-Link:
