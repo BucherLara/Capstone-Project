@@ -272,7 +272,7 @@ export default function Form({ onSubmit }) {
                 id="link"
                 name="link"
                 placeholder="https://www.google.com/maps/..."
-                pattern="https://www.google.com/maps/"
+                pattern="https://www.google.com/maps/.*"
                 required
               />
             </label>
