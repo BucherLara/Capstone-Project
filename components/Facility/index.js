@@ -73,7 +73,7 @@ export default function Facility({ facility, setFacilities }) {
             {requirements}
           </ListItem>
           <ListItem>
-            <StyledSpan>addresse: </StyledSpan>
+            <StyledSpan>Adresse: </StyledSpan>
             <StyledLink href={link} target="_blank">
               {address}
             </StyledLink>
