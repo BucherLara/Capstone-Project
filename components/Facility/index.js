@@ -5,17 +5,7 @@ import { ListItem } from "../FacilityList";
 import { css } from "styled-components";
 
 export default function Facility({ facility, setFacilities }) {
-  const {
-    name,
-    address,
-    target,
-    requirements,
-    image,
-    link,
-    tel,
-    id,
-    category,
-  } = facility;
+  const { name, adress, target, requirements, image, link, tel, id } = facility;
 
   function toggleBookmark(facilityId) {
     setFacilities((facilities) => {
@@ -62,7 +52,7 @@ export default function Facility({ facility, setFacilities }) {
             </StyledSvg>
           </StyledButton>
           <ListItem>
-            <StyledSpan>Kategorie: </StyledSpan> {category}
+            <StyledSpan>Kategorie: </StyledSpan> {facility.category}
           </ListItem>
 
           <ListItem>
@@ -73,9 +63,9 @@ export default function Facility({ facility, setFacilities }) {
             {requirements}
           </ListItem>
           <ListItem>
-            <StyledSpan>addresse: </StyledSpan>
+            <StyledSpan>Adresse: </StyledSpan>
             <StyledLink href={link} target="_blank">
-              {address}
+              {adress}
             </StyledLink>
           </ListItem>
           <ListItem>
