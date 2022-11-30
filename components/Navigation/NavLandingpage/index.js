@@ -4,63 +4,53 @@ import Image from "next/image";
 
 export default function NavLandingpage() {
   return (
-    <GridContainer>
-      <StyledNav>
-        <StyledLink href={"/sleep"}>
-          <StyledIcon
-            src={"/icons/sleep.png"}
-            alt={"Schlafen-Icon"}
-            width={100}
-            height={60}
-          />
-          <StyledParagraph>Schlafen</StyledParagraph>
-        </StyledLink>
-      </StyledNav>
-      <StyledNav>
-        <StyledLink href={"/hygiene"}>
-          <StyledIcon
-            src={"/icons/shower.png"}
-            alt={"Hygiene-Icon"}
-            width={100}
-            height={60}
-          />
-          <StyledParagraph>Hygiene</StyledParagraph>
-        </StyledLink>
-      </StyledNav>
-      <StyledNav>
-        <StyledLink href={"/medicine"}>
-          <StyledIcon
-            src={"/icons/medicine.png"}
-            alt={"Medizin-Icon"}
-            width={100}
-            height={60}
-          />
-          <StyledParagraph>Medizin</StyledParagraph>
-        </StyledLink>
-      </StyledNav>
-      <StyledNav>
-        <StyledLink href={"/favorites"}>
-          <StyledIcon
-            src={"/icons/heart.png"}
-            alt={"Favoriten-Icon"}
-            width={100}
-            height={60}
-          />
-          <StyledParagraph>meine Favoriten</StyledParagraph>
-        </StyledLink>
-      </StyledNav>
-      <StyledNav>
-        <StyledLink href={"/add"}>
-          <StyledIcon
-            src={"/icons/add.png"}
-            alt={"Favoriten-Icon"}
-            width={100}
-            height={60}
-          />
-          <StyledParagraph>Einrichtung hinzufügen</StyledParagraph>
-        </StyledLink>
-      </StyledNav>
-    </GridContainer>
+    <StyledNav>
+      <StyledLink href={"/sleep"}>
+        <StyledIcon
+          src={"/icons/sleep.png"}
+          alt={"Schlafen-Icon"}
+          width={100}
+          height={60}
+        />
+        <StyledSpan>Schlafen</StyledSpan>
+      </StyledLink>
+      <StyledLink href={"/hygiene"}>
+        <StyledIcon
+          src={"/icons/shower.png"}
+          alt={"Hygiene-Icon"}
+          width={100}
+          height={60}
+        />
+        <StyledSpan>Hygiene</StyledSpan>
+      </StyledLink>
+      <StyledLink href={"/medicine"}>
+        <StyledIcon
+          src={"/icons/medicine.png"}
+          alt={"Medizin-Icon"}
+          width={100}
+          height={60}
+        />
+        <StyledSpan>Medizin</StyledSpan>
+      </StyledLink>
+      <StyledLink href={"/favorites"}>
+        <StyledIcon
+          src={"/icons/heart.png"}
+          alt={"Favoriten-Icon"}
+          width={100}
+          height={60}
+        />
+        <StyledSpan>meine Favoriten</StyledSpan>
+      </StyledLink>
+      <StyledLink href={"/add"}>
+        <StyledIcon
+          src={"/icons/add.png"}
+          alt={"Favoriten-Icon"}
+          width={100}
+          height={60}
+        />
+        <StyledSpan>Einrichtung hinzufügen</StyledSpan>
+      </StyledLink>
+    </StyledNav>
   );
 }
 
@@ -76,7 +66,7 @@ const StyledLink = styled(Link)`
   color: #0000ee;
 `;
 
-const StyledParagraph = styled.p`
+const StyledSpan = styled.span`
   margin-top: 65px;
   position: absolute;
   margin-left: 5px;
@@ -87,12 +77,10 @@ const StyledParagraph = styled.p`
 const StyledNav = styled.nav`
   margin-left: 15px;
   margin-top: 10px;
-`;
-
-const GridContainer = styled.div`
   display: grid;
   grid-template-columns: auto auto;
 `;
+
 const StyledIcon = styled(Image)`
   object-fit: contain;
   margin-right: 10px;
