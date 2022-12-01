@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { useState } from "react";
 import styled from "styled-components";
 import { useRouter } from "next/router";
 
