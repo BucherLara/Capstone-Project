@@ -6,7 +6,7 @@ export default function Footer() {
   const [currentPage, setCurrentPage] = useState("home");
 
   return (
-    <StyledFooter>
+    <footer>
       <StyledNav>
         <StyledLink
           href={"/"}
@@ -84,21 +84,15 @@ export default function Footer() {
           </svg>
         </StyledLink>
       </StyledNav>
-    </StyledFooter>
+    </footer>
   );
 }
 
 const StyledLink = styled(Link)`
-  // display: flex;
-  // width: 100%;
   padding: 0;
   ${({ active }) => (active ? "fill: #DAF7A6" : "fill:black")}
 `;
-const StyledFooter = styled.footer`
-  // bottom: 100px;
-  // position: fixed;
-  padding: 0;
-`;
+
 const StyledNav = styled.nav`
   display: flex;
   justify-content: space-around;
