@@ -75,7 +75,6 @@ export default function Form({ addFacilities }) {
               value="schlafen"
               defaultChecked
               required
-              // onChange={handleCheckbox}
             />
             Schlafen
           </label>

@@ -1,10 +1,8 @@
-import HomeLink from "../../components/Navigation/HomeLink";
 import { StyledHeading } from "../sleep";
 import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
-import FavoriteLink from "../../components/Navigation/FavoriteLink";
 
 export default function Medicine({ facilities, setFacilities }) {
   const medicinFacilities = facilities.filter((facility) => {
@@ -90,9 +88,6 @@ export default function Medicine({ facilities, setFacilities }) {
           );
         })}
       </StyledList>
-
-      <HomeLink />
-      <FavoriteLink />
     </>
   );
 }

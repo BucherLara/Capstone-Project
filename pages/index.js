@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Head from "next/head";
-import NavLandingpage from "../components/Navigation/NavLandingpage";
+import NavLandingpage from "../components/NavLandingpage";
 
 export default function Home({ facilities }) {
   if (!facilities) return <div>loading...</div>;
@@ -11,9 +11,7 @@ export default function Home({ facilities }) {
         <title>App-Name</title>
       </Head>
 
-      <main>
-        <NavLandingpage />
-      </main>
+      <NavLandingpage />
     </>
   );
 }

@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import HomeLink from "../../components/Navigation/HomeLink";
+import Footer from "../../components/Footer";
 import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
-import FavoriteLink from "../../components/Navigation/FavoriteLink";
 
 export default function Sleep({ facilities, setFacilities }) {
   const sleepFacilities = facilities.filter((facility) => {
@@ -90,9 +89,7 @@ export default function Sleep({ facilities, setFacilities }) {
           );
         })}
       </StyledList>
-
-      <HomeLink />
-      <FavoriteLink />
+      <Footer />
     </>
   );
 }
