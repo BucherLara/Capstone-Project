@@ -259,7 +259,7 @@ export default function Form({ addFacilities }) {
             id="tel"
             name="tel"
             placeholder="0049..."
-            pattern="0049"
+            pattern="[0]{2}[4][9][0-9]{9}"
             required
           />
         </label>
