@@ -255,7 +255,7 @@ export default function Form({ addFacilities }) {
         <label htmlFor="tel">
           Telefonnummer:
           <StyledInput
-            type="number"
+            type="tel"
             id="tel"
             name="tel"
             placeholder="0049..."
