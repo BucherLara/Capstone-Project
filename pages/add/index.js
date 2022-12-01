@@ -1,5 +1,6 @@
 import Form from "../../components/Form";
 import Head from "next/head";
+
 export default function NewFacilities({ addFacilities }) {
   return (
     <>

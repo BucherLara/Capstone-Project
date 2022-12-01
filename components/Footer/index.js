@@ -1,21 +1,17 @@
 import Link from "next/link";
 import { useState } from "react";
 import styled from "styled-components";
+import { useRouter } from "next/router";
 
 export default function Footer() {
-  const [currentPage, setCurrentPage] = useState("home");
+  const { pathname } = useRouter();
 
   return (
     <footer>
       <StyledNav>
-        <StyledLink
-          href={"/"}
-          onClick={() => {
-            setCurrentPage("home");
-          }}
-        >
+        <StyledLink href={"/"}>
           <svg
-            fill={currentPage === "home" ? " #DAF7A6" : "black"}
+            fill={pathname === "/home" ? " #DAF7A6" : "black"}
             xmlns="http://www.w3.org/2000/svg"
             height="48"
             width="48"
@@ -23,29 +19,19 @@ export default function Footer() {
             <path d="M11 39h7.5V26.5h11V39H37V19.5L24 9.75 11 19.5Zm-3 3V18L24 6l16 12v24H26.5V29.5h-5V42Zm16-17.65Z" />
           </svg>
         </StyledLink>
-        <StyledLink
-          href={"/sleep"}
-          onClick={() => {
-            setCurrentPage("sleep");
-          }}
-        >
+        <StyledLink href={"/sleep"}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="48"
             width="48"
-            fill={currentPage === "sleep" ? " #DAF7A6" : "black"}
+            fill={pathname === "/sleep" ? " #DAF7A6" : "black"}
           >
             <path d="M2 38V8.75h3v19.7h17.65V13h16.1q3 0 5.125 2.125T46 20.25V38h-3v-6.55H5V38Zm11.5-12.45q-2.25 0-3.775-1.525T8.2 20.25q0-2.25 1.525-3.775T13.5 14.95q2.25 0 3.775 1.525T18.8 20.25q0 2.25-1.525 3.775T13.5 25.55Zm12.15 2.9H43v-8.2q0-1.75-1.25-3t-3-1.25h-13.1Zm-12.15-5.9q.95 0 1.625-.675t.675-1.625q0-.95-.675-1.625T13.5 17.95q-.95 0-1.625.675T11.2 20.25q0 .95.675 1.625t1.625.675Zm0-2.3ZM25.65 16v12.45Z" />
           </svg>
         </StyledLink>
-        <StyledLink
-          href={"/hygiene"}
-          onClick={() => {
-            setCurrentPage("hygiene");
-          }}
-        >
+        <StyledLink href={"/hygiene"}>
           <svg
-            fill={currentPage === "hygiene" ? " #DAF7A6" : "black"}
+            fill={pathname === "/hygiene" ? " #DAF7A6" : "black"}
             xmlns="http://www.w3.org/2000/svg"
             height="48"
             width="48"
@@ -53,14 +39,9 @@ export default function Footer() {
             <path d="M14.9 34.85q-.6 0-1.05-.45-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45Zm9.1 0q-.6 0-1.05-.45-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45Zm9.1 0q-.6 0-1.05-.45-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45ZM10 27.35v-3Q10 19 13.625 15t8.875-4.55V6h3v4.45q5.25.55 8.875 4.55T38 24.35v3Zm3-3h22q0-4.55-3.225-7.775Q28.55 13.35 24 13.35q-4.55 0-7.775 3.225Q13 19.8 13 24.35ZM14.9 42q-.6 0-1.05-.45-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45Zm9.1 0q-.6 0-1.05-.45-.45-.45-.45-1.05 0-.6.45-1.05Q23.4 39 24 39q.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05Q24.6 42 24 42Zm9.1 0q-.6 0-1.05-.45-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45ZM24 24.35Z" />
           </svg>
         </StyledLink>
-        <StyledLink
-          href={"/medicine"}
-          onClick={() => {
-            setCurrentPage("medicine");
-          }}
-        >
+        <StyledLink href={"/medicine"}>
           <svg
-            fill={currentPage === "medicine" ? " #DAF7A6" : "black"}
+            fill={pathname === "/medicine" ? " #DAF7A6" : "black"}
             xmlns="http://www.w3.org/2000/svg"
             height="48"
             width="48"
@@ -68,14 +49,9 @@ export default function Footer() {
             <path d="M22.5 36.15h3v-6h6v-3h-6v-6h-3v6h-6v3h6ZM7 44q-1.2 0-2.1-.9Q4 42.2 4 41V15q0-1.2.9-2.1.9-.9 2.1-.9h9V7q0-1.2.9-2.1.9-.9 2.1-.9h10q1.2 0 2.1.9.9.9.9 2.1v5h9q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h34V15H7v26Zm12-29h10V7H19ZM7 41V15v26Z" />
           </svg>
         </StyledLink>
-        <StyledLink
-          href={"/favorites"}
-          onClick={() => {
-            setCurrentPage("favorites");
-          }}
-        >
+        <StyledLink href={"/favorites"}>
           <svg
-            fill={currentPage === "favorites" ? " #DAF7A6" : "black"}
+            fill={pathname === "/favorites" ? " #DAF7A6" : "black"}
             xmlns="http://www.w3.org/2000/svg"
             height="48"
             width="48"
