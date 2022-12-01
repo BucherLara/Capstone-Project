@@ -15,6 +15,9 @@ const GlobalStyles = createGlobalStyle`
     * {
         box-sizing: border-box;
     }
+    main{
+         margin-bottom: 80px;
+        }
    
 `;
 
