@@ -10,7 +10,7 @@ export default function Footer() {
       <StyledNav>
         <StyledLink href={"/"}>
           <svg
-            fill={pathname === "/home" ? " #DAF7A6" : "black"}
+            fill={pathname === "/" ? " #DAF7A6" : "black"}
             xmlns="http://www.w3.org/2000/svg"
             height="48"
             width="48"
