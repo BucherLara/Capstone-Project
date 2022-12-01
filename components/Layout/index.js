@@ -1,15 +1,15 @@
-// import Header from "../Header";
-// import Footer from "../Footer";
-import styled from "styled-components";
+import Header from "../Header";
+import Footer from "../Footer";
 
+import { useRouter } from "next/router";
 export default function Layout({ children }) {
-  <>
-    {/* <Header /> */}
-    <StyledMain>{children}</StyledMain>
-    {/* <Footer /> */}
-  </>;
-}
+  const { pathname } = useRouter();
 
-const StyledMain = styled.main`
-  z-index: -100px;
-`;
+  return (
+    <>
+      <Header />
+      <main>{children}</main>
+      {pathname !== "/" ? <Footer /> : null}
+    </>
+  );
+}

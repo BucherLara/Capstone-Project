@@ -1,8 +1,8 @@
-import { StyledHeading } from "../sleep";
 import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
+import Head from "next/head";
 
 export default function Medicine({ facilities, setFacilities }) {
   const medicinFacilities = facilities.filter((facility) => {
@@ -37,7 +37,10 @@ export default function Medicine({ facilities, setFacilities }) {
 
   return (
     <>
-      <StyledHeading>Medizinischen Versorgung</StyledHeading>
+      <Head>
+        <title>Medizinische Versorgung</title>
+        <meta key="title" content="Medizinische Versorgung" />
+      </Head>
       <form>
         <fieldset>
           <legend>Was benötigst du?</legend>

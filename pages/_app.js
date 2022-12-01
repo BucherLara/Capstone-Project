@@ -2,7 +2,7 @@ import GlobalStyles from "../components/GlobalStyles";
 import initialState from "../helpers/db.json";
 import { useLocalStorage } from "../helpers/hooks";
 import { nanoid } from "nanoid";
-// import Layout from "../components/Layout";
+import Layout from "../components/Layout";
 
 function MyApp({ Component, pageProps }) {
   const [facilities, setFacilities] = useLocalStorage(
@@ -41,14 +41,14 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <GlobalStyles />
-      {/* <Layout> */}
-      <Component
-        {...pageProps}
-        facilities={facilities}
-        setFacilities={setFacilities}
-        addFacilities={addFacilities}
-      />
-      {/* </Layout> */}
+      <Layout>
+        <Component
+          {...pageProps}
+          facilities={facilities}
+          setFacilities={setFacilities}
+          addFacilities={addFacilities}
+        />
+      </Layout>
     </>
   );
 }

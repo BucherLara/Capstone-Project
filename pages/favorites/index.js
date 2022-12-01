@@ -1,8 +1,7 @@
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { ListItem } from "../../components/FacilityList";
-import { StyledHeading } from "../sleep";
-
+import Head from "next/head";
 export default function Favorites({
   toggleBookmark,
   facilities,
@@ -10,7 +9,10 @@ export default function Favorites({
 }) {
   return (
     <>
-      <StyledHeading>Meine Favoriten</StyledHeading>
+      <Head>
+        <title>Meine Favoriten</title>
+        <meta key="title" content="Meine Favoriten" />
+      </Head>
       <StyledList>
         {facilities.map(
           (facility) =>

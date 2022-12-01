@@ -1,5 +1,3 @@
-import styled from "styled-components";
-import Head from "next/head";
 import NavLandingpage from "../components/NavLandingpage";
 
 export default function Home({ facilities }) {
@@ -7,14 +5,7 @@ export default function Home({ facilities }) {
 
   return (
     <>
-      <Head>
-        <title>App-Name</title>
-      </Head>
-
       <NavLandingpage />
     </>
   );
 }
-const Heading = styled.h1`
-  text-align: center;
-`;

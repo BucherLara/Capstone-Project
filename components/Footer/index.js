@@ -1,13 +1,19 @@
 import Link from "next/link";
 import { useState } from "react";
 import styled from "styled-components";
+
 export default function Footer() {
   const [currentPage, setCurrentPage] = useState("home");
 
   return (
     <StyledFooter>
       <StyledNav>
-        <StyledLink href={"/"}>
+        <StyledLink
+          href={"/"}
+          onClick={() => {
+            setCurrentPage("home");
+          }}
+        >
           <svg
             fill={currentPage === "home" ? " #DAF7A6" : "black"}
             xmlns="http://www.w3.org/2000/svg"
