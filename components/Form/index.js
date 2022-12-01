@@ -56,7 +56,6 @@ export default function Form({ addFacilities }) {
           <path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z" />
         </svg>
       </Link>
-      <h3>Neue Einrichtungen hinzufügen:</h3>
       <StyledForm onSubmit={handleSubmit}>
         <label htmlFor="name">
           Name der Einrichtung:
@@ -75,7 +74,6 @@ export default function Form({ addFacilities }) {
               value="schlafen"
               defaultChecked
               required
-              // onChange={handleCheckbox}
             />
             Schlafen
           </label>
@@ -257,11 +255,11 @@ export default function Form({ addFacilities }) {
         <label htmlFor="tel">
           Telefonnummer:
           <StyledInput
-            type="number"
+            type="tel"
             id="tel"
             name="tel"
             placeholder="0049..."
-            pattern="0049"
+            pattern="[0]{2}[4][9][0-9]{9}"
             required
           />
         </label>

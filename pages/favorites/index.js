@@ -1,9 +1,7 @@
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { ListItem } from "../../components/FacilityList";
-import { StyledHeading } from "../sleep";
-import HomeLink from "../../components/Navigation/HomeLink";
-import FavoriteLink from "../../components/Navigation/FavoriteLink";
+import Head from "next/head";
 
 export default function Favorites({
   toggleBookmark,
@@ -12,7 +10,10 @@ export default function Favorites({
 }) {
   return (
     <>
-      <StyledHeading>Meine Favoriten</StyledHeading>
+      <Head>
+        <title>Meine Favoriten</title>
+        <meta key="title" content="Meine Favoriten" />
+      </Head>
       <StyledList>
         {facilities.map(
           (facility) =>
@@ -28,8 +29,6 @@ export default function Favorites({
             )
         )}
       </StyledList>
-      <HomeLink />
-      <FavoriteLink />
     </>
   );
 }

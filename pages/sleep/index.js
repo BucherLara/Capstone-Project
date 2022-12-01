@@ -1,10 +1,8 @@
-import styled from "styled-components";
-import HomeLink from "../../components/Navigation/HomeLink";
 import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
-import FavoriteLink from "../../components/Navigation/FavoriteLink";
+import Head from "next/head";
 
 export default function Sleep({ facilities, setFacilities }) {
   const sleepFacilities = facilities.filter((facility) => {
@@ -39,7 +37,10 @@ export default function Sleep({ facilities, setFacilities }) {
 
   return (
     <>
-      <StyledHeading>Unterkünfte</StyledHeading>
+      <Head>
+        <title>Unterkünfte</title>
+        <meta key="title" content="Unterkünfte" />
+      </Head>
       <form>
         <fieldset>
           <legend>Was benötigst du?</legend>
@@ -90,15 +91,6 @@ export default function Sleep({ facilities, setFacilities }) {
           );
         })}
       </StyledList>
-
-      <HomeLink />
-      <FavoriteLink />
     </>
   );
 }
-
-const StyledHeading = styled.h2`
-  margin-bottom: 20px;
-`;
-
-export { StyledHeading };

@@ -1,10 +1,8 @@
-import HomeLink from "../../components/Navigation/HomeLink";
-import { StyledHeading } from "../sleep";
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { ListItem } from "../../components/FacilityList";
 import { useState } from "react";
-import FavoriteLink from "../../components/Navigation/FavoriteLink";
+import Head from "next/head";
 
 export default function Hygiene({ facilities, setFacilities }) {
   const hygieneFacilities = facilities.filter((facility) => {
@@ -39,7 +37,10 @@ export default function Hygiene({ facilities, setFacilities }) {
 
   return (
     <>
-      <StyledHeading>Duschmöglichkeiten </StyledHeading>
+      <Head>
+        <title>Duschmöglichkeiten</title>
+        <meta key="title" content="Duschmöglichkeiten" />
+      </Head>
       <form>
         <fieldset>
           <legend>Was benötigst du?</legend>
@@ -90,8 +91,6 @@ export default function Hygiene({ facilities, setFacilities }) {
           );
         })}
       </StyledList>
-      <HomeLink />
-      <FavoriteLink />
     </>
   );
 }
