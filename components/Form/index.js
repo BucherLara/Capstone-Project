@@ -248,7 +248,7 @@ export default function Form({ addFacilities }) {
             id="link"
             name="link"
             placeholder="https://www.google.com/maps/..."
-            pattern="https://www.google.com/maps/.*"
+            pattern="/^https?\:\/\/(www\.)?google\.(com|fr|de)\/maps\b/"
             required
           />
         </label>
@@ -293,3 +293,5 @@ const StyledCheckbox = styled(StyledInput)`
   padding: 0;
   width: 20%;
 `;
+
+// "^https?\:\/\/((www|maps)\.)?google\.[a-z]+\/maps\/?\?([^&]+&)*(s?ll=-?[0-9]{1,2}\.[0-9]+,-?[0-9]{1,2}\.[0-9]+|q=[^&+])+($|&)/"

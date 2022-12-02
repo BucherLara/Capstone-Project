@@ -4,86 +4,93 @@ import Image from "next/image";
 
 export default function NavLandingpage() {
   return (
-    <StyledNav>
-      <StyledLink href={"/sleep"}>
-        <StyledIcon
-          src={"/icons/sleep.png"}
-          alt={"Schlafen-Icon"}
-          width={100}
-          height={60}
-        />
-        <StyledSpan>Schlafen</StyledSpan>
-      </StyledLink>
-      <StyledLink href={"/hygiene"}>
-        <StyledIcon
-          src={"/icons/shower.png"}
-          alt={"Hygiene-Icon"}
-          width={100}
-          height={60}
-        />
-        <StyledSpan>Hygiene</StyledSpan>
-      </StyledLink>
-      <StyledLink href={"/medicine"}>
-        <StyledIcon
-          src={"/icons/medicine.png"}
-          alt={"Medizin-Icon"}
-          width={100}
-          height={60}
-        />
-        <StyledSpan>Medizin</StyledSpan>
-      </StyledLink>
-      <StyledLink href={"/favorites"}>
-        <StyledIcon
-          src={"/icons/heart.png"}
-          alt={"Favoriten-Icon"}
-          width={100}
-          height={60}
-        />
-        <StyledSpan>meine Favoriten</StyledSpan>
-      </StyledLink>
-      <StyledLink href={"/add"}>
-        <StyledIcon
-          src={"/icons/add.png"}
-          alt={"Favoriten-Icon"}
-          width={100}
-          height={60}
-        />
-        <StyledSpan>Einrichtung hinzufügen</StyledSpan>
-      </StyledLink>
-    </StyledNav>
+    <>
+      <StyledNav>
+        <StyledNavLink href={"/sleep"}>
+          <StyledIcon
+            src={"/icons/sleep.png"}
+            alt={"Schlafen-Icon"}
+            width={100}
+            height={60}
+          />
+          <StyledSpan>Schlafen</StyledSpan>
+        </StyledNavLink>
+        <StyledNavLink href={"/hygiene"}>
+          <StyledIcon
+            src={"/icons/shower.png"}
+            alt={"Hygiene-Icon"}
+            width={100}
+            height={60}
+          />
+          <StyledSpan>Hygiene</StyledSpan>
+        </StyledNavLink>
+        <StyledNavLink href={"/medicine"}>
+          <StyledIcon
+            src={"/icons/medicine.png"}
+            alt={"Medizin-Icon"}
+            width={100}
+            height={60}
+          />
+          <StyledSpan>Medizin</StyledSpan>
+        </StyledNavLink>
+        <StyledNavLink href={"/favorites"}>
+          <StyledIcon
+            src={"/icons/heart.png"}
+            alt={"Favoriten-Icon"}
+            width={100}
+            height={60}
+          />
+          <StyledSpan>Favoriten</StyledSpan>
+        </StyledNavLink>
+      </StyledNav>
+
+      <StyledLinkContainer>
+        <StyledLink href={"/add"}>Einrichtung hinzufügen</StyledLink>
+      </StyledLinkContainer>
+    </>
   );
 }
 
-const StyledLink = styled(Link)`
-  border-style: solid;
+const StyledNavLink = styled(Link)`
+  border-radius: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  // margin: 0 10px 10px 10px;
   text-decoration: none;
-  width: 120px;
-  height: 120px;
-  display: flex;
-  margin-top: 15px;
-  border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 25px 80px -25px;
-  color: #0000ee;
+  text-align: center;
+  padding-bottom: 40px;
 `;
 
 const StyledSpan = styled.span`
-  margin-top: 65px;
-  position: absolute;
-  margin-left: 5px;
-  padding: 10px;
-  color: black;
-  max-width: 120px;
+  color: #111111;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 24px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 40px;
 `;
 const StyledNav = styled.nav`
-  margin-left: 15px;
-  margin-top: 10px;
+  margin: 46px 20px 0 20px;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 2fr 2fr;
+  gap: 20px;
 `;
 
 const StyledIcon = styled(Image)`
+  height: 65px;
+  width: 65px;
+  margin: 41px 58px 0px 57px;
   object-fit: contain;
-  margin-right: 10px;
-  border-radius: 50px;
-  margin-top: 10px;
+`;
+
+const StyledLinkContainer = styled.span`
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+`;
+const StyledLink = styled(Link)`
+  font-size: 18px;
+  color: #111111;
 `;
