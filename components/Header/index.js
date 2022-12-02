@@ -29,7 +29,8 @@ const StyledHeader = styled.header`
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 0;
-  line-height: 46px;
+  line-height: 39px;
   text-align: center;
-  padding: 53px 20px 0 20px;
+  padding-bottom: 10px;
+  //padding: 20px 20px;
 `;

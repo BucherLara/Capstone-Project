@@ -53,7 +53,7 @@ export default function NavLandingpage() {
 
 const StyledNavLink = styled(Link)`
   border-radius: 40px;
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
   // margin: 0 10px 10px 10px;
   text-decoration: none;
@@ -62,7 +62,7 @@ const StyledNavLink = styled(Link)`
 `;
 
 const StyledSpan = styled.span`
-  color: #111111;
+  color: var(--font-color);
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0;
@@ -72,7 +72,7 @@ const StyledSpan = styled.span`
   margin-bottom: 40px;
 `;
 const StyledNav = styled.nav`
-  margin: 46px 20px 0 20px;
+  margin: 20px 20px 0 20px;
   display: grid;
   grid-template-columns: 2fr 2fr;
   gap: 20px;
@@ -88,9 +88,9 @@ const StyledIcon = styled(Image)`
 const StyledLinkContainer = styled.span`
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 30px;
 `;
 const StyledLink = styled(Link)`
   font-size: 18px;
-  color: #111111;
+  color: var(--font-color);
 `;

@@ -7,7 +7,9 @@ const GlobalStyles = createGlobalStyle`
  }   
 
 :root {
-    --primary-color: orange;
+    --primary-color: #E3E5F9;
+    --secondary-color: #ffffff;
+    --font-color: #111111
 
 }
 html,
