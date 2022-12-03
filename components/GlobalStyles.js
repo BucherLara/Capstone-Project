@@ -8,25 +8,42 @@ const GlobalStyles = createGlobalStyle`
 
 :root {
     --primary-color: #E3E5F9;
-    --secondary-color: #ffffff;
+    --secondary-color:  #ffffff;
     --font-color: #111111
 
 }
+body {
+    padding: 0 20px 0 20px;
+}
 html,
     body {
+        margin:0;
          
-        margin: 0;
+        
         font-family: "DMSans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
        
         min-width: 450px;
         
         background-color: var(--primary-color);
+
     }
-    
+    h1 {
+        font-size: 34px;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    h3 {font-size: 25px;
+        margin: 0;
+
+    }
 
     * {
         box-sizing: border-box;
     }
+   
     
 `;
 

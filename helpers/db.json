@@ -7,7 +7,7 @@
     "link": "https://www.google.com/maps/place/Pik+As/@53.553246,9.980664,17z/data=!3m1!4b1!4m5!3m4!1s0x47b18f10d01e241f:0xabb10810d7b57cb4!8m2!3d53.5532528!4d9.9828532",
     "target": "Für Männer",
     "requirements": "KEINE",
-    "image": "/img/PikAs.png",
+    "image": "/assets/images/pikas.png",
     "filterCriteria": ["now", "dog"],
     "tel": "004940427312059",
     "isBookmarked": false
@@ -137,7 +137,7 @@
     "link": "https://www.google.com/maps/place/Pik+As/@53.553246,9.980664,17z/data=!3m1!4b1!4m5!3m4!1s0x47b18f10d01e241f:0xabb10810d7b57cb4!8m2!3d53.5532528!4d9.9828532",
     "target": "Für Alle",
     "requirements": "Wenn vorhanden Versicherungskarte",
-    "image": "/img/PikAs.png",
+    "image": "/assets/images/pikas.png",
     "filterCriteria": ["general", "psychologist"],
     "tel": "004940427312059",
     "isBookmarked": false

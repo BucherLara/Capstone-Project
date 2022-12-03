@@ -3,6 +3,7 @@ import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
 import Head from "next/head";
+import styled from "styled-components";
 
 export default function Sleep({ facilities, setFacilities }) {
   const sleepFacilities = facilities.filter((facility) => {
@@ -42,42 +43,40 @@ export default function Sleep({ facilities, setFacilities }) {
         <meta key="title" content="Unterkünfte" />
       </Head>
       <form>
-        <fieldset>
-          <legend>Was benötigst du?</legend>
-          <div>
-            <input
-              type="checkbox"
-              name="now"
-              id="now"
-              value="now"
-              checked={selectedFilters.includes("now")}
-              onChange={handleToggleFilter}
-            />
-            <label htmlFor="now"> sofort</label>
-          </div>
-          <div>
-            <input
-              type="checkbox"
-              name="u25"
-              id="u25"
-              value="u25"
-              checked={selectedFilters.includes("u25")}
-              onChange={handleToggleFilter}
-            />
-            <label htmlFor="u25"> unter 25 Jahren</label>
-          </div>
-          <div>
-            <input
-              type="checkbox"
-              name="dog"
-              id="dog"
-              value="dog"
-              checked={selectedFilters.includes("dog")}
-              onChange={handleToggleFilter}
-            />
-            <label htmlFor="dog"> mit Hund</label>
-          </div>
-        </fieldset>
+        <h2>Was benötigst du?</h2>
+        <div>
+          <CheckboxInput
+            type="checkbox"
+            name="now"
+            id="now"
+            value="now"
+            checked={selectedFilters.includes("now")}
+            onChange={handleToggleFilter}
+          />
+          <StyledLabel htmlFor="now"> sofort</StyledLabel>
+        </div>
+        <div>
+          <CheckboxInput
+            type="checkbox"
+            name="u25"
+            id="u25"
+            value="u25"
+            checked={selectedFilters.includes("u25")}
+            onChange={handleToggleFilter}
+          />
+          <StyledLabel htmlFor="u25"> unter 25 Jahren</StyledLabel>
+        </div>
+        <div>
+          <CheckboxInput
+            type="checkbox"
+            name="dog"
+            id="dog"
+            value="dog"
+            checked={selectedFilters.includes("dog")}
+            onChange={handleToggleFilter}
+          />
+          <StyledLabel htmlFor="dog"> mit Hund</StyledLabel>
+        </div>
       </form>
       <StyledList>
         {filteredFacilities.map((filteredFacility) => {
@@ -94,3 +93,13 @@ export default function Sleep({ facilities, setFacilities }) {
     </>
   );
 }
+
+const CheckboxInput = styled.input`
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+`;
+
+const StyledLabel = styled.label`
+  font-size: 18px;
+`;

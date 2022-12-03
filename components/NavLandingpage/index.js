@@ -8,7 +8,7 @@ export default function NavLandingpage() {
       <StyledNav>
         <StyledNavLink href={"/sleep"}>
           <StyledIcon
-            src={"/icons/sleep.png"}
+            src={"/assets/svg/sleep.svg"}
             alt={"Schlafen-Icon"}
             width={100}
             height={60}
@@ -17,7 +17,7 @@ export default function NavLandingpage() {
         </StyledNavLink>
         <StyledNavLink href={"/hygiene"}>
           <StyledIcon
-            src={"/icons/shower.png"}
+            src={"/assets/svg/hygiene.svg"}
             alt={"Hygiene-Icon"}
             width={100}
             height={60}
@@ -26,7 +26,7 @@ export default function NavLandingpage() {
         </StyledNavLink>
         <StyledNavLink href={"/medicine"}>
           <StyledIcon
-            src={"/icons/medicine.png"}
+            src={"/assets/svg/medicine.svg"}
             alt={"Medizin-Icon"}
             width={100}
             height={60}
@@ -35,7 +35,7 @@ export default function NavLandingpage() {
         </StyledNavLink>
         <StyledNavLink href={"/favorites"}>
           <StyledIcon
-            src={"/icons/heart.png"}
+            src={"/assets/svg/favorites.svg"}
             alt={"Favoriten-Icon"}
             width={100}
             height={60}
