@@ -3,6 +3,7 @@ import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
 import Head from "next/head";
+import { StyledForm, StyledLabel, CheckboxInput } from "../sleep";
 
 export default function Medicine({ facilities, setFacilities }) {
   const medicinFacilities = facilities.filter((facility) => {
@@ -41,44 +42,42 @@ export default function Medicine({ facilities, setFacilities }) {
         <title>Medizinische Versorgung</title>
         <meta key="title" content="Medizinische Versorgung" />
       </Head>
-      <form>
-        <fieldset>
-          <legend>Was benötigst du?</legend>
-          <div>
-            <input
-              type="checkbox"
-              name="general"
-              id="general"
-              value="general"
-              checked={selectedFilters.includes("general")}
-              onChange={handleToggleFilter}
-            />
-            <label htmlFor="general"> Allgemein</label>
-          </div>
-          <div>
-            <input
-              type="checkbox"
-              name="psychologist"
-              id="psychologist"
-              value="psychologist"
-              checked={selectedFilters.includes("psychologist")}
-              onChange={handleToggleFilter}
-            />
-            <label htmlFor="psychologist"> Psycholog*in</label>
-          </div>
-          <div>
-            <input
-              type="checkbox"
-              name="gynecologist"
-              id="gynecologist"
-              value="gynecologist"
-              checked={selectedFilters.includes("gynecologist")}
-              onChange={handleToggleFilter}
-            />
-            <label htmlFor="gynecologist"> Frauenärzt*in</label>
-          </div>
-        </fieldset>
-      </form>
+      <StyledForm>
+        <h2>Was benötigst du?</h2>
+        <div>
+          <CheckboxInput
+            type="checkbox"
+            name="general"
+            id="general"
+            value="general"
+            checked={selectedFilters.includes("general")}
+            onChange={handleToggleFilter}
+          />
+          <StyledLabel htmlFor="general"> Allgemein</StyledLabel>
+        </div>
+        <div>
+          <CheckboxInput
+            type="checkbox"
+            name="psychologist"
+            id="psychologist"
+            value="psychologist"
+            checked={selectedFilters.includes("psychologist")}
+            onChange={handleToggleFilter}
+          />
+          <StyledLabel htmlFor="psychologist"> Psycholog*in</StyledLabel>
+        </div>
+        <div>
+          <CheckboxInput
+            type="checkbox"
+            name="gynecologist"
+            id="gynecologist"
+            value="gynecologist"
+            checked={selectedFilters.includes("gynecologist")}
+            onChange={handleToggleFilter}
+          />
+          <StyledLabel htmlFor="gynecologist"> Frauenärzt*in</StyledLabel>
+        </div>
+      </StyledForm>
       <StyledList>
         {filteredFacilities.map((filteredFacility) => {
           return (

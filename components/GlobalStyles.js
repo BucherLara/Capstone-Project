@@ -12,12 +12,11 @@ const GlobalStyles = createGlobalStyle`
     --font-color: #111111
 
 }
-body {
-    padding: 0 20px 0 20px;
-}
+
 html,
     body {
         margin:0;
+        margin-bottom: 40px; 
          
         
         font-family: "DMSans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

@@ -3,6 +3,7 @@ import { StyledList } from "../../components/Facility";
 import { ListItem } from "../../components/FacilityList";
 import { useState } from "react";
 import Head from "next/head";
+import { StyledForm, StyledLabel, CheckboxInput } from "../sleep";
 
 export default function Hygiene({ facilities, setFacilities }) {
   const hygieneFacilities = facilities.filter((facility) => {
@@ -41,44 +42,42 @@ export default function Hygiene({ facilities, setFacilities }) {
         <title>Duschmöglichkeiten</title>
         <meta key="title" content="Duschmöglichkeiten" />
       </Head>
-      <form>
-        <fieldset>
-          <legend>Was benötigst du?</legend>
-          <div>
-            <input
-              type="checkbox"
-              name="mobile"
-              id="mobile"
-              value="mobile"
-              checked={selectedFilters.includes("mobile")}
-              onChange={handleToggleFilter}
-            />
-            <label htmlFor="mobile"> mobil</label>
-          </div>
-          <div>
-            <input
-              type="checkbox"
-              name="lGBTQIA+"
-              id="lGBTQIA+"
-              value="lGBTQIA+"
-              checked={selectedFilters.includes("lGBTQIA+")}
-              onChange={handleToggleFilter}
-            />
-            <label htmlFor="lGBTQIA+"> LGBTQIA+</label>
-          </div>
-          <div>
-            <input
-              type="checkbox"
-              name="u25"
-              id="u25"
-              value="u25"
-              checked={selectedFilters.includes("u25")}
-              onChange={handleToggleFilter}
-            />
-            <label htmlFor="u25"> unter 25 Jahren</label>
-          </div>
-        </fieldset>
-      </form>
+      <StyledForm>
+        <h2>Was benötigst du?</h2>
+        <div>
+          <CheckboxInput
+            type="checkbox"
+            name="mobile"
+            id="mobile"
+            value="mobile"
+            checked={selectedFilters.includes("mobile")}
+            onChange={handleToggleFilter}
+          />
+          <StyledLabel htmlFor="mobile"> mobil</StyledLabel>
+        </div>
+        <div>
+          <CheckboxInput
+            type="checkbox"
+            name="lGBTQIA+"
+            id="lGBTQIA+"
+            value="lGBTQIA+"
+            checked={selectedFilters.includes("lGBTQIA+")}
+            onChange={handleToggleFilter}
+          />
+          <StyledLabel htmlFor="lGBTQIA+"> LGBTQIA+</StyledLabel>
+        </div>
+        <div>
+          <CheckboxInput
+            type="checkbox"
+            name="u25"
+            id="u25"
+            value="u25"
+            checked={selectedFilters.includes("u25")}
+            onChange={handleToggleFilter}
+          />
+          <StyledLabel htmlFor="u25"> unter 25 Jahren</StyledLabel>
+        </div>
+      </StyledForm>
       <StyledList>
         {filteredFacilities.map((filteredFacility) => {
           return (

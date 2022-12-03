@@ -92,7 +92,7 @@ export default function Header() {
           : pathname === "/medicine"
           ? "Medizinische Versorgung"
           : pathname === "/favorites"
-          ? "meine Favoriten"
+          ? "Favoriten"
           : pathname === "/add"
           ? "Neue Einrichtung hinzufügen"
           : "Überlebenshilfen für wohnungslose Menschen"}

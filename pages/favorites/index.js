@@ -11,7 +11,7 @@ export default function Favorites({
   return (
     <>
       <Head>
-        <title>Meine Favoriten</title>
+        <title>Favoriten</title>
         <meta key="title" content="Meine Favoriten" />
       </Head>
       <StyledList>

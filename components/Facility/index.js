@@ -200,20 +200,22 @@ export default function Facility({ facility, setFacilities }) {
 }
 const StyledImage = styled(Image)`
   object-fit: contain;
+  border-radius: 40%;
 `;
 const ImageContainer = styled.div`
   text-align: center;
 `;
 
 const StyledSection = styled.section`
-  display: flex;
-  border-style: solid;
-  padding: 20px;
-  border-radius: 20px;
-  background-color: white;
-  flex-direction: column;
-  min-heigth: 500px;
-  // align-items: center;
+  border-radius: 40px;
+  background-color: var(--secondary-color);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+  // position: relative;
+  // bottom: 70px;
+  // min-heigth: 500px;
+  margin: 20px;
 `;
 const StyledList = styled.ul`
   text-align: left;
@@ -225,6 +227,7 @@ const StyledList = styled.ul`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+  color: var(--font-color);
 `;
 
 const StyledButton = styled.button`

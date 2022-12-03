@@ -42,7 +42,7 @@ export default function Sleep({ facilities, setFacilities }) {
         <title>Unterkünfte</title>
         <meta key="title" content="Unterkünfte" />
       </Head>
-      <form>
+      <StyledForm>
         <h2>Was benötigst du?</h2>
         <div>
           <CheckboxInput
@@ -77,7 +77,7 @@ export default function Sleep({ facilities, setFacilities }) {
           />
           <StyledLabel htmlFor="dog"> mit Hund</StyledLabel>
         </div>
-      </form>
+      </StyledForm>
       <StyledList>
         {filteredFacilities.map((filteredFacility) => {
           return (
@@ -94,6 +94,10 @@ export default function Sleep({ facilities, setFacilities }) {
   );
 }
 
+const StyledForm = styled.form`
+  margin: 0 20px 0 20px;
+`;
+
 const CheckboxInput = styled.input`
   width: 25px;
   height: 25px;
@@ -103,3 +107,5 @@ const CheckboxInput = styled.input`
 const StyledLabel = styled.label`
   font-size: 18px;
 `;
+
+export { StyledForm, StyledLabel, CheckboxInput };
