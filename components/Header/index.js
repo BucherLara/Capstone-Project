@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import styled from "styled-components";
 import Link from "next/link";
+import { css } from "styled-components";
 
 export default function Header() {
   const { pathname } = useRouter();
@@ -84,7 +85,9 @@ export default function Header() {
         )}
       </Link>
 
-      <StyledHeading>
+      <StyledHeading
+        variant={(pathname === "/add" || pathname === "/medicine") && "add"}
+      >
         {pathname === "/sleep"
           ? "Unterkünfte"
           : pathname === "/hygiene"
@@ -152,8 +155,6 @@ export default function Header() {
 }
 
 const StyledHeader = styled.header`
-  color: #111111;
-  font-family: "DMSans";
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 0;
@@ -163,6 +164,7 @@ const StyledHeader = styled.header`
 `;
 const HomeSvg = styled.svg`
   margin-top: 40px;
+  margin-bottom: 0;
 `;
 
 const PagesSvg = styled.svg`
@@ -174,6 +176,14 @@ const PagesSvg = styled.svg`
 
 const StyledHeading = styled.h1`
   margin-top: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  ${({ variant }) =>
+    variant === "add" &&
+    css`
+      margin: 65px 20px 0 20px;
+    `}
 `;
 
 const AddSvg = styled.svg`

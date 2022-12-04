@@ -3,7 +3,7 @@ import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
 import Head from "next/head";
-import { StyledForm, StyledLabel, CheckboxInput } from "../sleep";
+import { StyledForm, StyledLabel, CheckboxInput, StyledDiv } from "../sleep";
 
 export default function Medicine({ facilities, setFacilities }) {
   const medicinFacilities = facilities.filter((facility) => {
@@ -44,7 +44,7 @@ export default function Medicine({ facilities, setFacilities }) {
       </Head>
       <StyledForm>
         <h2>Was benötigst du?</h2>
-        <div>
+        <StyledDiv>
           <CheckboxInput
             type="checkbox"
             name="general"
@@ -54,8 +54,8 @@ export default function Medicine({ facilities, setFacilities }) {
             onChange={handleToggleFilter}
           />
           <StyledLabel htmlFor="general"> Allgemein</StyledLabel>
-        </div>
-        <div>
+        </StyledDiv>
+        <StyledDiv>
           <CheckboxInput
             type="checkbox"
             name="psychologist"
@@ -65,8 +65,8 @@ export default function Medicine({ facilities, setFacilities }) {
             onChange={handleToggleFilter}
           />
           <StyledLabel htmlFor="psychologist"> Psycholog*in</StyledLabel>
-        </div>
-        <div>
+        </StyledDiv>
+        <StyledDiv>
           <CheckboxInput
             type="checkbox"
             name="gynecologist"
@@ -76,7 +76,7 @@ export default function Medicine({ facilities, setFacilities }) {
             onChange={handleToggleFilter}
           />
           <StyledLabel htmlFor="gynecologist"> Frauenärzt*in</StyledLabel>
-        </div>
+        </StyledDiv>
       </StyledForm>
       <StyledList>
         {filteredFacilities.map((filteredFacility) => {

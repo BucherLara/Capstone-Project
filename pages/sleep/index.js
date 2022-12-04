@@ -44,7 +44,7 @@ export default function Sleep({ facilities, setFacilities }) {
       </Head>
       <StyledForm>
         <h2>Was benötigst du?</h2>
-        <div>
+        <StyledDiv>
           <CheckboxInput
             type="checkbox"
             name="now"
@@ -54,8 +54,8 @@ export default function Sleep({ facilities, setFacilities }) {
             onChange={handleToggleFilter}
           />
           <StyledLabel htmlFor="now"> sofort</StyledLabel>
-        </div>
-        <div>
+        </StyledDiv>
+        <StyledDiv>
           <CheckboxInput
             type="checkbox"
             name="u25"
@@ -65,8 +65,8 @@ export default function Sleep({ facilities, setFacilities }) {
             onChange={handleToggleFilter}
           />
           <StyledLabel htmlFor="u25"> unter 25 Jahren</StyledLabel>
-        </div>
-        <div>
+        </StyledDiv>
+        <StyledDiv>
           <CheckboxInput
             type="checkbox"
             name="dog"
@@ -76,7 +76,7 @@ export default function Sleep({ facilities, setFacilities }) {
             onChange={handleToggleFilter}
           />
           <StyledLabel htmlFor="dog"> mit Hund</StyledLabel>
-        </div>
+        </StyledDiv>
       </StyledForm>
       <StyledList>
         {filteredFacilities.map((filteredFacility) => {
@@ -102,10 +102,17 @@ const CheckboxInput = styled.input`
   width: 25px;
   height: 25px;
   margin-right: 10px;
+  cursor: text;
+  margin-top: 0;
 `;
 
 const StyledLabel = styled.label`
   font-size: 18px;
 `;
 
-export { StyledForm, StyledLabel, CheckboxInput };
+const StyledDiv = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export { StyledForm, StyledLabel, CheckboxInput, StyledDiv };

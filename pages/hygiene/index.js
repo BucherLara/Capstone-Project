@@ -3,7 +3,7 @@ import { StyledList } from "../../components/Facility";
 import { ListItem } from "../../components/FacilityList";
 import { useState } from "react";
 import Head from "next/head";
-import { StyledForm, StyledLabel, CheckboxInput } from "../sleep";
+import { StyledForm, StyledLabel, CheckboxInput, StyledDiv } from "../sleep";
 
 export default function Hygiene({ facilities, setFacilities }) {
   const hygieneFacilities = facilities.filter((facility) => {
@@ -44,7 +44,7 @@ export default function Hygiene({ facilities, setFacilities }) {
       </Head>
       <StyledForm>
         <h2>Was benötigst du?</h2>
-        <div>
+        <StyledDiv>
           <CheckboxInput
             type="checkbox"
             name="mobile"
@@ -54,8 +54,8 @@ export default function Hygiene({ facilities, setFacilities }) {
             onChange={handleToggleFilter}
           />
           <StyledLabel htmlFor="mobile"> mobil</StyledLabel>
-        </div>
-        <div>
+        </StyledDiv>
+        <StyledDiv>
           <CheckboxInput
             type="checkbox"
             name="lGBTQIA+"
@@ -65,8 +65,8 @@ export default function Hygiene({ facilities, setFacilities }) {
             onChange={handleToggleFilter}
           />
           <StyledLabel htmlFor="lGBTQIA+"> LGBTQIA+</StyledLabel>
-        </div>
-        <div>
+        </StyledDiv>
+        <StyledDiv>
           <CheckboxInput
             type="checkbox"
             name="u25"
@@ -76,7 +76,7 @@ export default function Hygiene({ facilities, setFacilities }) {
             onChange={handleToggleFilter}
           />
           <StyledLabel htmlFor="u25"> unter 25 Jahren</StyledLabel>
-        </div>
+        </StyledDiv>
       </StyledForm>
       <StyledList>
         {filteredFacilities.map((filteredFacility) => {

@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import Link from "next/link";
+import { StyledLabel } from "../../pages/sleep";
+import { CheckboxInput, StyledDiv } from "../../pages/sleep";
 
 export default function Form({ addFacilities }) {
   const [category, setCategory] = useState("sleep");
@@ -44,27 +46,18 @@ export default function Form({ addFacilities }) {
   }
 
   return (
-    <>
-      <Link href={"/"}>
-        <svg
-          fill="#000000"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 50 50"
-          width="40px"
-          height="40px"
-        >
-          <path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z" />
-        </svg>
-      </Link>
-      <StyledForm onSubmit={handleSubmit}>
-        <label htmlFor="name">
-          Name der Einrichtung:
+    <Container>
+      <p>Erklärung des Formulars: Lorem ipsum didorium..............</p>
+
+      <form onSubmit={handleSubmit}>
+        <FlexLabel htmlFor="name">
+          Name der Einrichtung
           <StyledInput type="text" id="name" name="name" required />
-        </label>
-        <legend>Kategorie der Einrichtung auswählen:</legend>
-        <div>
-          <label htmlFor="sleep">
-            <StyledInput
+        </FlexLabel>
+        <StyledFieldset>
+          <StyledLegend>Kategorie der Einrichtung</StyledLegend>
+          <StyledDiv>
+            <CheckboxInput
               onClick={() => {
                 setCategory("sleep");
               }}
@@ -75,47 +68,39 @@ export default function Form({ addFacilities }) {
               defaultChecked
               required
             />
-            Schlafen
-          </label>
-        </div>
-        <StyledSection showDetails={category === "sleep"}>
-          <div>
-            <label htmlFor="dog">
-              <StyledCheckbox
+            <StyledLabel htmlFor="sleep"> Schlafen</StyledLabel>
+          </StyledDiv>
+          <StyledSection showDetails={category === "sleep"}>
+            <StyledDiv>
+              <CheckboxInput
                 type="checkbox"
                 id="dog"
                 name="filterCriteria"
                 value="dog"
               />
-              mit Hund
-            </label>
-          </div>
-          <div>
-            <label htmlFor="now">
-              <StyledCheckbox
+              <StyledLabel htmlFor="dog">mit Hund</StyledLabel>
+            </StyledDiv>
+            <StyledDiv>
+              <CheckboxInput
                 type="checkbox"
                 id="now"
                 name="filterCriteria"
                 value="now"
               />
-              sofort
-            </label>
-          </div>
-          <div>
-            <label htmlFor="u25">
-              <StyledCheckbox
+              <StyledLabel htmlFor="now"> sofort</StyledLabel>
+            </StyledDiv>
+            <StyledDiv>
+              <CheckboxInput
                 type="checkbox"
                 id="u25"
                 name="filterCriteria"
                 value="u25"
               />
-              unter 25 Jahren
-            </label>
-          </div>
-        </StyledSection>
-        <div>
-          <label htmlFor="hygiene">
-            <StyledInput
+              <StyledLabel htmlFor="u25">unter 25 Jahren</StyledLabel>
+            </StyledDiv>
+          </StyledSection>
+          <StyledDiv>
+            <CheckboxInput
               onClick={() => {
                 setCategory("hygiene");
               }}
@@ -125,47 +110,39 @@ export default function Form({ addFacilities }) {
               value="hygiene"
               required
             />
-            Hygiene
-          </label>
-        </div>
-        <StyledSection showDetails={category === "hygiene"}>
-          <div>
-            <label htmlFor="mobile">
-              <StyledCheckbox
+            <StyledLabel htmlFor="hygiene">Hygiene</StyledLabel>
+          </StyledDiv>
+          <StyledSection showDetails={category === "hygiene"}>
+            <StyledDiv>
+              <CheckboxInput
                 type="checkbox"
                 id="mobile"
                 name="filterCriteria"
                 value="mobile"
               />
-              mobil
-            </label>
-          </div>
-          <div>
-            <label htmlFor="lGBTQIA+">
-              <StyledCheckbox
+              <StyledLabel htmlFor="mobile"> mobil</StyledLabel>
+            </StyledDiv>
+            <StyledDiv>
+              <CheckboxInput
                 type="checkbox"
                 id="lGBTQIA+"
                 name="filterCriteria"
                 value="lGBTQIA+"
               />
-              LGBTQIA+
-            </label>
-          </div>
-          <div>
-            <label htmlFor="u25">
-              <StyledCheckbox
+              <StyledLabel htmlFor="lGBTQIA+"> LGBTQIA+</StyledLabel>
+            </StyledDiv>
+            <StyledDiv>
+              <CheckboxInput
                 type="checkbox"
                 id="u25"
                 name="filterCriteria"
                 value="u25"
               />
-              unter 25 Jahren
-            </label>
-          </div>
-        </StyledSection>
-        <div>
-          <label htmlFor="medicine">
-            <StyledInput
+              <StyledLabel htmlFor="u25">unter 25 Jahren</StyledLabel>
+            </StyledDiv>
+          </StyledSection>
+          <StyledDiv>
+            <CheckboxInput
               onClick={() => {
                 setCategory("medicine");
               }}
@@ -175,59 +152,61 @@ export default function Form({ addFacilities }) {
               value="medizin"
               required
             />
-            Medizin
-          </label>
-        </div>
-        <StyledSection showDetails={category === "medicine"}>
-          <div>
-            <label htmlFor="general">
-              <StyledCheckbox
+            <StyledLabel htmlFor="medicine"> Medizin</StyledLabel>
+          </StyledDiv>
+          <StyledSection showDetails={category === "medicine"}>
+            <StyledDiv>
+              <CheckboxInput
                 type="checkbox"
                 id="general"
                 name="filterCriteria"
                 value="general"
               />
-              Allgemein
-            </label>
-          </div>
-          <div>
-            <label htmlFor="psychologist">
-              <StyledCheckbox
+              <StyledLabel htmlFor="general">Allgemein</StyledLabel>
+            </StyledDiv>
+            <StyledDiv>
+              <CheckboxInput
                 type="checkbox"
                 id="psychologist+"
                 name="filterCriteria"
                 value="psychologist"
               />
-              Pycholog*in
-            </label>
-          </div>
-          <div>
-            <label htmlFor="gynecologist">
-              <StyledCheckbox
+              <StyledLabel htmlFor="psychologist"> Pycholog*in</StyledLabel>
+            </StyledDiv>
+            <StyledDiv>
+              <CheckboxInput
                 type="checkbox"
                 id="gynecologist"
                 name="filterCriteria"
                 value="gynecologist"
               />
-              Gynäkolog*in
-            </label>
-          </div>
-        </StyledSection>
-        <label htmlFor="target">
-          Zielgruppe:
-          <StyledInput type="text" id="target" name="target" required />
-        </label>
-        <label htmlFor="requirements">
-          Zugangsvoraussetzungen:
+              <StyledLabel htmlFor="gynecologist">Gynäkolog*in</StyledLabel>
+            </StyledDiv>
+          </StyledSection>
+        </StyledFieldset>
+
+        <FlexLabel htmlFor="target">
+          Zielgruppe
+          <StyledInput
+            type="text"
+            id="target"
+            name="target"
+            required
+            placeholder="An wen richtet sich das Angebot?"
+          />
+        </FlexLabel>
+        <FlexLabel htmlFor="requirements">
+          Zugangsvoraussetzungen
           <StyledInput
             type="text"
             id="requirements"
             name="requirements"
             required
+            placeholder="Welche Voraussetzungen gibt es?"
           />
-        </label>
+        </FlexLabel>
 
-        {/* <label htmlFor="image">Logo:</label>
+        {/* <FlexLabel htmlFor="image">Logo:</FlexLabel>
         <input
           type="image"
           id="image"
@@ -237,12 +216,18 @@ export default function Form({ addFacilities }) {
           height="48"
         /> */}
 
-        <label htmlFor="address">
-          addresse:
-          <StyledInput type="text" id="address" name="address" required />
-        </label>
-        <label htmlFor="link">
-          Google-Maps-Link:
+        <FlexLabel htmlFor="address">
+          Adresse
+          <StyledInput
+            type="text"
+            id="address"
+            name="address"
+            required
+            placeholder="Straße, Nr., Plz Hamburg"
+          />
+        </FlexLabel>
+        <FlexLabel htmlFor="link">
+          Google-Maps-Link
           <StyledInput
             type="url"
             id="link"
@@ -251,9 +236,9 @@ export default function Form({ addFacilities }) {
             pattern="/^https?\:\/\/(www\.)?google\.(com|fr|de)\/maps\b/"
             required
           />
-        </label>
-        <label htmlFor="tel">
-          Telefonnummer:
+        </FlexLabel>
+        <FlexLabel htmlFor="tel">
+          Telefonnummer
           <StyledInput
             type="tel"
             id="tel"
@@ -262,36 +247,63 @@ export default function Form({ addFacilities }) {
             pattern="[0]{2}[4][9][0-9]{9}"
             required
           />
-        </label>
-        <button type="submit" value="submit">
-          Hinzufügen
-        </button>
-      </StyledForm>
-    </>
+        </FlexLabel>
+
+        <StyledButton type="submit" value="submit">
+          Einrichtung hinzufügen
+        </StyledButton>
+      </form>
+      <StyledLink href={"/"}>Zurück</StyledLink>
+    </Container>
   );
 }
 
-const StyledForm = styled.form`
-  display: flex;
-  flex-direction: column;
+const Container = styled.div`
+  margin: 20px;
 `;
-
+const StyledFieldset = styled.fieldset`
+  border: none;
+`;
 const StyledSection = styled.section`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: space-between;
+  margin-left: 30px;
 
   ${({ showDetails }) => (showDetails ? "size:20px;" : "display:none")}
 `;
 
 const StyledInput = styled.input`
-  size: 30px;
-  margin: 8px 0;
-  cursor: text;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
 `;
-const StyledCheckbox = styled(StyledInput)`
-  size: 20px;
-  padding: 0;
-  width: 20%;
+const FlexLabel = styled(StyledLabel)`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-weight: bold;
+`;
+
+const StyledLegend = styled.legend`
+  font-size: 18px;
+  font-weight: bold;
+`;
+const StyledLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  color: var(--font-color);
+  font-size: 18px;
+  margin: 15px 0 50px 0;
+`;
+const StyledButton = styled.button`
+  border-radius: 36px;
+  background-color: var(--third-color);
+  color: var(--second-font-color);
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  margin-top: 15px;
 `;
 
 // "^https?\:\/\/((www|maps)\.)?google\.[a-z]+\/maps\/?\?([^&]+&)*(s?ll=-?[0-9]{1,2}\.[0-9]+,-?[0-9]{1,2}\.[0-9]+|q=[^&+])+($|&)/"

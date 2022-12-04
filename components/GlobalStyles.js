@@ -9,7 +9,9 @@ const GlobalStyles = createGlobalStyle`
 :root {
     --primary-color: #E3E5F9;
     --secondary-color:  #ffffff;
-    --font-color: #111111
+    --font-color: #111111;
+    --third-color: #111111;
+    --second-font-color: #ffffff;
 
 }
 
@@ -37,6 +39,9 @@ html,
     h3 {font-size: 25px;
         margin: 0;
 
+    }
+    p {
+        font-size: 18px; 
     }
 
     * {
