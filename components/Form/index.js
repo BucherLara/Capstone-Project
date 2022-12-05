@@ -236,7 +236,7 @@ export default function Form({ addFacilities }) {
             id="link"
             name="link"
             placeholder="https://www.google.com/maps/..."
-            pattern="https?:\\/\\/((www\\.)?google\\.(com|fr|de)|goo.gl)\\/maps(\\?.+|\\/.+)"
+            pattern="https?:\/\/((www\.)?google\.(com|fr|de)|goo.gl)\/maps(\?.+|\/.+)"
             required
           />
         </FlexLabel>
