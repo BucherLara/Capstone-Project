@@ -145,9 +145,9 @@ export default function Header() {
         pathname !== "/favorites" ? (
           <StyledLink href="/add">
             <AddSvg
-              width="35px"
-              height="35px"
-              viewBox="0 0 35 35"
+              width="40px"
+              height="40px"
+              viewBox="0 0 40 40"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -162,29 +162,37 @@ export default function Header() {
               >
                 <g
                   id="Schlafen"
-                  transform="translate(-365.000000, -105.000000)"
-                  stroke="#111111"
-                  strokeWidth="1.5"
+                  transform="translate(-360.000000, -102.000000)"
                 >
-                  <g id="Add" transform="translate(365.000000, 105.000000)">
+                  <g id="Add" transform="translate(360.000000, 102.000000)">
+                    <circle
+                      id="Oval"
+                      fill="#FFFFFF"
+                      cx="20"
+                      cy="20"
+                      r="20"
+                    ></circle>
                     <line
-                      x1="6.75694444"
-                      y1="17.5"
-                      x2="28.2430556"
-                      y2="17.5"
+                      x1="7.72222222"
+                      y1="20"
+                      x2="32.2777778"
+                      y2="20"
                       id="Line-Copy"
-                      strokeLinecap="square"
-                      transform="translate(17.500000, 17.500000) rotate(90.000000) translate(-17.500000, -17.500000) "
+                      stroke="#111111"
+                      stroke-width="1.5"
+                      stroke-linecap="square"
+                      transform="translate(20.000000, 20.000000) rotate(90.000000) translate(-20.000000, -20.000000) "
                     ></line>
                     <line
-                      x1="6.75694444"
-                      y1="17.5"
-                      x2="28.2430556"
-                      y2="17.5"
+                      x1="7.72222222"
+                      y1="20"
+                      x2="32.2777778"
+                      y2="20"
                       id="Line"
-                      strokeLinecap="square"
+                      stroke="#111111"
+                      stroke-width="1.5"
+                      stroke-linecap="square"
                     ></line>
-                    <circle id="Oval" cx="17.5" cy="17.5" r="16.75"></circle>
                   </g>
                 </g>
               </g>
@@ -230,7 +238,7 @@ const HeadingPages = styled.h1`
 
 const AddSvg = styled.svg`
   margin-right: 20px;
-  margin-top: 10px;
+  margin-top: 5px;
 `;
 const StyledDiv = styled.div`
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
