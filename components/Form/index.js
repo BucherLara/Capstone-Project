@@ -47,7 +47,12 @@ export default function Form({ addFacilities }) {
 
   return (
     <Container>
-      <p>Erklärung des Formulars: Lorem ipsum didorium..............</p>
+      <p>
+        Hallo an alle Obdach- und Wohnungslosenhilfen in Hamburg. Wir freuen
+        uns, wenn die Zahl der Hilfsangebote stetig wächst. Haltet eure
+        Informationen aktuell und informiert gerne auch andere Einrichtungen und
+        Klient*innen über die App. Danke!
+      </p>
 
       <form onSubmit={handleSubmit}>
         <FlexLabel htmlFor="name">
@@ -62,9 +67,9 @@ export default function Form({ addFacilities }) {
                 setCategory("sleep");
               }}
               type="radio"
-              id="schlafen"
+              id="Schlafen"
               name="category"
-              value="schlafen"
+              value="Schlafen"
               defaultChecked
               required
             />
@@ -120,7 +125,7 @@ export default function Form({ addFacilities }) {
                 name="filterCriteria"
                 value="mobile"
               />
-              <StyledLabel htmlFor="mobile"> mobil</StyledLabel>
+              <StyledLabel htmlFor="mobile">mobil</StyledLabel>
             </StyledDiv>
             <StyledDiv>
               <CheckboxInput
@@ -129,7 +134,7 @@ export default function Form({ addFacilities }) {
                 name="filterCriteria"
                 value="lGBTQIA+"
               />
-              <StyledLabel htmlFor="lGBTQIA+"> LGBTQIA+</StyledLabel>
+              <StyledLabel htmlFor="lGBTQIA+">LGBTQIA+</StyledLabel>
             </StyledDiv>
             <StyledDiv>
               <CheckboxInput
@@ -171,7 +176,7 @@ export default function Form({ addFacilities }) {
                 name="filterCriteria"
                 value="psychologist"
               />
-              <StyledLabel htmlFor="psychologist"> Pycholog*in</StyledLabel>
+              <StyledLabel htmlFor="psychologist"> Psycholog*in</StyledLabel>
             </StyledDiv>
             <StyledDiv>
               <CheckboxInput
@@ -223,7 +228,7 @@ export default function Form({ addFacilities }) {
             id="address"
             name="address"
             required
-            placeholder="Straße, Nr., Plz Hamburg"
+            placeholder="Straße Nr., Plz Hamburg"
           />
         </FlexLabel>
         <FlexLabel htmlFor="link">
@@ -295,6 +300,7 @@ const StyledLink = styled(Link)`
   color: var(--font-color);
   font-size: 18px;
   margin: 15px 0 50px 0;
+  font-weight: bold;
 `;
 const StyledButton = styled.button`
   border-radius: 36px;

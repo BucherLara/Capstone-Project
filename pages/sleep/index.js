@@ -2,12 +2,11 @@ import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
-import Head from "next/head";
 import styled from "styled-components";
 
 export default function Sleep({ facilities, setFacilities }) {
   const sleepFacilities = facilities.filter((facility) => {
-    return facility.category === "schlafen";
+    return facility.category === "Schlafen";
   });
 
   const [selectedFilters, setSelectedFilters] = useState([]);
@@ -38,10 +37,6 @@ export default function Sleep({ facilities, setFacilities }) {
 
   return (
     <>
-      <Head>
-        <title>Unterkünfte</title>
-        <meta key="title" content="Unterkünfte" />
-      </Head>
       <StyledForm>
         <h2>Was benötigst du?</h2>
         <StyledDiv>

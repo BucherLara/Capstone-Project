@@ -5,7 +5,6 @@ export default function Home({ facilities }) {
 
   return (
     <>
-      {/* <Head></Head> */}
       <NavLandingpage />
     </>
   );

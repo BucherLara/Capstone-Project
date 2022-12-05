@@ -1,7 +1,6 @@
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { ListItem } from "../../components/FacilityList";
-import Head from "next/head";
 
 export default function Favorites({
   toggleBookmark,
@@ -10,10 +9,6 @@ export default function Favorites({
 }) {
   return (
     <>
-      <Head>
-        <title>Favoriten</title>
-        <meta key="title" content="Meine Favoriten" />
-      </Head>
       <StyledList>
         {facilities.map(
           (facility) =>

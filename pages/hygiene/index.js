@@ -2,7 +2,6 @@ import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { ListItem } from "../../components/FacilityList";
 import { useState } from "react";
-import Head from "next/head";
 import { StyledForm, StyledLabel, CheckboxInput, StyledDiv } from "../sleep";
 
 export default function Hygiene({ facilities, setFacilities }) {
@@ -38,10 +37,6 @@ export default function Hygiene({ facilities, setFacilities }) {
 
   return (
     <>
-      <Head>
-        <title>Duschmöglichkeiten</title>
-        <meta key="title" content="Duschmöglichkeiten" />
-      </Head>
       <StyledForm>
         <h2>Was benötigst du?</h2>
         <StyledDiv>

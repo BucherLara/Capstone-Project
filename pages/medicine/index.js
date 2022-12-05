@@ -2,7 +2,6 @@ import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
-import Head from "next/head";
 import { StyledForm, StyledLabel, CheckboxInput, StyledDiv } from "../sleep";
 
 export default function Medicine({ facilities, setFacilities }) {
@@ -38,10 +37,6 @@ export default function Medicine({ facilities, setFacilities }) {
 
   return (
     <>
-      <Head>
-        <title>Medizinische Versorgung</title>
-        <meta key="title" content="Medizinische Versorgung" />
-      </Head>
       <StyledForm>
         <h2>Was benötigst du?</h2>
         <StyledDiv>
