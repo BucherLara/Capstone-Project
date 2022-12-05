@@ -57,9 +57,9 @@ export default function Header() {
               <g
                 id="221202"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
                 fill="none"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               >
                 <g
                   id="Home"
@@ -94,9 +94,9 @@ export default function Header() {
                 <g
                   id="221202"
                   stroke="none"
-                  stroke-width="1"
+                  strokeWidth="1"
                   fill="none"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                 >
                   <g
                     id="Home"
@@ -157,15 +157,15 @@ export default function Header() {
               <g
                 id="221202"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
                 fill="none"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               >
                 <g
                   id="Schlafen"
                   transform="translate(-365.000000, -105.000000)"
                   stroke="#111111"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                 >
                   <g id="Add" transform="translate(365.000000, 105.000000)">
                     <line
@@ -174,7 +174,7 @@ export default function Header() {
                       x2="28.2430556"
                       y2="17.5"
                       id="Line-Copy"
-                      stroke-linecap="square"
+                      strokeLinecap="square"
                       transform="translate(17.500000, 17.500000) rotate(90.000000) translate(-17.500000, -17.500000) "
                     ></line>
                     <line
@@ -183,7 +183,7 @@ export default function Header() {
                       x2="28.2430556"
                       y2="17.5"
                       id="Line"
-                      stroke-linecap="square"
+                      strokeLinecap="square"
                     ></line>
                     <circle id="Oval" cx="17.5" cy="17.5" r="16.75"></circle>
                   </g>

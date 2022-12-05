@@ -2,7 +2,13 @@ import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { ListItem } from "../../components/FacilityList";
 import { useState } from "react";
-import { StyledForm, StyledLabel, CheckboxInput, StyledDiv } from "../sleep";
+
+import {
+  StyledForm,
+  StyledLabel,
+  CheckboxInput,
+  StyledDiv,
+} from "../../components/Form";
 
 export default function Hygiene({ facilities, setFacilities }) {
   const hygieneFacilities = facilities.filter((facility) => {

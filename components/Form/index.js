@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import Link from "next/link";
-import { StyledLabel } from "../../pages/sleep";
-import { CheckboxInput, StyledDiv } from "../../pages/sleep";
 
 export default function Form({ addFacilities }) {
   const [category, setCategory] = useState("sleep");
@@ -238,7 +236,7 @@ export default function Form({ addFacilities }) {
             id="link"
             name="link"
             placeholder="https://www.google.com/maps/..."
-            pattern="/^https?\:\/\/(www\.)?google\.(com|fr|de)\/maps\b/"
+            pattern="https?:\\/\\/((www\\.)?google\\.(com|fr|de)|goo.gl)\\/maps(\\?.+|\\/.+)"
             required
           />
         </FlexLabel>
@@ -249,7 +247,7 @@ export default function Form({ addFacilities }) {
             id="tel"
             name="tel"
             placeholder="0049..."
-            pattern="[0]{2}[4][9][0-9]{9}"
+            pattern="(00|+)49[0-9]{,13}"
             required
           />
         </FlexLabel>
@@ -262,6 +260,9 @@ export default function Form({ addFacilities }) {
     </Container>
   );
 }
+const StyledLabel = styled.label`
+  font-size: 18px;
+`;
 
 const Container = styled.div`
   margin: 20px;
@@ -312,4 +313,23 @@ const StyledButton = styled.button`
   margin-top: 15px;
 `;
 
-// "^https?\:\/\/((www|maps)\.)?google\.[a-z]+\/maps\/?\?([^&]+&)*(s?ll=-?[0-9]{1,2}\.[0-9]+,-?[0-9]{1,2}\.[0-9]+|q=[^&+])+($|&)/"
+const StyledForm = styled.form`
+  margin: 0 20px 0 20px;
+`;
+
+const CheckboxInput = styled.input`
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  cursor: text;
+  margin-top: 0;
+`;
+
+const StyledDiv = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export { StyledForm, StyledLabel, CheckboxInput, StyledDiv };
+
+// pattern="/^https?\:\/\/(www\.)?google\.(com|fr|de)\/maps\b/"

@@ -2,7 +2,12 @@ import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
-import styled from "styled-components";
+import {
+  StyledForm,
+  StyledLabel,
+  CheckboxInput,
+  StyledDiv,
+} from "../../components/Form";
 
 export default function Sleep({ facilities, setFacilities }) {
   const sleepFacilities = facilities.filter((facility) => {
@@ -88,26 +93,3 @@ export default function Sleep({ facilities, setFacilities }) {
     </>
   );
 }
-
-const StyledForm = styled.form`
-  margin: 0 20px 0 20px;
-`;
-
-const CheckboxInput = styled.input`
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
-  cursor: text;
-  margin-top: 0;
-`;
-
-const StyledLabel = styled.label`
-  font-size: 18px;
-`;
-
-const StyledDiv = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-export { StyledForm, StyledLabel, CheckboxInput, StyledDiv };

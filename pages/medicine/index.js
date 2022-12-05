@@ -2,7 +2,12 @@ import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { useState } from "react";
-import { StyledForm, StyledLabel, CheckboxInput, StyledDiv } from "../sleep";
+import {
+  StyledForm,
+  StyledLabel,
+  CheckboxInput,
+  StyledDiv,
+} from "../../components/Form";
 
 export default function Medicine({ facilities, setFacilities }) {
   const medicinFacilities = facilities.filter((facility) => {
