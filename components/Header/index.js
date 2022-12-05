@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import styled from "styled-components";
 import Link from "next/link";
-import { css } from "styled-components";
 import Head from "next/head";
 
 export default function Header() {
@@ -144,10 +143,10 @@ export default function Header() {
         {pathname !== "/" &&
         pathname !== "/add" &&
         pathname !== "/favorites" ? (
-          <Link href="/add">
+          <StyledLink href="/add">
             <AddSvg
-              width="45px"
-              height="45px"
+              width="35px"
+              height="35px"
               viewBox="0 0 35 35"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -190,7 +189,7 @@ export default function Header() {
                 </g>
               </g>
             </AddSvg>
-          </Link>
+          </StyledLink>
         ) : null}
       </StyledHeader>
     </>
@@ -199,8 +198,6 @@ export default function Header() {
 
 const StyledHeader = styled.header`
   font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 0;
   line-height: 39px;
   text-align: center;
   padding-bottom: 10px;
@@ -232,20 +229,15 @@ const HeadingPages = styled.h1`
 `;
 
 const AddSvg = styled.svg`
-  position: absolute;
-  top: 50px;
-  right: 0.1px;
-  padding-left: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
 `;
 const StyledDiv = styled.div`
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 79px;
 `;
-// ${({ variant }) =>
-//     variant === "add" &&
-//     css`
-//       margin: 65px 20px 0 20px;
-//     `}
-
-// variant={(pathname === "/add" || pathname === "/medicine") && "add"}
+const StyledLink = styled(Link)`
+  display: flex;
+  justify-content: flex-end;
+`;
