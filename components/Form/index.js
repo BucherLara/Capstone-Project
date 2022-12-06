@@ -1,9 +1,20 @@
-import styled from "styled-components";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import Link from "next/link";
+import {
+  StyledDiv,
+  CheckboxInput,
+  StyledButton,
+  StyledLink,
+  StyledLegend,
+  FlexLabel,
+  StyledInput,
+  StyledSection,
+  StyledFieldset,
+  Container,
+  StyledLabel,
+} from "./styled.form";
 
-export default function Form({ addFacilities, toggleBookmark }) {
+export default function Form({ addFacilities }) {
   const [category, setCategory] = useState("sleep");
 
   const router = useRouter();
@@ -260,76 +271,5 @@ export default function Form({ addFacilities, toggleBookmark }) {
     </Container>
   );
 }
-const StyledLabel = styled.label`
-  font-size: 18px;
-`;
-
-const Container = styled.div`
-  margin: 20px;
-`;
-const StyledFieldset = styled.fieldset`
-  border: none;
-`;
-const StyledSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: space-between;
-  margin-left: 30px;
-
-  ${({ showDetails }) => (showDetails ? "size:20px;" : "display:none")}
-`;
-
-const StyledInput = styled.input`
-  padding: 10px;
-  font-size: 18px;
-  border: none;
-`;
-const FlexLabel = styled(StyledLabel)`
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  font-weight: bold;
-`;
-
-const StyledLegend = styled.legend`
-  font-size: 18px;
-  font-weight: bold;
-`;
-const StyledLink = styled(Link)`
-  display: flex;
-  justify-content: center;
-  color: var(--font-color);
-  font-size: 18px;
-  margin: 15px 0 50px 0;
-  font-weight: bold;
-`;
-const StyledButton = styled.button`
-  border-radius: 36px;
-  background-color: var(--third-color);
-  color: var(--second-font-color);
-  width: 100%;
-  padding: 20px;
-  font-size: 18px;
-  margin-top: 15px;
-`;
-
-const StyledForm = styled.form`
-  margin: 0 20px 0 20px;
-`;
-
-const CheckboxInput = styled.input`
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
-  cursor: text;
-  margin-top: 0;
-`;
-
-const StyledDiv = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-export { StyledForm, StyledLabel, CheckboxInput, StyledDiv };
 
 // pattern="/^https?\:\/\/(www\.)?google\.(com|fr|de)\/maps\b/"

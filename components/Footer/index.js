@@ -1,7 +1,10 @@
-import Link from "next/link";
-import styled from "styled-components";
 import { useRouter } from "next/router";
-import Image from "next/image";
+import {
+  StyledImage,
+  StyledParagraph,
+  StyledNav,
+  StyledLink,
+} from "./styled.footer";
 
 export default function Footer() {
   const { pathname } = useRouter();
@@ -55,41 +58,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-const StyledLink = styled(Link)`
-  color: var(--font-color);
-  padding: 0;
-  text-decoration: none;
-`;
-
-const StyledNav = styled.nav`
-  display: flex;
-  justify-content: space-around;
-  position: fixed;
-  bottom: 0;
-  align-items: center;
-
-  width: 100%;
-  background-color: var(--secondary-color);
-
-  height: 75px;
-`;
-
-const StyledParagraph = styled.p`
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0;
-  text-align: center;
-  margin: 0;
-`;
-
-const StyledImage = styled(Image)`
-  &.active {
-    opacity: 1;
-  }
-  &.notActive {
-    opacity: 0.3;
-  }
-`;
-// background-color: lightgrey;
-// border-radius: 40px;

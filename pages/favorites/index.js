@@ -1,5 +1,5 @@
 import Facility from "../../components/Facility";
-import { StyledList } from "../../components/Facility";
+import { StyledList } from "../../components/Facility/styled.facility";
 import { ListItem } from "../../components/FacilityList";
 
 export default function Favorites({ toggleBookmark, facilities }) {

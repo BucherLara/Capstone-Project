@@ -1,5 +1,5 @@
 import Facility from "../../components/Facility";
-import { StyledList } from "../../components/Facility";
+import { StyledList } from "../../components/Facility/styled.facility";
 import { ListItem } from "../../components/FacilityList";
 import { useState } from "react";
 
@@ -8,7 +8,7 @@ import {
   StyledLabel,
   CheckboxInput,
   StyledDiv,
-} from "../../components/Form";
+} from "../../components/Form/styled.form";
 
 export default function Hygiene({ facilities, toggleBookmark }) {
   const hygieneFacilities = facilities.filter((facility) => {

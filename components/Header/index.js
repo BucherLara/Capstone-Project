@@ -179,8 +179,8 @@ export default function Header() {
                       y2="20"
                       id="Line-Copy"
                       stroke="#111111"
-                      stroke-width="1.5"
-                      stroke-linecap="square"
+                      strokeWidth="1.5"
+                      strokeLinecap="square"
                       transform="translate(20.000000, 20.000000) rotate(90.000000) translate(-20.000000, -20.000000) "
                     ></line>
                     <line
@@ -190,8 +190,8 @@ export default function Header() {
                       y2="20"
                       id="Line"
                       stroke="#111111"
-                      stroke-width="1.5"
-                      stroke-linecap="square"
+                      strokeWidth="1.5"
+                      strokeLinecap="square"
                     ></line>
                   </g>
                 </g>

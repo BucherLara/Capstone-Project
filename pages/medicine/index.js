@@ -1,13 +1,13 @@
 import { ListItem } from "../../components/FacilityList";
 import Facility from "../../components/Facility";
-import { StyledList } from "../../components/Facility";
+import { StyledList } from "../../components/Facility/styled.facility";
 import { useState } from "react";
 import {
   StyledForm,
   StyledLabel,
   CheckboxInput,
   StyledDiv,
-} from "../../components/Form";
+} from "../../components/Form/styled.form";
 
 export default function Medicine({ facilities, toggleBookmark }) {
   const medicinFacilities = facilities.filter((facility) => {
