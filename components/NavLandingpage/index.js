@@ -14,7 +14,7 @@ export default function NavLandingpage() {
         <StyledNavLink href={"/sleep"}>
           <StyledIcon
             src={"/assets/svg/sleep.svg"}
-            alt={"Schlafen-Icon"}
+            alt={"schlafen-icon"}
             width={100}
             height={60}
           />
@@ -23,7 +23,7 @@ export default function NavLandingpage() {
         <StyledNavLink href={"/hygiene"}>
           <StyledIcon
             src={"/assets/svg/hygiene.svg"}
-            alt={"Hygiene-Icon"}
+            alt={"hygiene-icon"}
             width={100}
             height={60}
           />
@@ -32,7 +32,7 @@ export default function NavLandingpage() {
         <StyledNavLink href={"/medicine"}>
           <StyledIcon
             src={"/assets/svg/medicine.svg"}
-            alt={"Medizin-Icon"}
+            alt={"medizin-icon"}
             width={100}
             height={60}
           />
@@ -41,7 +41,7 @@ export default function NavLandingpage() {
         <StyledNavLink href={"/favorites"}>
           <StyledIcon
             src={"/assets/svg/favorites.svg"}
-            alt={"Favoriten-Icon"}
+            alt={"favoriten-Icon"}
             width={100}
             height={60}
           />

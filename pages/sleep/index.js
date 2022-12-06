@@ -48,34 +48,34 @@ export default function Sleep({ facilities, toggleBookmark }) {
           <CheckboxInput
             type="checkbox"
             name="now"
-            id="now"
+            id="sofort"
             value="now"
             checked={selectedFilters.includes("now")}
             onChange={handleToggleFilter}
           />
-          <StyledLabel htmlFor="now"> sofort</StyledLabel>
+          <StyledLabel htmlFor="sofort"> sofort</StyledLabel>
         </StyledDiv>
         <StyledDiv>
           <CheckboxInput
             type="checkbox"
             name="u25"
-            id="u25"
+            id="personen-u25"
             value="u25"
             checked={selectedFilters.includes("u25")}
             onChange={handleToggleFilter}
           />
-          <StyledLabel htmlFor="u25"> unter 25 Jahren</StyledLabel>
+          <StyledLabel htmlFor="personen-u25"> unter 25 Jahren</StyledLabel>
         </StyledDiv>
         <StyledDiv>
           <CheckboxInput
             type="checkbox"
             name="dog"
-            id="dog"
+            id="mit-hund"
             value="dog"
             checked={selectedFilters.includes("dog")}
             onChange={handleToggleFilter}
           />
-          <StyledLabel htmlFor="dog"> mit Hund</StyledLabel>
+          <StyledLabel htmlFor="mit-hund"> mit Hund</StyledLabel>
         </StyledDiv>
       </StyledForm>
       <StyledList>

@@ -11,7 +11,7 @@ import {
 
 export default function Medicine({ facilities, toggleBookmark }) {
   const medicinFacilities = facilities.filter((facility) => {
-    return facility.category === "medizin";
+    return facility.category === "Medizin";
   });
 
   const [selectedFilters, setSelectedFilters] = useState([]);
@@ -48,34 +48,34 @@ export default function Medicine({ facilities, toggleBookmark }) {
           <CheckboxInput
             type="checkbox"
             name="general"
-            id="general"
+            id="allgemein-medizin"
             value="general"
             checked={selectedFilters.includes("general")}
             onChange={handleToggleFilter}
           />
-          <StyledLabel htmlFor="general"> Allgemein</StyledLabel>
+          <StyledLabel htmlFor="allgemein-medizin"> Allgemein</StyledLabel>
         </StyledDiv>
         <StyledDiv>
           <CheckboxInput
             type="checkbox"
             name="psychologist"
-            id="psychologist"
+            id="psycholog*in"
             value="psychologist"
             checked={selectedFilters.includes("psychologist")}
             onChange={handleToggleFilter}
           />
-          <StyledLabel htmlFor="psychologist"> Psycholog*in</StyledLabel>
+          <StyledLabel htmlFor="psycholog*in"> Psycholog*in</StyledLabel>
         </StyledDiv>
         <StyledDiv>
           <CheckboxInput
             type="checkbox"
             name="gynecologist"
-            id="gynecologist"
+            id="gynäkolog*in"
             value="gynecologist"
             checked={selectedFilters.includes("gynecologist")}
             onChange={handleToggleFilter}
           />
-          <StyledLabel htmlFor="gynecologist"> Frauenärzt*in</StyledLabel>
+          <StyledLabel htmlFor="gynäkolog*in"> Frauenärzt*in</StyledLabel>
         </StyledDiv>
       </StyledForm>
       <StyledList>

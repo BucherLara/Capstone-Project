@@ -15,7 +15,7 @@ export default function Footer() {
           <StyledImage
             variant={pathname === "/sleep" && "active"}
             src={"/assets/svg/sleep.svg"}
-            alt={"Schlafen-Icon"}
+            alt={"schlafen-icon"}
             width={45}
             height={45}
           />
@@ -25,7 +25,7 @@ export default function Footer() {
           <StyledImage
             variant={pathname === "/hygiene" && "active"}
             src={"/assets/svg/hygiene.svg"}
-            alt={"Hygiene-Icon"}
+            alt={"hygiene-icon"}
             width={45}
             height={45}
           />
@@ -35,7 +35,7 @@ export default function Footer() {
           <StyledImage
             variant={pathname === "/medicine" && "active"}
             src={"/assets/svg/medicine.svg"}
-            alt={"Medizin-Icon"}
+            alt={"medizin-icon"}
             width={45}
             height={45}
           />
@@ -45,7 +45,7 @@ export default function Footer() {
           <StyledImage
             variant={pathname === "/favorites" && "active"}
             src={"/assets/svg/favorites.svg"}
-            alt={"Favoriten-Icon"}
+            alt={"favoriten-icon"}
             width={45}
             height={45}
           />

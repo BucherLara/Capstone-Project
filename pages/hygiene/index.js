@@ -12,7 +12,7 @@ import {
 
 export default function Hygiene({ facilities, toggleBookmark }) {
   const hygieneFacilities = facilities.filter((facility) => {
-    return facility.category === "hygiene";
+    return facility.category === "Hygiene";
   });
 
   const [selectedFilters, setSelectedFilters] = useState([]);
@@ -49,34 +49,34 @@ export default function Hygiene({ facilities, toggleBookmark }) {
           <CheckboxInput
             type="checkbox"
             name="mobile"
-            id="mobile"
+            id="mobil"
             value="mobile"
             checked={selectedFilters.includes("mobile")}
             onChange={handleToggleFilter}
           />
-          <StyledLabel htmlFor="mobile"> mobil</StyledLabel>
+          <StyledLabel htmlFor="mobil"> mobil</StyledLabel>
         </StyledDiv>
         <StyledDiv>
           <CheckboxInput
             type="checkbox"
             name="lGBTQIA+"
-            id="lGBTQIA+"
+            id="lGBTQIA+-personen"
             value="lGBTQIA+"
             checked={selectedFilters.includes("lGBTQIA+")}
             onChange={handleToggleFilter}
           />
-          <StyledLabel htmlFor="lGBTQIA+"> LGBTQIA+</StyledLabel>
+          <StyledLabel htmlFor="lGBTQIA+-personen+"> LGBTQIA+</StyledLabel>
         </StyledDiv>
         <StyledDiv>
           <CheckboxInput
             type="checkbox"
             name="u25"
-            id="u25"
+            id="personen-u25"
             value="u25"
             checked={selectedFilters.includes("u25")}
             onChange={handleToggleFilter}
           />
-          <StyledLabel htmlFor="u25"> unter 25 Jahren</StyledLabel>
+          <StyledLabel htmlFor="personen-u25"> unter 25 Jahren</StyledLabel>
         </StyledDiv>
       </StyledForm>
       <StyledList>

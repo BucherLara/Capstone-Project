@@ -64,9 +64,14 @@ export default function Form({ addFacilities }) {
       </p>
 
       <form onSubmit={handleSubmit}>
-        <FlexLabel htmlFor="name">
+        <FlexLabel htmlFor="name-der-einrichtung">
           Name der Einrichtung
-          <StyledInput type="text" id="name" name="name" required />
+          <StyledInput
+            type="text"
+            id="name-der-einrichtung"
+            name="name"
+            required
+          />
         </FlexLabel>
         <StyledFieldset>
           <StyledLegend>Kategorie der Einrichtung</StyledLegend>
@@ -76,41 +81,41 @@ export default function Form({ addFacilities }) {
                 setCategory("sleep");
               }}
               type="radio"
-              id="Schlafen"
+              id="schlafen"
               name="category"
               value="Schlafen"
               defaultChecked
               required
             />
-            <StyledLabel htmlFor="sleep"> Schlafen</StyledLabel>
+            <StyledLabel htmlFor="schlafen"> Schlafen</StyledLabel>
           </StyledDiv>
           <StyledSection showDetails={category === "sleep"}>
             <StyledDiv>
               <CheckboxInput
                 type="checkbox"
-                id="dog"
+                id="mit-hund"
                 name="filterCriteria"
                 value="dog"
               />
-              <StyledLabel htmlFor="dog">mit Hund</StyledLabel>
+              <StyledLabel htmlFor="mit-hund">mit Hund</StyledLabel>
             </StyledDiv>
             <StyledDiv>
               <CheckboxInput
                 type="checkbox"
-                id="now"
+                id="sofort"
                 name="filterCriteria"
                 value="now"
               />
-              <StyledLabel htmlFor="now"> sofort</StyledLabel>
+              <StyledLabel htmlFor="sofort"> sofort</StyledLabel>
             </StyledDiv>
             <StyledDiv>
               <CheckboxInput
                 type="checkbox"
-                id="u25"
+                id="personen-u25"
                 name="filterCriteria"
                 value="u25"
               />
-              <StyledLabel htmlFor="u25">unter 25 Jahren</StyledLabel>
+              <StyledLabel htmlFor="personen-u25">unter 25 Jahren</StyledLabel>
             </StyledDiv>
           </StyledSection>
           <StyledDiv>
@@ -121,7 +126,7 @@ export default function Form({ addFacilities }) {
               type="radio"
               id="hygiene"
               name="category"
-              value="hygiene"
+              value="Hygiene"
               required
             />
             <StyledLabel htmlFor="hygiene">Hygiene</StyledLabel>
@@ -130,29 +135,29 @@ export default function Form({ addFacilities }) {
             <StyledDiv>
               <CheckboxInput
                 type="checkbox"
-                id="mobile"
+                id="mobil"
                 name="filterCriteria"
                 value="mobile"
               />
-              <StyledLabel htmlFor="mobile">mobil</StyledLabel>
+              <StyledLabel htmlFor="mobil">mobil</StyledLabel>
             </StyledDiv>
             <StyledDiv>
               <CheckboxInput
                 type="checkbox"
-                id="lGBTQIA+"
+                id="lGBTQIA+-personen"
                 name="filterCriteria"
                 value="lGBTQIA+"
               />
-              <StyledLabel htmlFor="lGBTQIA+">LGBTQIA+</StyledLabel>
+              <StyledLabel htmlFor="lGBTQIA+-personen">LGBTQIA+</StyledLabel>
             </StyledDiv>
             <StyledDiv>
               <CheckboxInput
                 type="checkbox"
-                id="u25"
+                id="personen-u25"
                 name="filterCriteria"
                 value="u25"
               />
-              <StyledLabel htmlFor="u25">unter 25 Jahren</StyledLabel>
+              <StyledLabel htmlFor="personen-u25">unter 25 Jahren</StyledLabel>
             </StyledDiv>
           </StyledSection>
           <StyledDiv>
@@ -163,57 +168,57 @@ export default function Form({ addFacilities }) {
               type="radio"
               id="medizin"
               name="category"
-              value="medizin"
+              value="Medizin"
               required
             />
-            <StyledLabel htmlFor="medicine"> Medizin</StyledLabel>
+            <StyledLabel htmlFor="medizin"> Medizin</StyledLabel>
           </StyledDiv>
           <StyledSection showDetails={category === "medicine"}>
             <StyledDiv>
               <CheckboxInput
                 type="checkbox"
-                id="general"
+                id="allgemein-medizin"
                 name="filterCriteria"
                 value="general"
               />
-              <StyledLabel htmlFor="general">Allgemein</StyledLabel>
+              <StyledLabel htmlFor="allgemein-medizin">Allgemein</StyledLabel>
             </StyledDiv>
             <StyledDiv>
               <CheckboxInput
                 type="checkbox"
-                id="psychologist+"
+                id="psycholog*in"
                 name="filterCriteria"
                 value="psychologist"
               />
-              <StyledLabel htmlFor="psychologist"> Psycholog*in</StyledLabel>
+              <StyledLabel htmlFor="psycholog*in">Psycholog*in</StyledLabel>
             </StyledDiv>
             <StyledDiv>
               <CheckboxInput
                 type="checkbox"
-                id="gynecologist"
+                id="gynäkolog*in"
                 name="filterCriteria"
                 value="gynecologist"
               />
-              <StyledLabel htmlFor="gynecologist">Gynäkolog*in</StyledLabel>
+              <StyledLabel htmlFor="gynäkolog*in">Gynäkolog*in</StyledLabel>
             </StyledDiv>
           </StyledSection>
         </StyledFieldset>
 
-        <FlexLabel htmlFor="target">
+        <FlexLabel htmlFor="zielgruppe">
           Zielgruppe
           <StyledInput
             type="text"
-            id="target"
+            id="zielgruppe"
             name="target"
             required
             placeholder="An wen richtet sich das Angebot?"
           />
         </FlexLabel>
-        <FlexLabel htmlFor="requirements">
+        <FlexLabel htmlFor="zugangsvoraussetzungen">
           Zugangsvoraussetzungen
           <StyledInput
             type="text"
-            id="requirements"
+            id="zugangsvoraussetzungen"
             name="requirements"
             required
             placeholder="Welche Voraussetzungen gibt es?"
@@ -230,32 +235,32 @@ export default function Form({ addFacilities }) {
           height="48"
         /> */}
 
-        <FlexLabel htmlFor="address">
+        <FlexLabel htmlFor="adresse">
           Adresse
           <StyledInput
             type="text"
-            id="address"
+            id="adresse"
             name="address"
             required
             placeholder="Straße Nr., Plz Hamburg"
           />
         </FlexLabel>
-        <FlexLabel htmlFor="link">
+        <FlexLabel htmlFor="google-maps-link">
           Google-Maps-Link
           <StyledInput
             type="url"
-            id="link"
+            id="google-maps-link"
             name="link"
             placeholder="https://www.google.com/maps/..."
             pattern="https?:\/\/((www\.)?google\.(com|fr|de)|goo.gl)\/maps(\?.+|\/.+)"
             required
           />
         </FlexLabel>
-        <FlexLabel htmlFor="tel">
+        <FlexLabel htmlFor="telefonnummer">
           Telefonnummer
           <StyledInput
             type="tel"
-            id="tel"
+            id="telefonnummer"
             name="tel"
             placeholder="0049..."
             pattern="(00|+)49[0-9]{,13}"

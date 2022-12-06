@@ -35,12 +35,12 @@ export default function Facility({ facility, toggleBookmark }) {
           <h3>{name}</h3>
           <StyledButton
             type="button"
-            aria-label="bookmark-button"
             onClick={() => {
               toggleBookmark(id);
             }}
           >
             <StyledSvg
+              aria-label="bookmark-button"
               variant={
                 facility.isBookmarked ? "bookmarkActive" : "bookmarkNotActive"
               }
@@ -80,6 +80,7 @@ export default function Facility({ facility, toggleBookmark }) {
             <ColoredContainer>
               <StyledLink href={`tel:${tel}`}>
                 <svg
+                  aria-label="telefon-icon"
                   width="30px"
                   height="30px"
                   viewBox="0 0 30 30"
@@ -87,7 +88,6 @@ export default function Facility({ facility, toggleBookmark }) {
                   xmlns="http://www.w3.org/2000/svg"
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 >
-                  <title>Fill 1</title>
                   <g
                     id="Symbols"
                     stroke="none"
@@ -126,6 +126,7 @@ export default function Facility({ facility, toggleBookmark }) {
             <ColoredContainer>
               <StyledLink href={link} target="_blank">
                 <svg
+                  aria-label="google-maps-icon"
                   width="30px"
                   height="35px"
                   viewBox="0 0 92.29 132.26"
@@ -133,7 +134,6 @@ export default function Facility({ facility, toggleBookmark }) {
                   xmlns="http://www.w3.org/2000/svg"
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 >
-                  <title>GoogleMaps</title>
                   <defs>
                     <polygon
                       id="path-1"

@@ -52,8 +52,8 @@ export default function Header() {
       <StyledHeader>
         <Link href="/">
           {pathname === "/" ? (
-            // <p>"Überlebenshilfen für wohnungslose Menschen"</p>
             <HomeSvg
+              aria-label="home-icon:reichende Hände-Herz"
               width="77px"
               height="69px"
               viewBox="0 0 77 69"
@@ -61,7 +61,6 @@ export default function Header() {
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
             >
-              <title>App Icon 1</title>
               <g
                 id="221202"
                 stroke="none"
@@ -91,6 +90,7 @@ export default function Header() {
           ) : (
             <StyledDiv>
               <PagesSvg
+                aria-label="home-icon:reichende Hände-Herz"
                 width="58px"
                 height="50px"
                 viewBox="0 0 77 69"
@@ -98,7 +98,6 @@ export default function Header() {
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <title>App Icon 1</title>
                 <g
                   id="221202"
                   stroke="none"
@@ -154,6 +153,7 @@ export default function Header() {
         pathname !== "/favorites" ? (
           <StyledLink href="/add">
             <AddSvg
+              aria-label="hinzufügen-icon"
               width="40px"
               height="40px"
               viewBox="0 0 40 40"
@@ -161,7 +161,6 @@ export default function Header() {
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
             >
-              <title>Add</title>
               <g
                 id="221202"
                 stroke="none"
