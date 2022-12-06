@@ -1,6 +1,11 @@
-import Link from "next/link";
-import styled from "styled-components";
-import Image from "next/image";
+import {
+  StyledLink,
+  StyledLinkContainer,
+  StyledIcon,
+  StyledNav,
+  StyledSpan,
+  StyledNavLink,
+} from "./styled.navlanding";
 
 export default function NavLandingpage() {
   return (
@@ -50,47 +55,3 @@ export default function NavLandingpage() {
     </>
   );
 }
-
-const StyledNavLink = styled(Link)`
-  border-radius: 40px;
-  background-color: var(--secondary-color);
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
-  // margin: 0 10px 10px 10px;
-  text-decoration: none;
-  text-align: center;
-  padding-bottom: 40px;
-`;
-
-const StyledSpan = styled.span`
-  color: var(--font-color);
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 24px;
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 40px;
-`;
-const StyledNav = styled.nav`
-  margin: 20px 20px 0 20px;
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap: 20px;
-`;
-
-const StyledIcon = styled(Image)`
-  height: 65px;
-  width: 65px;
-  margin: 41px 58px 0px 57px;
-  object-fit: contain;
-`;
-
-const StyledLinkContainer = styled.span`
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-`;
-const StyledLink = styled(Link)`
-  font-size: 18px;
-  color: var(--font-color);
-`;

@@ -19,7 +19,7 @@ const StyledSection = styled.section`
 `;
 const StyledList = styled.ul`
   padding: 0;
-  line-height: 21px;
+  line-height: 1.3 rem;
 `;
 
 const StyledLink = styled(Link)`
@@ -30,7 +30,6 @@ const StyledLink = styled(Link)`
   align-items: center;
   gap: 10px;
   height: 65px;
-  width: 350px;
 `;
 
 const StyledButton = styled.button`
@@ -39,8 +38,6 @@ const StyledButton = styled.button`
   background-color: white;
 `;
 const StyledSvg = styled.svg`
-  height: 45px;
-
   ${({ variant }) =>
     variant === "bookmarkActive" &&
     css`
@@ -61,31 +58,28 @@ const StyledSpan = styled.span`
 
 const FlexContainer = styled.div`
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: 100%;
 `;
 
 const ColoredContainer = styled.div`
   background-color: var(--primary-color);
   border-radius: 36px;
-  margin: 10px 0 10px 0;
   text-align: center;
   margin-top: 20px;
 `;
-const StyledParagraph = styled.p`
+const StyledParagraphLineTwo = styled.p`
   margin-top: -15px;
   text-align: left;
 `;
-const StyledP = styled.p`
+const StyledParagraphLineOne = styled.p`
   text-align: left;
 `;
 
 export {
   StyledList,
   StyledImage,
-  StyledP,
-  StyledParagraph,
+  StyledParagraphLineTwo,
+  StyledParagraphLineOne,
   ColoredContainer,
   FlexContainer,
   StyledSpan,

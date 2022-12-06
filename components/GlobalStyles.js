@@ -29,19 +29,19 @@ html,
 
     }
     h1 {
-        font-size: 34px;
+        font-size: 2.1rem;
         font-weight: bold;
     }
     h2 {
-        font-size: 18px;
+        font-size: 1.2rem;
         font-weight: bold;
     }
-    h3 {font-size: 25px;
+    h3 {font-size: 1.6rem;
         margin: 0;
 
     }
     p {
-        font-size: 18px; 
+        font-size: 1.2rem; 
     }
 
     * {

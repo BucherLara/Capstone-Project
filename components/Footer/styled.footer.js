@@ -4,8 +4,10 @@ import Image from "next/image";
 
 const StyledLink = styled(Link)`
   color: var(--font-color);
-  padding: 0;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const StyledNav = styled.nav`
@@ -14,28 +16,19 @@ const StyledNav = styled.nav`
   position: fixed;
   bottom: 0;
   align-items: center;
-
   width: 100%;
   background-color: var(--secondary-color);
-
   height: 75px;
 `;
 
 const StyledParagraph = styled.p`
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: bold;
-  letter-spacing: 0;
-  text-align: center;
   margin: 0;
 `;
 
 const StyledImage = styled(Image)`
-  &.active {
-    opacity: 1;
-  }
-  &.notActive {
-    opacity: 0.3;
-  }
+  opacity: ${({ variant }) => (variant === "active" ? 1 : 0.3)};
 `;
 
 export { StyledImage, StyledParagraph, StyledNav, StyledLink };

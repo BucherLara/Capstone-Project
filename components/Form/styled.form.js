@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Link from "next/link";
 
 const StyledLabel = styled.label`
-  font-size: 18px;
+  font-size: 1.2rem;
 `;
 
 const Container = styled.div`
@@ -12,16 +12,13 @@ const StyledFieldset = styled.fieldset`
   border: none;
 `;
 const StyledSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: space-between;
   margin-left: 30px;
   ${({ showDetails }) => (showDetails ? "size:20px;" : "display:none")}
 `;
 
 const StyledInput = styled.input`
   padding: 10px;
-  font-size: 18px;
+  font-size: 1.2rem;
   border: none;
 `;
 const FlexLabel = styled(StyledLabel)`
@@ -32,14 +29,14 @@ const FlexLabel = styled(StyledLabel)`
 `;
 
 const StyledLegend = styled.legend`
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: bold;
 `;
 const StyledLink = styled(Link)`
   display: flex;
   justify-content: center;
   color: var(--font-color);
-  font-size: 18px;
+  font-size: 1.2rem;
   margin: 15px 0 50px 0;
   font-weight: bold;
 `;
@@ -49,7 +46,7 @@ const StyledButton = styled.button`
   color: var(--second-font-color);
   width: 100%;
   padding: 20px;
-  font-size: 18px;
+  font-size: 1.2rem;
   margin-top: 15px;
 `;
 
@@ -61,8 +58,6 @@ const CheckboxInput = styled.input`
   width: 25px;
   height: 25px;
   margin-right: 10px;
-  cursor: text;
-  margin-top: 0;
 `;
 
 const StyledDiv = styled.div`
