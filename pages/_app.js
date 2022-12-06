@@ -38,6 +38,19 @@ function MyApp({ Component, pageProps }) {
     ]);
   }
 
+  function toggleBookmark(facilityId) {
+    setFacilities((facilities) => {
+      const newValue = facilities.map((facility) => {
+        if (facility.id === facilityId) {
+          return { ...facility, isBookmarked: !facility.isBookmarked };
+        } else {
+          return facility;
+        }
+      });
+      return newValue;
+    });
+  }
+
   return (
     <>
       <GlobalStyles />
@@ -47,6 +60,7 @@ function MyApp({ Component, pageProps }) {
           facilities={facilities}
           setFacilities={setFacilities}
           addFacilities={addFacilities}
+          toggleBookmark={toggleBookmark}
         />
       </Layout>
     </>

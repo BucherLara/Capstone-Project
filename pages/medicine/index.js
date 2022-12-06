@@ -9,7 +9,7 @@ import {
   StyledDiv,
 } from "../../components/Form";
 
-export default function Medicine({ facilities, setFacilities }) {
+export default function Medicine({ facilities, toggleBookmark }) {
   const medicinFacilities = facilities.filter((facility) => {
     return facility.category === "medizin";
   });
@@ -84,7 +84,7 @@ export default function Medicine({ facilities, setFacilities }) {
             <ListItem key={filteredFacility.id}>
               <Facility
                 facility={filteredFacility}
-                setFacilities={setFacilities}
+                toggleBookmark={toggleBookmark}
               />
             </ListItem>
           );

@@ -9,7 +9,7 @@ import {
   StyledDiv,
 } from "../../components/Form";
 
-export default function Sleep({ facilities, setFacilities }) {
+export default function Sleep({ facilities, toggleBookmark }) {
   const sleepFacilities = facilities.filter((facility) => {
     return facility.category === "Schlafen";
   });
@@ -84,7 +84,7 @@ export default function Sleep({ facilities, setFacilities }) {
             <ListItem key={filteredFacility.id}>
               <Facility
                 facility={filteredFacility}
-                setFacilities={setFacilities}
+                toggleBookmark={toggleBookmark}
               />
             </ListItem>
           );

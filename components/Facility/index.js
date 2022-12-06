@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ListItem } from "../FacilityList";
 import { css } from "styled-components";
 
-export default function Facility({ facility, setFacilities }) {
+export default function Facility({ facility, toggleBookmark }) {
   const {
     name,
     address,
@@ -17,19 +17,6 @@ export default function Facility({ facility, setFacilities }) {
     category,
   } = facility;
 
-  function toggleBookmark(facilityId) {
-    setFacilities((facilities) => {
-      const newValue = facilities.map((facility) => {
-        if (facility.id === facilityId) {
-          return { ...facility, isBookmarked: !facility.isBookmarked };
-        } else {
-          return facility;
-        }
-      });
-      return newValue;
-    });
-  }
-
   return (
     <>
       <StyledSection>
@@ -37,7 +24,7 @@ export default function Facility({ facility, setFacilities }) {
           <h3>{name}</h3>
           <StyledButton
             type="button"
-            aria-label="bookmark"
+            aria-label="bookmark-button"
             onClick={() => {
               toggleBookmark(id);
             }}

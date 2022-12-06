@@ -2,11 +2,7 @@ import Facility from "../../components/Facility";
 import { StyledList } from "../../components/Facility";
 import { ListItem } from "../../components/FacilityList";
 
-export default function Favorites({
-  toggleBookmark,
-  facilities,
-  setFacilities,
-}) {
+export default function Favorites({ toggleBookmark, facilities }) {
   return (
     <>
       <StyledList>
@@ -18,7 +14,6 @@ export default function Favorites({
                   facility={facility}
                   toggleBookmark={toggleBookmark}
                   isBookmarked={facility.isBookmarked}
-                  setFacilities={setFacilities}
                 />{" "}
               </ListItem>
             )

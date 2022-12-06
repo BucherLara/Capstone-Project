@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import Link from "next/link";
 
-export default function Form({ addFacilities }) {
+export default function Form({ addFacilities, toggleBookmark }) {
   const [category, setCategory] = useState("sleep");
 
   const router = useRouter();
