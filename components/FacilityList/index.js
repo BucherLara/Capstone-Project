@@ -8,7 +8,7 @@ export default function FacilityList({ facilities, toggleBookmark }) {
       <StyledList>
         {facilities.map((facility) => {
           return (
-            <ListItem key={facility.id} toggleBookmark={toggleBookmark}>
+            <ListItem key={facility.id}>
               <Facility facility={facility} toggleBookmark={toggleBookmark} />
             </ListItem>
           );
