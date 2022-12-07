@@ -36,6 +36,8 @@ const HeadingPages = styled.h1`
 const AddSvg = styled.svg`
   margin-right: 20px;
   margin-top: 5px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
 `;
 const StyledDiv = styled.div`
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
