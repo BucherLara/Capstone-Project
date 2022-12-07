@@ -14,7 +14,7 @@ const StyledSection = styled.section`
   background-color: var(--secondary-color);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
   padding: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   margin: 20px;
 `;
 const StyledList = styled.ul`
