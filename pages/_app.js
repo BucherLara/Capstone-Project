@@ -51,6 +51,15 @@ function MyApp({ Component, pageProps }) {
     });
   }
 
+  function deleteFacility(facilityId) {
+    setFacilities((facilities) => {
+      const newValue = facilities.filter(
+        (facility) => facility.id !== facilityId
+      );
+      return newValue;
+    });
+  }
+
   return (
     <>
       <GlobalStyles />
@@ -61,6 +70,7 @@ function MyApp({ Component, pageProps }) {
           setFacilities={setFacilities}
           addFacilities={addFacilities}
           toggleBookmark={toggleBookmark}
+          deleteFacility={deleteFacility}
         />
       </Layout>
     </>

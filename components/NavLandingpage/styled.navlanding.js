@@ -14,7 +14,7 @@ const StyledNavLink = styled(Link)`
 const StyledSpan = styled.span`
   color: var(--font-color);
   font-size: 1.2rem;
-  font-weight: bold;
+  font-family: var(--secondary-font)
   line-height: 1.4 rem;
 `;
 const StyledNav = styled.nav`

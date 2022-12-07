@@ -4,7 +4,6 @@ import {
   StyledDiv,
   CheckboxInput,
   StyledButton,
-  StyledLink,
   StyledLegend,
   FlexLabel,
   StyledInput,
@@ -12,6 +11,8 @@ import {
   StyledFieldset,
   Container,
   StyledLabel,
+  StyledBackButton,
+  ButtonContainer,
 } from "./styled.form";
 
 export default function Form({ addFacilities }) {
@@ -263,7 +264,7 @@ export default function Form({ addFacilities }) {
             id="telefonnummer"
             name="tel"
             placeholder="0049..."
-            pattern="(00|+)49[0-9]{,13}"
+            pattern="(00|\+)49[0-9]{7,13}"
             required
           />
         </FlexLabel>
@@ -272,9 +273,11 @@ export default function Form({ addFacilities }) {
           Einrichtung hinzufügen
         </StyledButton>
       </form>
-      <StyledLink href={"/"}>Zurück</StyledLink>
+      <ButtonContainer>
+        <StyledBackButton onClick={() => router.back()}>
+          Zurück
+        </StyledBackButton>
+      </ButtonContainer>
     </Container>
   );
 }
-
-// pattern="/^https?\:\/\/(www\.)?google\.(com|fr|de)\/maps\b/"

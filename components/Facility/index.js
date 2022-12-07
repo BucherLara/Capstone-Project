@@ -1,4 +1,5 @@
 import { ListItem } from "../FacilityList";
+import DeleteModal from "../Modal";
 
 import {
   StyledList,
@@ -15,7 +16,7 @@ import {
   ImageContainer,
 } from "./styled.facility";
 
-export default function Facility({ facility, toggleBookmark }) {
+export default function Facility({ facility, toggleBookmark, deleteFacility }) {
   const {
     name,
     address,
@@ -198,6 +199,7 @@ export default function Facility({ facility, toggleBookmark }) {
             </ColoredContainer>
           </ListItem>
         </StyledList>
+        <DeleteModal facility={facility} deleteFacility={deleteFacility} />
       </StyledSection>
     </>
   );

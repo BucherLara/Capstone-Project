@@ -10,7 +10,11 @@ import {
   StyledDiv,
 } from "../../components/Form/styled.form";
 
-export default function Hygiene({ facilities, toggleBookmark }) {
+export default function Hygiene({
+  facilities,
+  toggleBookmark,
+  deleteFacility,
+}) {
   const hygieneFacilities = facilities.filter((facility) => {
     return facility.category === "Hygiene";
   });
@@ -86,6 +90,7 @@ export default function Hygiene({ facilities, toggleBookmark }) {
               <Facility
                 facility={filteredFacility}
                 toggleBookmark={toggleBookmark}
+                deleteFacility={deleteFacility}
               />
             </ListItem>
           );
