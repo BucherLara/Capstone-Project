@@ -9,6 +9,7 @@ import {
   CancelButton,
   Container,
   StyledSpan,
+  StyledH1,
 } from "./styled.modal";
 
 export default function DeleteModal({ facility, deleteFacility }) {
@@ -61,10 +62,10 @@ export default function DeleteModal({ facility, deleteFacility }) {
             </PagesSvg>
           </StyledDiv>
           <Container>
-            <h1>
-              Willst du diese Einrichtung
+            <StyledH1>
+              Willst du die Einrichtung
               <StyledSpan> {facility.name}</StyledSpan> wirklich löschen?
-            </h1>
+            </StyledH1>
             <div>
               <StyledButton
                 type="button"

@@ -17,7 +17,11 @@ const Container = styled.div`
   padding: 20px;
 `;
 const StyledSpan = styled.span`
-  font-style: italic;
+  font-family: var(--secondary-font);
+`;
+const StyledH1 = styled.h1`
+  font: var(--primary-font);
+  font-size: 2.1rem;
 `;
 
 const CancelButton = styled(StyledButton)`
@@ -43,4 +47,5 @@ export {
   DeleteButton,
   FlexContainer,
   CancelButton,
+  StyledH1,
 };
