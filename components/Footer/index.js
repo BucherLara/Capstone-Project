@@ -13,7 +13,7 @@ export default function Footer() {
       <StyledNav>
         <StyledLink href={"/sleep"}>
           <StyledImage
-            variant={pathname === "/sleep" && "active"}
+            variant={pathname === "/sleep" ? "active" : undefined}
             src={"/assets/svg/sleep.svg"}
             alt={"schlafen-icon"}
             width={45}
@@ -23,7 +23,7 @@ export default function Footer() {
         </StyledLink>
         <StyledLink href={"/hygiene"}>
           <StyledImage
-            variant={pathname === "/hygiene" && "active"}
+            variant={pathname === "/hygiene" ? "active" : undefined}
             src={"/assets/svg/hygiene.svg"}
             alt={"hygiene-icon"}
             width={45}
@@ -33,7 +33,7 @@ export default function Footer() {
         </StyledLink>
         <StyledLink href={"/medicine"}>
           <StyledImage
-            variant={pathname === "/medicine" && "active"}
+            variant={pathname === "/medicine" ? "active" : undefined}
             src={"/assets/svg/medicine.svg"}
             alt={"medizin-icon"}
             width={45}
@@ -43,7 +43,7 @@ export default function Footer() {
         </StyledLink>
         <StyledLink href={"/favorites"}>
           <StyledImage
-            variant={pathname === "/favorites" && "active"}
+            variant={pathname === "/favorites" ? "active" : undefined}
             src={"/assets/svg/favorites.svg"}
             alt={"favoriten-icon"}
             width={45}
