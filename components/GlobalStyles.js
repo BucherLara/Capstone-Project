@@ -48,7 +48,9 @@ html,
         box-sizing: border-box;
     }
    
-    
+    main{
+        margin-bottom: 95px; 
+    }
 `;
 
 export default GlobalStyles;
