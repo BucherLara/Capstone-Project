@@ -8,6 +8,7 @@ import {
   FlexContainer,
   CancelButton,
   Container,
+  StyledSpan,
 } from "./styled.modal";
 
 export default function DeleteModal({ facility, deleteFacility }) {
@@ -61,7 +62,8 @@ export default function DeleteModal({ facility, deleteFacility }) {
           </StyledDiv>
           <Container>
             <h1>
-              Willst du diese Einrichtung {facility.name} wirklich löschen?
+              Willst du diese Einrichtung
+              <StyledSpan> {facility.name}</StyledSpan> wirklich löschen?
             </h1>
             <div>
               <StyledButton

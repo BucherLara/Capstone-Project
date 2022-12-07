@@ -16,6 +16,9 @@ const FlexContainer = styled.div`
 const Container = styled.div`
   padding: 20px;
 `;
+const StyledSpan = styled.span`
+  font-style: italic;
+`;
 
 const CancelButton = styled(StyledButton)`
   background-color: var(--primary-color);
@@ -33,4 +36,11 @@ const Modal = styled.span`
   z-index: 100;
 `;
 
-export { Modal, Container, DeleteButton, FlexContainer, CancelButton };
+export {
+  Modal,
+  StyledSpan,
+  Container,
+  DeleteButton,
+  FlexContainer,
+  CancelButton,
+};
