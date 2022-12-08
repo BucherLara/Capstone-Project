@@ -40,12 +40,6 @@ export default function Form({ addFacilities }) {
     const placeholderImage =
       "https://res.cloudinary.com/dk8ucka0s/image/upload/v1670507995/app_igyosw.png";
 
-    for (const property in data) {
-      if (data[property].trim() === "") {
-        return alert(`Bitte gib einen Text in das ${property} Feld ein!`);
-      }
-    }
-
     if (uploadImage.value === "") {
       addFacilities(
         name.trim(),
@@ -321,7 +315,6 @@ export default function Form({ addFacilities }) {
           />
           {imageValue === "" ? "" : <p>Das Bild wurde hinzugefügt!</p>}
         </FlexLabel>
-
         <StyledButton type="submit" value="submit">
           Einrichtung hinzufügen
         </StyledButton>
