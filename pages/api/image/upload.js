@@ -17,7 +17,6 @@ export default function handler(req, res) {
     if (error) {
       res.status(400).send("request body malformed");
     }
-
     const { filepath } = files.uploadImage;
 
     try {
