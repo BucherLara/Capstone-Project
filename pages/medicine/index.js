@@ -9,7 +9,11 @@ import {
   StyledDiv,
 } from "../../components/Form/styled.form";
 
-export default function Medicine({ facilities, toggleBookmark }) {
+export default function Medicine({
+  facilities,
+  toggleBookmark,
+  deleteFacility,
+}) {
   const medicinFacilities = facilities.filter((facility) => {
     return facility.category === "Medizin";
   });
@@ -85,6 +89,7 @@ export default function Medicine({ facilities, toggleBookmark }) {
               <Facility
                 facility={filteredFacility}
                 toggleBookmark={toggleBookmark}
+                deleteFacility={deleteFacility}
               />
             </ListItem>
           );

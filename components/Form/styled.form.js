@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Link from "next/link";
 
 const StyledLabel = styled.label`
   font-size: 1.2rem;
@@ -25,21 +24,14 @@ const FlexLabel = styled(StyledLabel)`
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  font-weight: bold;
+  font-family: var(--secondary-font);
 `;
 
 const StyledLegend = styled.legend`
   font-size: 1.2rem;
-  font-weight: bold;
+  font-family: var(--secondary-font);
 `;
-const StyledLink = styled(Link)`
-  display: flex;
-  justify-content: center;
-  color: var(--font-color);
-  font-size: 1.2rem;
-  margin: 15px 0 50px 0;
-  font-weight: bold;
-`;
+
 const StyledButton = styled.button`
   border-radius: 36px;
   background-color: var(--third-color);
@@ -48,6 +40,16 @@ const StyledButton = styled.button`
   padding: 20px;
   font-size: 1.2rem;
   margin-top: 15px;
+`;
+const StyledBackButton = styled.button`
+  border-style: none;
+  color: var(--font-color);
+  font-size: 1.2rem;
+  margin: 15px 0 50px 0;
+  font-family: var(--secondary-font);
+  background-color: var(--primary-color);
+  text-decoration: underline;
+  display: flex;
 `;
 
 const StyledForm = styled.form`
@@ -64,12 +66,16 @@ const StyledDiv = styled.div`
   display: flex;
   align-items: center;
 `;
+const ButtonContainer = styled.span`
+  display: flex;
+  justify-content: center;
+`;
+
 export {
   StyledDiv,
   CheckboxInput,
   StyledForm,
   StyledButton,
-  StyledLink,
   StyledLegend,
   FlexLabel,
   StyledInput,
@@ -77,4 +83,6 @@ export {
   StyledFieldset,
   Container,
   StyledLabel,
+  StyledBackButton,
+  ButtonContainer,
 };

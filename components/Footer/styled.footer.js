@@ -23,7 +23,7 @@ const StyledNav = styled.nav`
 
 const StyledParagraph = styled.p`
   font-size: 0.9rem;
-  font-weight: bold;
+  font-family: var(--secondary-font);
   margin: 0;
 `;
 

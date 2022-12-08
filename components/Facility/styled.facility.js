@@ -53,7 +53,7 @@ const StyledSvg = styled.svg`
     `}
 `;
 const StyledSpan = styled.span`
-  font-weight: bold;
+  font-family: var(--secondary-font);
 `;
 
 const FlexContainer = styled.div`
