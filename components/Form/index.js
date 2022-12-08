@@ -57,7 +57,6 @@ export default function Form({ addFacilities }) {
         method: "POST",
         body: formData,
       });
-      console.log(response);
 
       const imageData = await response.json();
       const image = imageData.secureUrl;
@@ -327,3 +326,9 @@ export default function Form({ addFacilities }) {
     </Container>
   );
 }
+
+// for (const property in data) {
+//   if (data[property].trim() === "") {
+//     return alert(`Bitte gib einen Text in das ${property} Feld ein!`);
+//   }
+// }
