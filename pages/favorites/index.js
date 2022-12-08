@@ -63,5 +63,5 @@ const StyledParagraph = styled.p`
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 30%;
+  margin-top: 25%;
 `;
