@@ -3,6 +3,7 @@ import initialState from "../helpers/db.json";
 import { useLocalStorage } from "../helpers/hooks";
 import { nanoid } from "nanoid";
 import Layout from "../components/Layout";
+import { CloudinaryContext } from "cloudinary-react";
 
 function MyApp({ Component, pageProps }) {
   const [facilities, setFacilities] = useLocalStorage(
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }) {
     link,
     target,
     requirements,
+    image,
     filterCriteria,
     tel
   ) {
@@ -30,7 +32,7 @@ function MyApp({ Component, pageProps }) {
         link,
         target,
         requirements,
-        image: "/icons/app.png",
+        image,
         filterCriteria,
         tel,
         isBookmarked: false,
@@ -62,17 +64,19 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <GlobalStyles />
-      <Layout>
-        <Component
-          {...pageProps}
-          facilities={facilities}
-          setFacilities={setFacilities}
-          addFacilities={addFacilities}
-          toggleBookmark={toggleBookmark}
-          deleteFacility={deleteFacility}
-        />
-      </Layout>
+      <CloudinaryContext cloudName="dk8ucka0s">
+        <GlobalStyles />
+        <Layout>
+          <Component
+            {...pageProps}
+            facilities={facilities}
+            setFacilities={setFacilities}
+            addFacilities={addFacilities}
+            toggleBookmark={toggleBookmark}
+            deleteFacility={deleteFacility}
+          />
+        </Layout>
+      </CloudinaryContext>
     </>
   );
 }

@@ -39,7 +39,7 @@ const StyledButton = styled.button`
   width: 100%;
   padding: 20px;
   font-size: 1.2rem;
-  margin-top: 15px;
+  margin-top: 30px;
 `;
 const StyledBackButton = styled.button`
   border-style: none;
@@ -70,6 +70,12 @@ const ButtonContainer = styled.span`
   display: flex;
   justify-content: center;
 `;
+const StyledUpload = styled.input`
+  display: none;
+`;
+const StyledSvg = styled.svg`
+  height: 45px;
+`;
 
 export {
   StyledDiv,
@@ -85,4 +91,6 @@ export {
   StyledLabel,
   StyledBackButton,
   ButtonContainer,
+  StyledUpload,
+  StyledSvg,
 };
