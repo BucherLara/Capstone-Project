@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
+import SnackBar from "../Snackbar";
 import {
   StyledDiv,
   CheckboxInput,
@@ -19,7 +20,7 @@ import {
 
 export default function Form({ addFacilities }) {
   const [category, setCategory] = useState("sleep");
-
+  const [showSnack, setShowSnack] = useState(false);
   const router = useRouter();
 
   async function handleSubmit(event) {
@@ -73,8 +74,8 @@ export default function Form({ addFacilities }) {
         tel.trim()
       );
     }
-    alert("Die Einrichtung wurde erfolgreich hinzugefügt!");
-    router.push("/");
+    setShowSnack(true);
+    // router.push("/");
   }
 
   const [imageValue, setImageValue] = useState("");
@@ -327,6 +328,13 @@ export default function Form({ addFacilities }) {
           Zurück
         </StyledBackButton>
       </ButtonContainer>
+      {showSnack && (
+        <SnackBar
+          onClose={() => {
+            router.push("/");
+          }}
+        />
+      )}
     </Container>
   );
 }
