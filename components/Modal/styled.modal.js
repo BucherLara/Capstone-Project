@@ -27,6 +27,7 @@ const StyledH1 = styled.h1`
 const CancelButton = styled(StyledButton)`
   background-color: var(--primary-color);
   color: var(--font-color);
+  margin-top: 10px;
 `;
 
 const Modal = styled.span`
