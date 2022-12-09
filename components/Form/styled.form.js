@@ -20,6 +20,10 @@ const StyledInput = styled.input`
   font-size: 1.2rem;
   border: none;
 `;
+const StyledP = styled.p`
+  margin-top: 30px;
+  font-size: 1.05rem;
+`;
 const FlexLabel = styled(StyledLabel)`
   display: flex;
   flex-direction: column;
@@ -39,7 +43,6 @@ const StyledButton = styled.button`
   width: 100%;
   padding: 20px;
   font-size: 1.2rem;
-  margin-top: 15px;
 `;
 const StyledBackButton = styled.button`
   border-style: none;
@@ -70,6 +73,12 @@ const ButtonContainer = styled.span`
   display: flex;
   justify-content: center;
 `;
+const StyledUpload = styled.input`
+  display: none;
+`;
+const StyledSvg = styled.svg`
+  height: 45px;
+`;
 
 export {
   StyledDiv,
@@ -85,4 +94,7 @@ export {
   StyledLabel,
   StyledBackButton,
   ButtonContainer,
+  StyledUpload,
+  StyledSvg,
+  StyledP,
 };
