@@ -16,6 +16,7 @@ import {
   ButtonContainer,
   StyledUpload,
   StyledSvg,
+  StyledP,
 } from "./styled.form";
 
 export default function Form({ addFacilities }) {
@@ -96,7 +97,7 @@ export default function Form({ addFacilities }) {
 
       <form onSubmit={handleSubmit}>
         <FlexLabel htmlFor="name-der-einrichtung">
-          Name der Einrichtung
+          Name der Einrichtung*
           <StyledInput
             type="text"
             id="name-der-einrichtung"
@@ -106,7 +107,7 @@ export default function Form({ addFacilities }) {
           />
         </FlexLabel>
         <StyledFieldset>
-          <StyledLegend>Kategorie der Einrichtung</StyledLegend>
+          <StyledLegend>Kategorie der Einrichtung*</StyledLegend>
           <StyledDiv>
             <CheckboxInput
               onClick={() => {
@@ -119,7 +120,7 @@ export default function Form({ addFacilities }) {
               defaultChecked
               required
             />
-            <StyledLabel htmlFor="schlafen"> Schlafen</StyledLabel>
+            <StyledLabel htmlFor="schlafen"> Schlafen*</StyledLabel>
           </StyledDiv>
           <StyledSection showDetails={category === "sleep"}>
             <StyledDiv>
@@ -161,7 +162,7 @@ export default function Form({ addFacilities }) {
               value="Hygiene"
               required
             />
-            <StyledLabel htmlFor="hygiene">Hygiene</StyledLabel>
+            <StyledLabel htmlFor="hygiene">Hygiene*</StyledLabel>
           </StyledDiv>
           <StyledSection showDetails={category === "hygiene"}>
             <StyledDiv>
@@ -203,7 +204,7 @@ export default function Form({ addFacilities }) {
               value="Medizin"
               required
             />
-            <StyledLabel htmlFor="medizin"> Medizin</StyledLabel>
+            <StyledLabel htmlFor="medizin"> Medizin*</StyledLabel>
           </StyledDiv>
           <StyledSection showDetails={category === "medicine"}>
             <StyledDiv>
@@ -237,7 +238,7 @@ export default function Form({ addFacilities }) {
         </StyledFieldset>
 
         <FlexLabel htmlFor="zielgruppe">
-          Zielgruppe
+          Zielgruppe*
           <StyledInput
             type="text"
             id="zielgruppe"
@@ -248,7 +249,7 @@ export default function Form({ addFacilities }) {
           />
         </FlexLabel>
         <FlexLabel htmlFor="zugangsvoraussetzungen">
-          Zugangsvoraussetzungen
+          Zugangsvoraussetzungen*
           <StyledInput
             type="text"
             id="zugangsvoraussetzungen"
@@ -259,7 +260,7 @@ export default function Form({ addFacilities }) {
           />
         </FlexLabel>
         <FlexLabel htmlFor="adresse">
-          Adresse
+          Adresse*
           <StyledInput
             type="text"
             id="adresse"
@@ -270,7 +271,7 @@ export default function Form({ addFacilities }) {
           />
         </FlexLabel>
         <FlexLabel htmlFor="google-maps-link">
-          Google-Maps-Link
+          Google-Maps-Link*
           <StyledInput
             type="url"
             id="google-maps-link"
@@ -281,7 +282,7 @@ export default function Form({ addFacilities }) {
           />
         </FlexLabel>
         <FlexLabel htmlFor="telefonnummer">
-          Telefonnummer
+          Telefonnummer*
           <StyledInput
             type="tel"
             id="telefonnummer"
@@ -291,7 +292,7 @@ export default function Form({ addFacilities }) {
             required
           />
         </FlexLabel>
-        <h2>Bild hinzufügen</h2>
+        <h2>Bild hinzufügen (optional)</h2>
         <FlexLabel htmlFor="uploadImage">
           <StyledSvg
             version="1.1"
@@ -319,6 +320,7 @@ export default function Form({ addFacilities }) {
           />
           {imageValue === "" ? "" : <p>Das Bild wurde hinzugefügt!</p>}
         </FlexLabel>
+        <StyledP> * Diese Felder müssen ausgefüllt werden!</StyledP>
         <StyledButton type="submit" value="submit">
           Einrichtung hinzufügen
         </StyledButton>
