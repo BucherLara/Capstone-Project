@@ -27,7 +27,7 @@ export default function Favorites({ toggleBookmark, facilities }) {
       </StyledSvg>
 
       <StyledParagraph>
-        Klicke auf die Herzen. um eine Einrichtung hinzuzufügen.
+        Klicke auf die Herzen, um eine Einrichtung hinzuzufügen.
       </StyledParagraph>
 
       <StyledList>
