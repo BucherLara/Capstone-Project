@@ -4,8 +4,6 @@
 
 ## Description
 
----
-
 **Überlebenshilfen für wohnungslose Menschen** is an app which informs about offers of social institutions so that people in need can find appropriate support easily.
 
 With the help of my app, people can search specifically for offers of help that meet their needs. Likewise, social institutions have the opportunity to inform about their offers.
