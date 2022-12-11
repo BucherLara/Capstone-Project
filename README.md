@@ -31,7 +31,7 @@ You can have a look at the current state of my application hosted on Vercel: [Ü
 - Jest
 - React Testing Library
 
----
+
 
 ## How to set it up
 
