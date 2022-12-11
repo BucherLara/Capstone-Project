@@ -14,13 +14,13 @@ With the help of my app, people can search specifically for offers of help that 
 
 ## Deployment
 
----
+
 
 You can have a look at the current state of my application hosted on Vercel: [Überlebenshilfen für wohnunglose Menschen](https://ueberlebenshilfen.vercel.app/)
 
 ## Tech Stack
 
----
+
 
 - React
 - React Hooks
