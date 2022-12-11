@@ -1,6 +1,6 @@
 # Überlebenshilfen für wohnungslose Menschen
 
-![Mobile View Screens](public/img/Ueberlebenshilfen.png)
+![Mobile View Screens](public/img/Ueberlebenshilfen-App.png)
 
 ## Description
 
