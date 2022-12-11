@@ -8,7 +8,7 @@
 
 With the help of my app, people can search specifically for offers of help that meet their needs. Likewise, social institutions have the opportunity to inform about their offers.
 
-<br><br>This app is the result of my Web Development Bootcamp at neuefische which I attended in late 2022.
+<br>This app is the result of my Web Development Bootcamp at neuefische which I attended in late 2022.
 
 <br>This app is optimized for mobile usage, so please set your browser to mobile version.
 
