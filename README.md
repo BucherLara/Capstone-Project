@@ -41,4 +41,4 @@ You can have a look at the current state of my application hosted on Vercel: [Ü
 - to run the app in development mode `npm start`, then open [http://localhost:3000](http://localhost:3000) to view it in the browser
 - to create a build ready for deploying:
   `npm run build`
-- test?
+
