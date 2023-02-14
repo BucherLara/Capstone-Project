@@ -27,9 +27,7 @@ You can have a look at the current state of my application hosted on Vercel: [Ü
 - Styled Components
 - Cloudinary
 - Next.js
-- Node.js
-- Jest
-- React Testing Library
+
 
 
 
